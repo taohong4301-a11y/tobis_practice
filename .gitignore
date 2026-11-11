@@ -2,3 +2,5 @@ models/
 output/
 __pycache__/
 .venv/
+client_secret*.json
+.youtube_token.json

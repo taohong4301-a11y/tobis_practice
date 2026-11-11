@@ -5,3 +5,5 @@ pyopenjtalk-plus
 pillow
 numpy
 fonttools
+google-api-python-client
+google-auth-oauthlib

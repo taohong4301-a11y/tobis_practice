@@ -26,6 +26,7 @@ tobis-practice/
 ├── requirements.txt
 ├── scripts/
 │   ├── make_video.py         # JSON → 视频 + 章节时间戳 + 简介模板
+│   ├── upload_youtube.py     # 视频 + 简介 → 上传到 YouTube（私享）
 │   └── download_models.sh    # 下载 Kokoro 语音模型
 ├── docs/
 │   └── TOBIS_W1_每日计划.md   # 第1周每日计划（附录 A/B/C 是视频题目的来源）
@@ -101,7 +102,21 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 2. **校对**：检查参考译文准确、数字换算正确、日语读音正确。
 3. **生成**：`python scripts/make_video.py content/epNN_....json output/epNN.mp4`
 4. **抽查**：至少听 5 题，重点检查日语 TTS 有没有读错汉字和数字。读错的地方：在 `make_video.py` 的 `READING_FIXES` 里加一条（原文 → 语音用写法）。
-5. **上传**：用生成的 `_description.txt` 作简介，`_chapters.txt` 作 YouTube 章节。B站和 YouTube 都要标注「AI 生成内容」。
+5. **上传**：
+   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享，Ellen 在 YouTube Studio 检查后改公开。
+   - B站：手动上传，用 `_description.txt` 作简介，并勾选「AI 生成内容」。B站没有给个人的官方上传 API，不要用基于登录 Cookie 的第三方工具。
+
+## 上传到 YouTube（准备只做一次）
+
+1. 打开 https://console.cloud.google.com/ ，新建项目（例如 tobis-uploader）。
+2. 「API とサービス / APIs & Services」→ 启用 **YouTube Data API v3**。
+3. 「OAuth 同意画面 / OAuth consent screen」：User type 选 External，填应用名和自己的邮箱；在 Test users 里加上自己的 Google 账号。
+4. 「認証情報 / Credentials」→ 创建 OAuth クライアント ID，类型选 **Desktop app**，下载 JSON，改名为 `client_secret.json` 放到项目根目录。
+5. 第一次运行上传脚本时会打开浏览器，用 YouTube 频道所在的账号登录并允许。授权保存在 `.youtube_token.json`。
+
+- `client_secret*.json` 和 `.youtube_token.json` 已 gitignore，**绝不提交**。
+- 限制：未审核的 API 项目上传的视频会被 YouTube 锁成私享，需要手动改公开（想自动公开要申请 YouTube API 审核）；每天配额只够上传几个视频。
+- OAuth 同意画面处于「测试」状态时，授权大约 7 天过期；脚本会自动重新打开浏览器让你再授权一次。
 
 ## 已知问题与经验
 
