@@ -100,12 +100,15 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 1. **出题**：按上面的格式和 TOBIS 出题特征生成新一期 JSON，存为 `content/epNN_<part>_<set>.json`。题材轮换：金融市场 / 企业业绩 / IT·数据 / 人事·劳动 / 能源·ESG / 制造·供应链 / 日常商务用语。每期至少 10 题含大数字。
 2. **校对**：检查参考译文准确、数字换算正确、日语读音正确。
 3. **生成**：`python scripts/make_video.py content/epNN_....json output/epNN.mp4`
-4. **抽查**：至少听 5 题，重点检查日语 TTS 有没有读错汉字和数字。读错的地方：改写原文（例如把汉字换成假名），或在 `norm_ja()` 里加替换规则。
+4. **抽查**：至少听 5 题，重点检查日语 TTS 有没有读错汉字和数字。读错的地方：在 `make_video.py` 的 `READING_FIXES` 里加一条（原文 → 语音用写法）。
 5. **上传**：用生成的 `_description.txt` 作简介，`_chapters.txt` 作 YouTube 章节。B站和 YouTube 都要标注「AI 生成内容」。
 
 ## 已知问题与经验
 
-- 日语 TTS 用 misaki 的 JAG2P → Kokoro。`norm_ja()` 已处理：千分位逗号、小数点（8.5 → 8点5）、% → パーセント、〜 → から。
+- 日语 TTS 用 misaki 的 `JAG2P(version="pyopenjtalk")` → Kokoro。不用默认的 cutlet 模式（要 fugashi + 约 770MB 的 unidic 词典）；`pyopenjtalk-plus` 在 Windows/macOS 有预编译包（原版 pyopenjtalk 在 Windows 要 cmake 编译，会装失败）。
+- `norm_ja()` 已处理：千分位逗号、小数点（8.5 → 8点5）、% → パーセント、〜 → から；读错的词写进 `READING_FIXES`（只改语音，画面不变）。已收录：自社株買い、設備投資、FinOps、7〜9月期。
+- 抽查读音最快的方法：对所有日语句子跑 `pyopenjtalk.g2p(norm_ja(text), kana=True)`，看片假名，不用一题题听。
+- Windows 上 winget 装的 ffmpeg 要开新终端才在 PATH 里。
 - 日语声音偶尔会读错多音汉字，上传前必须抽查。
 - 英语声音在美式和英式之间轮换，日语在女声 jf_alpha 和男声 jm_kumo 之间轮换。
 - 40 题一期约 25–30 分钟，生成耗时约 10–15 分钟（CPU）。

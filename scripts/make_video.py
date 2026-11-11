@@ -12,6 +12,7 @@
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -130,7 +131,8 @@ def engines():
     if _engines is None:
         from kokoro_onnx import Kokoro
         from misaki import ja
-        _engines = (Kokoro(str(MODEL), str(VOICES)), ja.JAG2P())
+        # pyopenjtalk 模式：不需要 fugashi/unidic 词典；Windows 用 pyopenjtalk-plus 的预编译包
+        _engines = (Kokoro(str(MODEL), str(VOICES)), ja.JAG2P(version="pyopenjtalk"))
     return _engines
 
 
@@ -139,7 +141,18 @@ def norm_ja(t):
     t = re.sub(r"(?<=\d),(?=\d)", "", t)
     t = re.sub(r"(?<=[\d%])\s+|\s+(?=\d)", "", t)
     t = re.sub(r"(\d)\.(\d)", r"\1点\2", t)
+    for k, v in READING_FIXES.items():
+        t = t.replace(k, v)
     return t.replace("%", "パーセント").replace("〜", "から")
+
+
+# TTS 读错的词：原文 → 只给语音用的写法（画面上不变）
+READING_FIXES = {
+    "株買い": "株がい",          # 自社株買い：pyopenjtalk 读成 かぶかい
+    "設備投資": "設備とうし",    # 读成 せつびとおし
+    "FinOps": "フィンオプス",     # 否则逐字母读
+    "7〜9月期": "7月から9月期",  # 否则读成 なな から くがつき
+}
 
 
 def tts(text, lang, idx):
@@ -193,7 +206,10 @@ def seg(img, audio, out):
                     "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-pix_fmt", "yuv420p",
                     "-r", "24", "-c:a", "aac", "-b:a", "128k", "-t", f"{len(audio) / SR:.3f}", f"{out}.mp4"],
                    check=True)
-    return f"{out}.mp4", len(audio) / SR
+    # 用编码后的真实时长（视频按帧取整会略长），否则章节时间越往后越早
+    real = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                           f"{out}.mp4"], check=True, capture_output=True, text=True).stdout.strip()
+    return f"{out}.mp4", float(real)
 
 
 def silence(sec):
@@ -206,7 +222,7 @@ def beep():
 
 
 def stamp(sec):
-    m, s = divmod(int(sec), 60)
+    m, s = divmod(int(np.ceil(sec + 0.5)), 60) if sec else (0, 0)  # 落在 3 秒章节卡的 0.5–1.5 秒处，不会停在上一题末尾
     return f"{m}:{s:02d}"
 
 
@@ -328,6 +344,7 @@ def build(spec, items, outname):
     out.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0",
                     "-i", str(work / "list.txt"), "-c", "copy", str(out)], check=True)
+    shutil.rmtree(work, ignore_errors=True)  # 约 1000 个临时片段
 
     chap = out.with_name(out.stem + "_chapters.txt")
     chap.write_text("\n".join(chapters) + "\n", encoding="utf-8")
@@ -337,7 +354,7 @@ def build(spec, items, outname):
     desc = out.with_name(out.stem + "_description.txt")
     desc.write_text(
         f"{spec['title']}\n\n"
-        f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')} の練習用。\n"
+        f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')}の練習用。\n"
         "听到提示音后在倒计时内口译，再对照参考译文。建议边做边录音，回听打分。\n\n"
         + guide +
         "※ 语音为 AI 合成（Kokoro TTS），题目为原创模拟题，与 CAIS 官方试题无关。\n\n"

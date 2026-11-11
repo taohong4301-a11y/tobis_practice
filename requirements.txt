@@ -1,6 +1,7 @@
 kokoro-onnx
 soundfile
-misaki[ja]
+misaki
+pyopenjtalk-plus
 pillow
 numpy
 fonttools
