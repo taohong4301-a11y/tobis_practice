@@ -27,8 +27,13 @@ tobis-practice/
 ├── scripts/
 │   ├── make_video.py         # JSON → 视频 + 章节时间戳 + 简介模板
 │   └── download_models.sh    # 下载 Kokoro 语音模型
+├── docs/
+│   └── TOBIS_W1_每日计划.md   # 第1周每日计划（附录 A/B/C 是视频题目的来源）
 ├── content/
-│   └── ep01_part2_A.json     # 第1期：Part 2 A 套 40 题（已完成）
+│   ├── ep01_part2_A.json     # 第1期：Part 2 A 套 40 题（= 每日计划 附录 A）
+│   ├── w1_numbers.json       # 第1周 数字热身 20 题（= 附录 B）
+│   ├── w1_symbols.json       # 第1周 笔记符号 30 个（= 附录 C）
+│   └── ep01_w1_full.json     # 第1周完整版合集：数字 + A套 + 符号，带按天章节
 ├── models/                   # 模型文件（gitignore）
 └── output/                   # 生成的视频（gitignore）
 ```
@@ -43,7 +48,11 @@ bash scripts/download_models.sh
 python scripts/make_video.py content/ep01_part2_A.json output/ep01.mp4
 ```
 
-字体：脚本自动找 macOS 的ヒラギノ、Windows 的游ゴシック/メイリオ、Linux 的 Noto CJK。都找不到时设置 `TOBIS_FONT` 和 `TOBIS_FONT_BOLD`。
+Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3.12 建 venv（Anaconda 的 3.9 太旧）；用 `.venv\Scripts\activate`。
+
+字体：主字体自动找 macOS 的ヒラギノ、Windows 的游ゴシック/メイリオ、Linux 的 Noto CJK。都找不到时设置 `TOBIS_FONT` 和 `TOBIS_FONT_BOLD`。
+主字体缺的字（游ゴシック没有简体字 译/练/时 等）逐字改用后备字体（Windows 微软雅黑、macOS 苹方），可用 `TOBIS_FONT_FALLBACK(_BOLD)` 覆盖。
+不装语音模型也能先看画面：加 `--preview`，只把每种题的卡片画到 `output/<名字>_preview/`。
 可调参数（环境变量）：`TOBIS_SPEED`（语速，默认 0.95）、`TOBIS_PAUSE`（倒计时系数，默认 1.6）。
 
 ## 题目 JSON 格式
@@ -66,6 +75,25 @@ python scripts/make_video.py content/ep01_part2_A.json output/ep01.mp4
 - `note` 里的日语难词要带读音，例：`削減（さくげん）`；数字给换算，例：`342 billion = 3,420億`。
 - `tag` 用于连续题：`连续 1/3`、`连续 2/3`、`连续 3/3`，其余留空。
 - 每期 40 题：英→日 20 + 日→英 20，各含 2 组连续题（第 11–13、18–20 题）。
+- 题号按「方向」分别从 1 数起（和每日计划里的编号一致）；可选 `countdown`（秒）覆盖默认倒计时。
+- `dir` 为 `SYMBOL` 时是笔记符号题：`src` = 意思，`ref` = 符号，没有语音，倒计时让观众写符号。
+
+### 合集文件（一个视频里放多套题，观众按章节自己选当天的部分）
+
+```json
+{
+  "title": "...", "part": "Part 2 短文形式",
+  "sources": [
+    {"file": "w1_numbers.json", "label": "数字 ", "countdown": 4,
+     "chapters": {"1": "数字热身 · 英→日 1–10（Day 1）", "11": "数字热身 · 日→英 1–10（Day 2）"}}
+  ],
+  "day_guide": ["Day 1：……", "Day 2：……"]
+}
+```
+
+- `sources` 按顺序拼接；`chapters` 的键是该文件里第几题（从 1 起），在那一题前插入章节标题卡并记 YouTube 章节。
+- 有章节时只输出章节级时间戳（不再每题一个）；`day_guide` 会做成开头的「按天练习建议」卡，并写进简介。
+- 每周的视频建议做成这种完整版：一次生成全部内容，用 Day 1/2/3… 标注，不写具体日期。
 
 ## 每周工作流
 

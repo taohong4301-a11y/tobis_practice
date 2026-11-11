@@ -3,3 +3,4 @@ soundfile
 misaki[ja]
 pillow
 numpy
+fonttools

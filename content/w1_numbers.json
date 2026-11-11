@@ -1,0 +1,28 @@
+{
+  "week": "2026-W46",
+  "part": "数字热身",
+  "set": "W1 附录 B",
+  "title": "TOBIS 数字热身 · 第1周 20题",
+  "items": [
+    {"dir": "EN→JA", "src": "3.7 billion", "ref": "37億", "note": "billion = 10億 → 3.7 × 10 = 37億（おく）", "tag": ""},
+    {"dir": "EN→JA", "src": "120 million", "ref": "1億2,000万", "note": "million = 100万 → 120 × 100万 = 1億2,000万（まん）", "tag": ""},
+    {"dir": "EN→JA", "src": "45 billion", "ref": "450億", "note": "45 × 10億 = 450億", "tag": ""},
+    {"dir": "EN→JA", "src": "1.8 trillion", "ref": "1兆8,000億", "note": "trillion = 1兆（ちょう）→ 1.8兆 = 1兆8,000億", "tag": ""},
+    {"dir": "EN→JA", "src": "750,000", "ref": "75万", "note": "万 = 10,000 → 750,000 ÷ 10,000 = 75万", "tag": ""},
+    {"dir": "EN→JA", "src": "2.35 million", "ref": "235万", "note": "2.35 × 100万 = 235万", "tag": ""},
+    {"dir": "EN→JA", "src": "68 billion", "ref": "680億", "note": "68 × 10億 = 680億", "tag": ""},
+    {"dir": "EN→JA", "src": "9.2 trillion", "ref": "9兆2,000億", "note": "9.2兆 = 9兆2,000億", "tag": ""},
+    {"dir": "EN→JA", "src": "13.5 million", "ref": "1,350万", "note": "13.5 × 100万 = 1,350万", "tag": ""},
+    {"dir": "EN→JA", "src": "600 billion", "ref": "6,000億", "note": "600 × 10億 = 6,000億", "tag": ""},
+    {"dir": "JA→EN", "src": "3,800万", "ref": "38 million", "note": "万 ÷ 100 = million → 3,800 ÷ 100 = 38 million", "tag": ""},
+    {"dir": "JA→EN", "src": "2億5,000万", "ref": "250 million", "note": "1億 = 100 million → 2.5億 = 250 million", "tag": ""},
+    {"dir": "JA→EN", "src": "120億", "ref": "12 billion", "note": "億 ÷ 10 = billion → 120 ÷ 10 = 12 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "4兆3,000億", "ref": "4.3 trillion", "note": "兆（ちょう）= trillion → 4.3兆 = 4.3 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "85万", "ref": "850,000", "note": "85 × 10,000 = 850,000", "tag": ""},
+    {"dir": "JA→EN", "src": "7,600億", "ref": "760 billion", "note": "7,600 ÷ 10 = 760 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "1兆", "ref": "1 trillion", "note": "1兆 = 1 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "9,500万", "ref": "95 million", "note": "9,500 ÷ 100 = 95 million", "tag": ""},
+    {"dir": "JA→EN", "src": "32億", "ref": "3.2 billion", "note": "32 ÷ 10 = 3.2 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "15兆", "ref": "15 trillion", "note": "15兆 = 15 trillion", "tag": ""}
+  ]
+}
