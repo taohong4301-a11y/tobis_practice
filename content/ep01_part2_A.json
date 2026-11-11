@@ -1,0 +1,289 @@
+{
+  "episode": 1,
+  "week": "2026-W46",
+  "part": "Part 2 短文形式",
+  "set": "A",
+  "title": "TOBIS 商务口译短句训练 第1期 · 英日双向40题",
+  "items": [
+    {
+      "dir": "EN→JA",
+      "src": "Our net sales rose 8.5% year on year to 342 billion yen, driven by strong demand for semiconductor materials.",
+      "ref": "半導体材料の旺盛な需要に支えられ、売上高は前年比8.5%増の3,420億円となりました。",
+      "note": "342 billion = 3,420億（おく）；旺盛（おうせい）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "The central bank left its policy rate unchanged at 0.5%, but hinted at a rate hike early next year.",
+      "ref": "中央銀行は政策金利を0.5%に据え置いたものの、来年早々の利上げを示唆しました。",
+      "note": "据え置く（すえおく）；示唆（しさ）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Starting in April, we will introduce a four-day work week on a trial basis for 300 employees at our Osaka office.",
+      "ref": "4月から、大阪事業所の従業員300人を対象に、週休3日制を試験的に導入します。",
+      "note": "four-day work week = 週休（しゅうきゅう）3日制",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "The merger is still subject to regulatory approval and is expected to close in the second half of fiscal 2027.",
+      "ref": "本合併は規制当局の承認が前提となっており、2027年度下半期に完了する見込みです。",
+      "note": "subject to = 〜が前提；下半期（しもはんき）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Thanks to the weaker yen, inbound tourism spending hit a record 2.1 trillion yen in the July-September quarter.",
+      "ref": "円安を背景に、7〜9月期の訪日客消費額は過去最高の2兆1,000億円に達しました。",
+      "note": "2.1 trillion = 2兆（ちょう）1,000億",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "After we redesigned the onboarding process, our customer churn rate fell from 4.2% to 2.8%.",
+      "ref": "オンボーディングの仕組みを見直した結果、顧客の解約率は4.2%から2.8%に低下しました。",
+      "note": "churn rate = 解約率（かいやくりつ）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "The company plans to buy back up to 5 million of its own shares, or about 3% of shares outstanding.",
+      "ref": "同社は、発行済み株式の約3%にあたる最大500万株の自社株買いを計画しています。",
+      "note": "自社株買い（じしゃかぶがい）；発行済み（はっこうずみ）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Please note that Thursday's meeting has been moved to Friday at 2 p.m. and will be held online.",
+      "ref": "木曜日の会議は金曜日午後2時に変更となり、オンラインでの開催となりますのでご注意ください。",
+      "note": "日常商务句，练流利度",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Labor shortages in the logistics industry have pushed up delivery costs by around 15% over the past two years.",
+      "ref": "物流業界の人手不足により、配送コストは過去2年間で約15%上昇しました。",
+      "note": "人手不足（ひとでぶそく）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "We aim to cut our Scope 1 and 2 emissions by 46% from 2013 levels by 2030.",
+      "ref": "当社は2030年までに、スコープ1・2の排出量を2013年比で46%削減することを目指しています。",
+      "note": "from 2013 levels = 2013年比；削減（さくげん）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Three years ago, we moved our entire data platform to the cloud to reduce the cost of maintaining on-premise servers.",
+      "ref": "3年前、オンプレミスのサーバー維持費を削減するため、データ基盤をすべてクラウドに移行しました。",
+      "note": "基盤（きばん）",
+      "tag": "连续 1/3"
+    },
+    {
+      "dir": "EN→JA",
+      "src": "At first, costs fell by about 30%, but as data volumes grew, our monthly cloud bill more than doubled.",
+      "ref": "当初はコストが約3割下がりましたが、データ量の増加に伴い、毎月のクラウド利用料は2倍以上に膨らみました。",
+      "note": "30% = 3割（さんわり）；膨らむ（ふくらむ）",
+      "tag": "连续 2/3"
+    },
+    {
+      "dir": "EN→JA",
+      "src": "We have therefore set up a FinOps team that reviews usage every week and automatically shuts down idle resources.",
+      "ref": "そこで、利用状況を毎週見直し、使われていないリソースを自動的に停止するFinOpsチームを立ち上げました。",
+      "note": "立ち上げる（たちあげる）",
+      "tag": "连续 3/3"
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Exports of electronic components to Southeast Asia increased for the fifth consecutive month.",
+      "ref": "東南アジア向けの電子部品の輸出は、5か月連続で増加しました。",
+      "note": "連続（れんぞく）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "The new factory will cost about 1.2 billion dollars and create roughly 800 jobs in the region.",
+      "ref": "新工場の投資額は約12億ドルで、地域に約800人の雇用を生み出す見込みです。",
+      "note": "1.2 billion = 12億；雇用（こよう）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Shareholders approved the proposal to raise the annual dividend to 60 yen per share.",
+      "ref": "株主は、年間配当を1株当たり60円に引き上げる議案を承認しました。",
+      "note": "配当（はいとう）；議案（ぎあん）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Although remote work is popular among younger employees, many managers say it makes it harder to train new hires.",
+      "ref": "リモートワークは若手社員に人気がある一方、新入社員の育成が難しくなると話す管理職も少なくありません。",
+      "note": "育成（いくせい）",
+      "tag": ""
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Last spring, one of our key component suppliers was hit by a fire and had to halt production for six weeks.",
+      "ref": "昨年春、主要部品のサプライヤー1社が火災に見舞われ、6週間の生産停止を余儀なくされました。",
+      "note": "余儀なく（よぎなく）",
+      "tag": "连续 1/3"
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Because we relied on that single supplier, our assembly lines stopped and we lost about 4 billion yen in sales.",
+      "ref": "その1社に依存していたため、組立ラインが止まり、約40億円の売上を失いました。",
+      "note": "4 billion = 40億；依存（いぞん）",
+      "tag": "连续 2/3"
+    },
+    {
+      "dir": "EN→JA",
+      "src": "Since then, we have qualified two more suppliers and increased our safety stock from two weeks to six weeks.",
+      "ref": "それ以降、新たに2社のサプライヤーを認定し、安全在庫を2週間分から6週間分に積み増しました。",
+      "note": "安全在庫（あんぜんざいこ）；積み増す（つみます）",
+      "tag": "连续 3/3"
+    },
+    {
+      "dir": "JA→EN",
+      "src": "当社の第2四半期の営業利益は、前年同期比12%減の85億円となりました。",
+      "ref": "Our operating profit for the second quarter fell 12% year on year to 8.5 billion yen.",
+      "note": "85億 = 8.5 billion；四半期（しはんき）；前年同期比（ぜんねんどうきひ）",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "政府は、来年度から最低賃金を全国平均で1,100円以上に引き上げる方針を固めました。",
+      "ref": "The government has decided to raise the national average minimum wage to more than 1,100 yen from next fiscal year.",
+      "note": "最低賃金（さいていちんぎん）；方針を固める（ほうしんをかためる）= decide",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "本日の会議の議事録は、明日の正午までに関係者全員に共有いたします。",
+      "ref": "I will share the minutes of today's meeting with everyone involved by noon tomorrow.",
+      "note": "議事録（ぎじろく）= minutes",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "円安の影響で、輸入原材料のコストが大幅に上昇しています。",
+      "ref": "Because of the weak yen, the cost of imported raw materials has risen sharply.",
+      "note": "大幅（おおはば）= sharply",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "東京都心の新築マンションの平均価格は、初めて1億円を超えました。",
+      "ref": "The average price of a new condominium in central Tokyo topped 100 million yen for the first time.",
+      "note": "1億 = 100 million；マンション ≠ mansion",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "弊社としましては、本件を前向きに検討させていただきたいと考えております。",
+      "ref": "We would like to give this matter positive consideration.",
+      "note": "弊社（へいしゃ）；前向きに検討（まえむきにけんとう）常是客套的「暂不承诺」，别译成we agree",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "生成AIの導入により、問い合わせ対応にかかる時間が4割短縮されました。",
+      "ref": "Introducing generative AI has cut the time spent on handling inquiries by 40%.",
+      "note": "4割（よんわり）= 40%；短縮（たんしゅく）",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "少子高齢化が進む中、地方の中小企業では後継者不足が深刻になっています。",
+      "ref": "With Japan's aging population and falling birthrate, small and medium-sized companies in rural areas face a serious shortage of successors.",
+      "note": "少子高齢化（しょうしこうれいか）；後継者（こうけいしゃ）",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "今回のリコールの対象となるのは、2024年から2025年に製造された約32万台です。",
+      "ref": "The recall covers about 320,000 vehicles made between 2024 and 2025.",
+      "note": "32万 = 320,000",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "日経平均株価は一時1,000円以上値下がりし、終値は4万8,215円でした。",
+      "ref": "The Nikkei Stock Average fell more than 1,000 points at one point and closed at 48,215.",
+      "note": "終値（おわりね）= closing price；4万8,215 = 48,215",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "わが社は来年4月、東南アジアで初めての海外拠点をベトナムのホーチミンに開設します。",
+      "ref": "Next April, we will open our first overseas office in Southeast Asia, in Ho Chi Minh City, Vietnam.",
+      "note": "拠点（きょてん）",
+      "tag": "连续 1/3"
+    },
+    {
+      "dir": "JA→EN",
+      "src": "現地では、日系の製造業向けに生産管理システムの導入支援を行う予定です。",
+      "ref": "There, we plan to help Japanese manufacturers implement production management systems.",
+      "note": "日系（にっけい）= Japanese(-owned)",
+      "tag": "连续 2/3"
+    },
+    {
+      "dir": "JA→EN",
+      "src": "3年以内に現地スタッフを50人まで増やし、売上高10億円を目指します。",
+      "ref": "Within three years, we aim to grow our local staff to 50 and reach sales of 1 billion yen.",
+      "note": "10億 = 1 billion",
+      "tag": "连续 3/3"
+    },
+    {
+      "dir": "JA→EN",
+      "src": "申し訳ございませんが、担当者はただいま席を外しております。",
+      "ref": "I'm sorry, but the person in charge is away from their desk at the moment.",
+      "note": "席を外す（せきをはずす）",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "来期は、設備投資を今期の1.5倍となる300億円に増やす計画です。",
+      "ref": "Next fiscal year, we plan to raise capital expenditure 1.5 times, to 30 billion yen.",
+      "note": "300億 = 30 billion；設備投資（せつびとうし）= capex",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "消費者物価指数は、生鮮食品を除いて前年比2.4%上昇しました。",
+      "ref": "The consumer price index excluding fresh food rose 2.4% from a year earlier.",
+      "note": "生鮮食品（せいせんしょくひん）",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "本プロジェクトは予定より2週間遅れていますが、年内の稼働には影響ありません。",
+      "ref": "The project is two weeks behind schedule, but it won't affect the go-live within this year.",
+      "note": "稼働（かどう）= go-live",
+      "tag": ""
+    },
+    {
+      "dir": "JA→EN",
+      "src": "当社では昨年、社員エンゲージメント調査を初めて実施しました。",
+      "ref": "Last year, we conducted our first employee engagement survey.",
+      "note": "",
+      "tag": "连续 1/3"
+    },
+    {
+      "dir": "JA→EN",
+      "src": "その結果、若手社員の約半数が、キャリアの見通しが立たないと感じていることが分かりました。",
+      "ref": "It showed that about half of our younger employees feel they can't see a clear career path.",
+      "note": "見通し（みとおし）",
+      "tag": "连续 2/3"
+    },
+    {
+      "dir": "JA→EN",
+      "src": "そこで今年度から、社内公募制度とメンター制度を導入し、若手の定着率向上に取り組んでいます。",
+      "ref": "So from this fiscal year, we introduced an internal job posting system and a mentoring program to improve retention of younger staff.",
+      "note": "公募（こうぼ）；定着率（ていちゃくりつ）= retention rate",
+      "tag": "连续 3/3"
+    }
+  ]
+}
