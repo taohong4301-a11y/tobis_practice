@@ -236,7 +236,7 @@
 | 材料 | 链接 | 哪天用 |
 | --- | --- | --- |
 | Vol.1 第1週 完全版（A 套 Part 2） | https://youtu.be/Defi33Zgb_0 （改公开后可用） | 周一、二、四、五、六、日 |
-| Vol.2（B 套对话 + 数字 + 定型表現） | 审核后生成，11/15 上传 | 全周 |
+| Vol.2（B 套对话 + 数字 + 定型表現） | https://youtu.be/-LjZuKdLQgI （改公开后可用） | 全周 |
 | NHK ニュース | https://www3.nhk.or.jp/news/ | 每天 |
 | 日⇔英 単文通訳クイック・レスポンス① | https://www.youtube.com/watch?v=71klUBqhmsQ | 周三 |
 | CAIS（报名） | https://www.cais.or.jp/ | 周一前 |
