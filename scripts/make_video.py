@@ -218,10 +218,15 @@ def seg(img, audio, out):
         return img, len(audio) / SR
     import soundfile as sf
     sf.write(f"{out}.wav", audio, SR)
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", img, "-i", f"{out}.wav",
-                    "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-pix_fmt", "yuv420p",
-                    "-r", "24", "-c:a", "aac", "-b:a", "128k", "-t", f"{len(audio) / SR:.3f}", f"{out}.mp4"],
-                   check=True)
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", img, "-i", f"{out}.wav",
+           "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-pix_fmt", "yuv420p",
+           "-r", "24", "-c:a", "aac", "-b:a", "128k", "-t", f"{len(audio) / SR:.3f}", f"{out}.mp4"]
+    for attempt in range(3):  # ffmpeg 偶尔会崩（例如同时跑两个渲染时），重试，免得 30 分钟的渲染白跑
+        if subprocess.run(cmd).returncode == 0:
+            break
+        print(f"ffmpeg 失败，重试 {attempt + 1}/2: {out}", flush=True)
+    else:
+        sys.exit(f"ffmpeg 连续 3 次失败: {out}")
     # 用编码后的真实时长（视频按帧取整会略长），否则章节时间越往后越早
     real = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                            f"{out}.mp4"], check=True, capture_output=True, text=True).stdout.strip()
@@ -265,7 +270,10 @@ def load_spec(path):
     for src in spec["sources"]:
         sub = json.load(open(path.parent / src["file"], encoding="utf-8"))
         chapters = src.get("chapters", {})
+        first, last = src.get("range", [1, len(sub["items"])])  # 可选：只取第 first–last 题（从 1 起）
         for j, it in enumerate(sub["items"], 1):
+            if not first <= j <= last:
+                continue
             it = with_dialogue(dict(it, _prefix=src.get("label", "")), sub)
             if str(j) in chapters:
                 it["chapter"] = chapters[str(j)]
@@ -298,11 +306,13 @@ def build(spec, items, outname):
             card(work / f"{key}c{s}.png", blocks_for(s))
             add(seg(str(work / f"{key}c{s}.png"), silence(1.0), str(work / f"{key}c{s}")))
 
-    card(work / "intro.png", [(spec["title"], 44, WHITE, True, 30),
-                              ("合図音のあと、カウントダウン中に通訳し、答えを確認してください。", 30, GREY, False, 10),
-                              ("Listen → beep → interpret during the countdown → check the answer.", 26, GREY, False, 10),
-                              ("音声は AI 合成、問題はオリジナルの模擬問題です。 / AI-generated voice; original practice questions.", 22, GREY, False, 0)])
-    add(seg(str(work / "intro.png"), silence(5), str(work / "p00")))
+    summary = spec.get("summary", [])  # 可选：内容概要（日文、英文各一段），显示在开头卡和简介里
+    card(work / "intro.png", [(spec["title"], 44 if not summary else 38, WHITE, True, 24)]
+         + [(s, 26, CYAN, False, 10) for s in summary] + ([("", 10, GREY, False, 10)] if summary else [])
+         + [("合図音のあと、カウントダウン中に通訳し、答えを確認してください。", 30 if not summary else 26, GREY, False, 10),
+            ("Listen → beep → interpret during the countdown → check the answer.", 26 if not summary else 22, GREY, False, 10),
+            ("音声は AI 合成、問題はオリジナルの模擬問題です。 / AI-generated voice; original practice questions.", 22, GREY, False, 0)])
+    add(seg(str(work / "intro.png"), silence(10 if summary else 5), str(work / "p00")))
 
     if spec.get("day_guide"):
         card(work / "guide.png", [("日ごとの練習プラン · Daily plan", 38, GOLD, True, 10),
@@ -334,7 +344,7 @@ def build(spec, items, outname):
         if "chapter" in it:
             chapters.append(f"{stamp(t)} {it['chapter']}")
         elif not use_chapters:
-            chapters.append(f"{stamp(t)} {it['_prefix']}Q{num} {it['dir']}")
+            chapters.append(f"{stamp(t)} {label if scene else it['_prefix'] + 'Q' + str(num) + ' ' + it['dir']}")
         if "chapter" in it or starts_dialogue:
             title = it.get("chapter") or scene
             blocks = [(title, fit_size(title, True, 48, W - 160), GOLD, True, 30)]
@@ -409,6 +419,7 @@ def build(spec, items, outname):
     desc = out.with_name(out.stem + "_description.txt")
     desc.write_text(
         f"{spec['title']}\n\n"
+        + "".join(s + "\n" for s in summary) + ("\n" if summary else "") +
         f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')}の練習用です。\n"
         f"Practice for the TOBIS business interpreting test (consecutive, {spec.get('part', 'Part 2')}).\n\n"
         "合図音のあと、カウントダウン中に通訳し、参考訳と比べてください。録音して聞き直すのがおすすめです。\n"
