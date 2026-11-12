@@ -1,8 +1,8 @@
 {
   "week": "2026-W46",
-  "part": "数字热身",
-  "set": "W1 附录 B",
-  "title": "TOBIS 数字热身 · 第1周 20题",
+  "part": "数字ウォームアップ",
+  "set": "W1 付録 B",
+  "title": "TOBIS 数字ウォームアップ 第1週 20問 / Number warm-up",
   "items": [
     {"dir": "EN→JA", "src": "3.7 billion", "ref": "37億", "note": "billion = 10億 → 3.7 × 10 = 37億（おく）", "tag": ""},
     {"dir": "EN→JA", "src": "120 million", "ref": "1億2,000万", "note": "million = 100万 → 120 × 100万 = 1億2,000万（まん）", "tag": ""},

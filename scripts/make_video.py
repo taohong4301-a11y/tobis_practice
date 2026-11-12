@@ -170,8 +170,8 @@ def tts(text, lang, idx):
 
 
 def wrap(draw, text, bold, size, maxw):
-    is_cjk = re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", text)
-    tokens = list(text) if is_cjk else re.findall(r"\S+\s*", text)
+    # \u82f1\u6587\u5355\u8bcd\uff08\u542b\u6570\u5b57\u3001\u6807\u70b9\uff09\u6574\u4f53\u4e0d\u62c6\uff1b\u65e5\u6587/\u7b26\u53f7\u9010\u5b57\u53ef\u65ad\u3002\u65e5\u82f1\u6df7\u6392\u65f6\u82f1\u6587\u4e0d\u4f1a\u88ab\u62c6\u6210 ris / e
+    tokens = re.findall(r"[A-Za-z0-9.,:;'\u2019!?%$&()/\-\u2013+=\u00d7\u00f7<>\u2192]+\s*|\s+|.", text)
     lines, cur = [], ""
     for tok in tokens:
         if text_len(draw, cur + tok, bold, size) > maxw and cur:
@@ -253,7 +253,7 @@ def build(spec, items, outname):
         work.mkdir(parents=True, exist_ok=True)
     else:
         work = Path(tempfile.mkdtemp(prefix="tobis_"))
-    parts, chapters, t = [], ["0:00 开场"], 0.0
+    parts, chapters, t = [], ["0:00 オープニング / Intro"], 0.0
     use_chapters = any("chapter" in it for it in items)
     seen = set()  # 预览模式下每种题只画第一题
 
@@ -270,13 +270,14 @@ def build(spec, items, outname):
             add(seg(str(work / f"{key}c{s}.png"), silence(1.0), str(work / f"{key}c{s}")))
 
     card(work / "intro.png", [(spec["title"], 44, WHITE, True, 30),
-                              ("听到提示音后，在倒计时内开口口译，然后看答案。", 30, GREY, False, 10),
+                              ("合図音のあと、カウントダウン中に通訳し、答えを確認してください。", 30, GREY, False, 10),
                               ("Listen → beep → interpret during the countdown → check the answer.", 26, GREY, False, 10),
-                              ("语音为 AI 合成，题目为原创模拟题。", 22, GREY, False, 0)])
+                              ("音声は AI 合成、問題はオリジナルの模擬問題です。 / AI-generated voice; original practice questions.", 22, GREY, False, 0)])
     add(seg(str(work / "intro.png"), silence(5), str(work / "p00")))
 
     if spec.get("day_guide"):
-        card(work / "guide.png", [("按天练习建议 · 用章节跳到当天的部分", 38, GOLD, True, 30),
+        card(work / "guide.png", [("日ごとの練習プラン · Daily plan", 38, GOLD, True, 10),
+                                  ("チャプターで当日の部分へ移動 / Use the chapters to jump to your day", 24, GREY, False, 24),
                                   ("\n".join(spec["day_guide"]), 26, WHITE, False, 0)])
         add(seg(str(work / "guide.png"), silence(10), str(work / "p01")))
 
@@ -285,12 +286,12 @@ def build(spec, items, outname):
         key = (it["_prefix"], it["dir"])
         counters[key] = counters.get(key, 0) + 1
         num = it.get("num", counters[key])
-        label = f"{it['_prefix']}Q{num}  {it['dir'] if it['dir'] != 'SYMBOL' else '笔记符号'}  {it.get('tag', '')}".strip()
+        label = f"{it['_prefix']}Q{num}  {it['dir'] if it['dir'] != 'SYMBOL' else 'Symbol'}  {it.get('tag', '')}".strip()
 
         if "chapter" in it:
             chapters.append(f"{stamp(t)} {it['chapter']}")
             card(work / f"ch{i}.png", [(it["chapter"], 48, GOLD, True, 30),
-                                       ("Section start", 26, GREY, False, 0)])
+                                       ("セクション開始 · Section start", 26, GREY, False, 0)])
             add(seg(str(work / f"ch{i}.png"), silence(3), str(work / f"ch{i}")))
         elif not use_chapters:
             chapters.append(f"{stamp(t)} {it['_prefix']}Q{num} {it['dir']}")
@@ -301,16 +302,16 @@ def build(spec, items, outname):
 
         if it["dir"] == "SYMBOL":
             card(work / f"q{i}a.png", [(label, 40, GOLD, True, 40),
-                                       ("写出笔记符号  ·  Write the symbol", 44, WHITE, True, 40),
+                                       ("ノート記号を書いてください  ·  Write the symbol", 44, WHITE, True, 40),
                                        (it["src"], 64, CYAN, True, 0)])
             add(seg(str(work / f"q{i}a.png"), silence(2.0), str(work / f"q{i}a")))
             countdown(int(it.get("countdown", 4)),
                       lambda s: [(label, 40, GOLD, True, 40), (it["src"], 52, CYAN, True, 40),
                                  (str(s), 120, WHITE, True, 0)], f"q{i}")
-            blocks = [(label, 34, GOLD, True, 20), ("意思", 24, GREY, False, 0), (it["src"], 40, WHITE, False, 24),
-                      ("符号", 24, GREY, False, 0), (it["ref"], 150, CYAN, True, 24)]
+            blocks = [(label, 34, GOLD, True, 20), ("意味 · Meaning", 24, GREY, False, 0), (it["src"], 40, WHITE, False, 24),
+                      ("記号 · Symbol", 24, GREY, False, 0), (it["ref"], 150, CYAN, True, 24)]
             if it.get("note"):
-                blocks.append(("要点：" + it["note"], 26, GOLD, False, 0))
+                blocks.append(("ポイント · Notes：" + it["note"], 26, GOLD, False, 0))
             card(work / f"q{i}r.png", blocks)
             add(seg(str(work / f"q{i}r.png"), silence(3.0), str(work / f"q{i}r")))
             print(f"{i}/{len(items)} done", flush=True)
@@ -328,9 +329,9 @@ def build(spec, items, outname):
 
         a_ref = tts(it["ref"], tgt_lang, i + 1)
         card(work / f"q{i}r.png", [(label, 34, GOLD, True, 20),
-                                   ("原文", 24, GREY, False, 0), (it["src"], 30, WHITE, False, 24),
-                                   ("参考译文", 24, GREY, False, 0), (it["ref"], 32, CYAN, True, 24),
-                                   ("要点：" + it["note"], 26, GOLD, False, 0)])
+                                   ("原文 · Source", 24, GREY, False, 0), (it["src"], 30, WHITE, False, 24),
+                                   ("参考訳 · Reference", 24, GREY, False, 0), (it["ref"], 32, CYAN, True, 24),
+                                   ("ポイント · Notes：" + it["note"], 26, GOLD, False, 0)])
         add(seg(str(work / f"q{i}r.png"), np.concatenate([silence(0.5), a_ref, silence(2.5)]), str(work / f"q{i}r")))
         print(f"{i}/{len(items)} done", flush=True)
 
@@ -350,15 +351,19 @@ def build(spec, items, outname):
     chap.write_text("\n".join(chapters) + "\n", encoding="utf-8")
     guide = ""
     if spec.get("day_guide"):
-        guide = "按天练习建议（用下面的章节跳到当天的部分）\n" + "\n".join(spec["day_guide"]) + "\n\n"
+        guide = ("日ごとの練習プラン / Daily plan（チャプターで当日の部分へ / jump with the chapters）\n"
+                 + "\n".join(spec["day_guide"]) + "\n\n")
     desc = out.with_name(out.stem + "_description.txt")
     desc.write_text(
         f"{spec['title']}\n\n"
-        f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')}の練習用。\n"
-        "听到提示音后在倒计时内口译，再对照参考译文。建议边做边录音，回听打分。\n\n"
+        f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')}の練習用です。\n"
+        f"Practice for the TOBIS business interpreting test (consecutive, {spec.get('part', 'Part 2')}).\n\n"
+        "合図音のあと、カウントダウン中に通訳し、参考訳と比べてください。録音して聞き直すのがおすすめです。\n"
+        "After the beep, interpret during the countdown, then compare with the reference. Record yourself and review.\n\n"
         + guide +
-        "※ 语音为 AI 合成（Kokoro TTS），题目为原创模拟题，与 CAIS 官方试题无关。\n\n"
-        "章节 / Chapters\n" + "\n".join(chapters) + "\n",
+        "※ 音声は AI 合成（Kokoro TTS）です。問題はオリジナルの模擬問題で、CAIS の公式試験問題とは関係ありません。\n"
+        "※ AI-generated voice (Kokoro TTS). Original practice questions, not affiliated with CAIS.\n\n"
+        "チャプター / Chapters\n" + "\n".join(chapters) + "\n",
         encoding="utf-8")
     print(f"视频: {out}\n章节: {chap}\n简介: {desc}\n总时长: {stamp(t)}")
 

@@ -10,6 +10,8 @@ Ellen 的个人项目：每周生成一期「TOBIS（ビジネス通訳検定）
 2. 提示音 → 倒计时（观众开口口译，时长 = 原文时长 × 1.6 + 3 秒）
 3. 显示原文 / 参考译文 / 要点，同时播放参考译文语音作为示范
 
+**视频语言规则：视频里出现的所有文字（卡片、章节、简介、标题、题目要点）只用日语＋英语对照，不出现中文。** 只有这份 CLAUDE.md、每日计划和终端提示用中文。
+
 ## TOBIS 考试要点（出题必须遵守）
 
 - 逐次通訳試験约 60 分钟，录音作答：耳机听音频，对麦克风口译。
@@ -66,15 +68,15 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
   "set": "B",
   "title": "TOBIS 商务口译短句训练 第2期 · 英日双向40题",
   "items": [
-    {"dir": "EN→JA", "src": "英文原文", "ref": "日文参考译文", "note": "要点（难词读音、数字换算）", "tag": ""},
-    {"dir": "JA→EN", "src": "日文原文", "ref": "English reference", "note": "要点", "tag": "连续 1/3"}
+    {"dir": "EN→JA", "src": "英文原文", "ref": "日文参考译文", "note": "日语/英语写的要点（难词读音、数字换算）", "tag": ""},
+    {"dir": "JA→EN", "src": "日文原文", "ref": "English reference", "note": "日语/英语写的要点", "tag": "連続 1/3"}
   ]
 }
 ```
 
 - `dir` 只能是 `EN→JA` 或 `JA→EN`。
-- `note` 里的日语难词要带读音，例：`削減（さくげん）`；数字给换算，例：`342 billion = 3,420億`。
-- `tag` 用于连续题：`连续 1/3`、`连续 2/3`、`连续 3/3`，其余留空。
+- `note` 用日语（可加 `/ English`）写，不要中文；日语难词带读音，例：`削減（さくげん）`；数字给换算，例：`342 billion = 3,420億`。
+- `tag` 用于连续题：`連続 1/3`、`連続 2/3`、`連続 3/3`（日文写法），其余留空。
 - 每期 40 题：英→日 20 + 日→英 20，各含 2 组连续题（第 11–13、18–20 题）。
 - 题号按「方向」分别从 1 数起（和每日计划里的编号一致）；可选 `countdown`（秒）覆盖默认倒计时。
 - `dir` 为 `SYMBOL` 时是笔记符号题：`src` = 意思，`ref` = 符号，没有语音，倒计时让观众写符号。
@@ -86,7 +88,7 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
   "title": "...", "part": "Part 2 短文形式",
   "sources": [
     {"file": "w1_numbers.json", "label": "数字 ", "countdown": 4,
-     "chapters": {"1": "数字热身 · 英→日 1–10（Day 1）", "11": "数字热身 · 日→英 1–10（Day 2）"}}
+     "chapters": {"1": "数字 英→日 1–10 · Numbers EN→JA（Day 1）", "11": "数字 日→英 1–10 · Numbers JA→EN（Day 2）"}}
   ],
   "day_guide": ["Day 1：……", "Day 2：……"]
 }
@@ -103,7 +105,7 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 3. **生成**：`python scripts/make_video.py content/epNN_....json output/epNN.mp4`
 4. **抽查**：至少听 5 题，重点检查日语 TTS 有没有读错汉字和数字。读错的地方：在 `make_video.py` 的 `READING_FIXES` 里加一条（原文 → 语音用写法）。
 5. **上传**：
-   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享，Ellen 在 YouTube Studio 检查后改公开。**未审核的 API 项目上传的视频可能被锁成私享**——是否受影响见下面「上传到 YouTube」的实测记录。
+   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享，Ellen 在 YouTube Studio 检查后改公开（2026-11-12 已实测可以改公开）。
    - B站：手动上传，用 `_description.txt` 作简介，并勾选「AI 生成内容」。B站没有给个人的官方上传 API，不要用基于登录 Cookie 的第三方工具。
 
 ## 上传到 YouTube（准备只做一次）
@@ -121,7 +123,7 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 - **最大的限制**：2020-07-28 之后建的 API 项目，在通过 YouTube API 审核（audit）之前，用 API 上传的视频会被锁成私享（Studio 里显示 "locked as private"），开发者反映**无法改成公开**。
   - 第一次先用 1 分钟的测试视频上传，确认是否被锁；被锁就删掉测试视频。
   - 解除方法：提交 Google 的「YouTube API Services – Audit and Quota Extension Form」，说明用途（个人频道每周上传 1 个自制教学视频）；可能要求提供隐私政策页面。审核通过前，YouTube 也手动上传。
-  - 2026-11-12：测试视频 https://youtu.be/ziBmLPCZuUs 上传成功（私享），**能否改公开还没确认**。确认后把结果写在这里。
+  - **2026-11-12 实测（频道 ミサキ @みさき0807，项目 tobis-uploader / 应用名 video_uploader_tobis）：API 上传的测试视频在 Studio 里可以改成公开，没有被锁。** 目前不需要申请审核；以后如果出现 "locked as private" 再按上面申请。
 - 配额：每天默认 10,000 单位，一次上传约 1,600，每周 1 个视频足够。
 - OAuth 同意画面处于「测试」状态时，授权大约 7 天过期；脚本会自动重新打开浏览器让你再授权一次。
 

@@ -24,8 +24,8 @@ CLIENT_SECRET = Path(os.environ.get("YT_CLIENT_SECRET", ROOT / "client_secret.js
 TOKEN = ROOT / ".youtube_token.json"
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 
-DEFAULT_TAGS = ["TOBIS", "ビジネス通訳検定", "通訳練習", "逐次通訳", "口译练习", "英日口译",
-                "日英通訳", "interpreting practice", "Japanese English interpreting"]
+DEFAULT_TAGS = ["TOBIS", "ビジネス通訳検定", "通訳練習", "逐次通訳", "英日通訳", "日英通訳",
+                "通訳トレーニング", "interpreting practice", "Japanese English interpreting"]
 CATEGORY_EDUCATION = "27"
 
 
@@ -50,7 +50,7 @@ def build_body(video, title, privacy):
             "description": description,
             "tags": DEFAULT_TAGS,
             "categoryId": CATEGORY_EDUCATION,
-            "defaultLanguage": "zh-Hans",
+            "defaultLanguage": "ja",
             "defaultAudioLanguage": "ja",
         },
         "status": {

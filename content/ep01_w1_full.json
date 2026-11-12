@@ -2,22 +2,26 @@
   "episode": 1,
   "week": "2026-W46",
   "part": "Part 2 短文形式",
-  "set": "W1 完整版",
-  "title": "TOBIS 商务口译 第1周完整练习 · 数字热身20题 + 英日双向40题 + 笔记符号30个",
+  "set": "W1 完全版",
+  "title": "TOBIS ビジネス通訳 第1週 完全版 · 数字20問＋英日40問＋ノート記号30 | Week 1 Practice",
   "sources": [
     {"file": "w1_numbers.json", "label": "数字 ", "countdown": 4,
-     "chapters": {"1": "数字热身 · 英→日 1–10（Day 1）", "11": "数字热身 · 日→英 1–10（Day 2）"}},
-    {"file": "ep01_part2_A.json", "label": "A套 ",
-     "chapters": {"1": "A套 · 英→日 1–10（Day 1）", "11": "A套 · 英→日 11–20（Day 2）",
-                  "21": "A套 · 日→英 1–10（Day 2）", "31": "A套 · 日→英 11–20（Day 3）"}},
-    {"file": "w1_symbols.json", "label": "符号 ", "countdown": 4,
-     "chapters": {"1": "笔记符号 1–15（Day 3）", "16": "笔记符号 16–30（Day 4）"}}
+     "chapters": {"1": "数字 英→日 1–10 · Numbers EN→JA（Day 1）",
+                  "11": "数字 日→英 1–10 · Numbers JA→EN（Day 2）"}},
+    {"file": "ep01_part2_A.json", "label": "Aセット ",
+     "chapters": {"1": "Aセット 英→日 1–10 · Set A EN→JA（Day 1）",
+                  "11": "Aセット 英→日 11–20 · Set A EN→JA（Day 2）",
+                  "21": "Aセット 日→英 1–10 · Set A JA→EN（Day 2）",
+                  "31": "Aセット 日→英 11–20 · Set A JA→EN（Day 3）"}},
+    {"file": "w1_symbols.json", "label": "記号 ", "countdown": 4,
+     "chapters": {"1": "ノート記号 1–15 · Note symbols（Day 3）",
+                  "16": "ノート記号 16–30 · Note symbols（Day 4）"}}
   ],
   "day_guide": [
-    "Day 1：数字热身 英→日 1–10 → A套 英→日 1–10",
-    "Day 2：数字热身 日→英 1–10 → A套 英→日 11–20 → A套 日→英 1–10",
-    "Day 3：数字热身 全部20题 → A套 日→英 11–20 → 笔记符号 1–15",
-    "Day 4：数字热身 全部20题计时（目标3分钟内）→ 笔记符号 16–30",
-    "周测：重做本周错题；再从 A套 随机抽10题（英→日5、日→英5）一次录完，不暂停"
+    "Day 1：数字 英→日 1–10 → Aセット 英→日 1–10 / Numbers EN→JA 1–10 → Set A EN→JA 1–10",
+    "Day 2：数字 日→英 1–10 → Aセット 英→日 11–20 → Aセット 日→英 1–10 / Numbers JA→EN 1–10 → Set A EN→JA 11–20 → Set A JA→EN 1–10",
+    "Day 3：数字 全20問 → Aセット 日→英 11–20 → ノート記号 1–15 / All 20 numbers → Set A JA→EN 11–20 → Symbols 1–15",
+    "Day 4：数字 全20問を時間計測（3分以内）→ ノート記号 16–30 / All 20 numbers, timed (under 3 min) → Symbols 16–30",
+    "週末テスト：間違えた問題をやり直し、Aセットから10問（英→日5・日→英5）を止めずに録音 / Weekly test: redo missed items, then 10 random Set A items in one take"
   ]
 }
