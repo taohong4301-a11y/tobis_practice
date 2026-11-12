@@ -103,7 +103,7 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 3. **生成**：`python scripts/make_video.py content/epNN_....json output/epNN.mp4`
 4. **抽查**：至少听 5 题，重点检查日语 TTS 有没有读错汉字和数字。读错的地方：在 `make_video.py` 的 `READING_FIXES` 里加一条（原文 → 语音用写法）。
 5. **上传**：
-   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享。**API 项目通过 YouTube 审核之前，这样上传的视频会被锁成私享、可能无法改公开**——在那之前 YouTube 也手动上传（拖进 YouTube Studio，简介粘贴 `_description.txt`）。
+   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享，Ellen 在 YouTube Studio 检查后改公开。**未审核的 API 项目上传的视频可能被锁成私享**——是否受影响见下面「上传到 YouTube」的实测记录。
    - B站：手动上传，用 `_description.txt` 作简介，并勾选「AI 生成内容」。B站没有给个人的官方上传 API，不要用基于登录 Cookie 的第三方工具。
 
 ## 上传到 YouTube（准备只做一次）
@@ -113,12 +113,15 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 3. 「OAuth 同意画面 / OAuth consent screen」：User type 选 External，填应用名和自己的邮箱；在 Test users 里加上自己的 Google 账号。
 4. 「認証情報 / Credentials」→ 创建 OAuth クライアント ID，类型选 **Desktop app**，下载 JSON，改名为 `client_secret.json` 放到项目根目录。
 5. 第一次运行上传脚本时会打开浏览器，用 YouTube 频道所在的账号登录并允许。授权保存在 `.youtube_token.json`。
+   - 必须在**运行脚本的这台电脑**上的浏览器里允许（授权会跳回 `http://localhost:端口`），在手机上点允许脚本收不到。
+   - 出现「禁止访问 … 错误 403: access_denied」= 这个 Gmail 不在 Audience → Test users 里，加上后等一两分钟再试。
+   - Windows 下载的 JSON 可能变成 `client_secret.json.json`（隐藏了扩展名），要改名。
 
 - `client_secret*.json` 和 `.youtube_token.json` 已 gitignore，**绝不提交**。
 - **最大的限制**：2020-07-28 之后建的 API 项目，在通过 YouTube API 审核（audit）之前，用 API 上传的视频会被锁成私享（Studio 里显示 "locked as private"），开发者反映**无法改成公开**。
   - 第一次先用 1 分钟的测试视频上传，确认是否被锁；被锁就删掉测试视频。
   - 解除方法：提交 Google 的「YouTube API Services – Audit and Quota Extension Form」，说明用途（个人频道每周上传 1 个自制教学视频）；可能要求提供隐私政策页面。审核通过前，YouTube 也手动上传。
-  - 审核结果（是否已通过、哪天提交）记在这里：_尚未提交_
+  - 2026-11-12：测试视频 https://youtu.be/ziBmLPCZuUs 上传成功（私享），**能否改公开还没确认**。确认后把结果写在这里。
 - 配额：每天默认 10,000 单位，一次上传约 1,600，每周 1 个视频足够。
 - OAuth 同意画面处于「测试」状态时，授权大约 7 天过期；脚本会自动重新打开浏览器让你再授权一次。
 
