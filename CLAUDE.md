@@ -108,6 +108,19 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 - 有章节时只输出章节级时间戳（不再每题一个）；`day_guide` 会做成开头的「按天练习建议」卡，并写进简介。
 - 每周的视频建议做成这种完整版：一次生成全部内容，用 Day 1/2/3… 标注，不写具体日期。
 
+### 对话题（Part 1，Vol.2 起）
+
+题目文件里加 `dialogues`（场景名 + 两位说话人的名字、语言、声音），每题加 `dialogue` 和 `speaker`，见 `content/part1_B.json`。
+- 每段对话开头自动插入场景卡（列出两位说话人，6 秒）；标签显示「会話1 · 3/10  EN→JA · Mark Davis」。
+- 原文用说话人本人的声音，参考译文用对方的声音（同一个人全程同一个声音）。
+- 说话人的 `lang` 必须和 `dir` 一致，不一致时脚本直接报错。
+- 新声音先用一段对话出样片试听（10 轮约 7 分钟，生成约 4 分钟）。
+
+### 封面和附录
+
+- 封面：合集 JSON 加 `thumbnail` 字段，`python scripts/make_thumbnail.py content/epNN_full.json output/epNN_thumb.png`。
+- 每日计划的附录表格：`python scripts/make_appendix.py content/xxx.json`（从 JSON 生成，计划和视频永远一致）。
+
 ## 每周工作流
 
 1. **出题**：按上面的格式和 TOBIS 出题特征生成新一期 JSON，存为 `content/epNN_<part>_<set>.json`。题材轮换：金融市场 / 企业业绩 / IT·数据 / 人事·劳动 / 能源·ESG / 制造·供应链 / 日常商务用语。每期至少 10 题含大数字。

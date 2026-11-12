@@ -141,6 +141,7 @@ def norm_ja(t):
     t = re.sub(r"(?<=\d),(?=\d)", "", t)
     t = re.sub(r"(?<=[\d%])\s+|\s+(?=\d)", "", t)
     t = re.sub(r"(\d)\.(\d)", r"\1点\2", t)
+    t = re.sub(r"(?<!\d)0点", "れい点", t)  # 0.5 → れいてんご（不读 ゼロてんご）
     for k, v in READING_FIXES.items():
         t = t.replace(k, v)
     return t.replace("%", "パーセント").replace("〜", "から")
@@ -152,21 +153,35 @@ READING_FIXES = {
     "設備投資": "設備とうし",    # 读成 せつびとおし
     "FinOps": "フィンオプス",     # 否则逐字母读
     "7〜9月期": "7月から9月期",  # 否则读成 なな から くがつき
+    "間を取って": "あいだを取って",  # 否则读成 まをとって
+    "月末": "げつまつ",          # 否则读成 つきまつ（商务场合说 げつまつ）
 }
 
 
-def tts(text, lang, idx):
+def tts(text, lang, idx, voice=None):
+    """voice 不指定时按题号轮换；对话题按说话人固定声音。"""
     if PREVIEW:
         return silence(1.5)
     kokoro, g2p = engines()
     if lang == "ja":
         r = g2p(norm_ja(text))
         ph = r[0] if isinstance(r, tuple) else r
-        s, _ = kokoro.create(ph, voice=JA_VOICES[idx % len(JA_VOICES)], speed=SPEED, is_phonemes=True)
+        s, _ = kokoro.create(ph, voice=voice or JA_VOICES[idx % len(JA_VOICES)], speed=SPEED, is_phonemes=True)
     else:
-        voice = EN_VOICES[idx % len(EN_VOICES)]
+        voice = voice or EN_VOICES[idx % len(EN_VOICES)]
         s, _ = kokoro.create(text, voice=voice, speed=SPEED, lang="en-gb" if voice.startswith("b") else "en-us")
     return s.astype(np.float32)
+
+
+NO_LINE_START = set("）)」』】〕、。，．・：；！？ー…ぁぃぅぇぉっゃゅょァィゥェォッャュョ%")
+
+
+def fit_size(text, bold, size, maxw, minimum=34):
+    """标题太长时缩小字号，尽量一行放下。"""
+    d = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    while size > minimum and text_len(d, text, bold, size) > maxw:
+        size -= 2
+    return size
 
 
 def wrap(draw, text, bold, size, maxw):
@@ -174,7 +189,8 @@ def wrap(draw, text, bold, size, maxw):
     tokens = re.findall(r"[A-Za-z0-9.,:;'\u2019!?%$&()/\-\u2013+=\u00d7\u00f7<>\u2192]+\s*|\s+|.", text)
     lines, cur = [], ""
     for tok in tokens:
-        if text_len(draw, cur + tok, bold, size) > maxw and cur:
+        # 禁则：）」、。等不放在行首，宁可让上一行略超出一点
+        if text_len(draw, cur + tok, bold, size) > maxw and cur and tok[0] not in NO_LINE_START:
             lines.append(cur.rstrip())
             cur = tok.lstrip()
         else:
@@ -226,18 +242,31 @@ def stamp(sec):
     return f"{m}:{s:02d}"
 
 
+def with_dialogue(it, data):
+    """对话题（有 "dialogue" 字段）：挂上场景名、说话人和对方的信息，并检查说话人语言和方向一致。"""
+    if "dialogue" not in it:
+        return it
+    meta = data["dialogues"][it["dialogue"]]
+    speakers = meta["speakers"]
+    me = speakers[it["speaker"]]
+    other = next(sp for sid, sp in speakers.items() if sid != it["speaker"])
+    if me["lang"] != ("en" if it["dir"] == "EN→JA" else "ja"):
+        sys.exit(f"说话人语言和方向不一致：{it['dialogue']} {it['speaker']} {it['src'][:30]}")
+    return dict(it, _scene=meta["scene"], _speakers=speakers, _me=me, _other=other)
+
+
 def load_spec(path):
     """单个题目文件，或带 "sources" 的合集文件（把多个题目文件按顺序拼起来）。"""
     path = Path(path)
     spec = json.load(open(path, encoding="utf-8"))
     if "sources" not in spec:
-        return spec, [dict(it, _prefix="") for it in spec["items"]]
+        return spec, [with_dialogue(dict(it, _prefix=""), spec) for it in spec["items"]]
     items = []
     for src in spec["sources"]:
         sub = json.load(open(path.parent / src["file"], encoding="utf-8"))
         chapters = src.get("chapters", {})
         for j, it in enumerate(sub["items"], 1):
-            it = dict(it, _prefix=src.get("label", ""))
+            it = with_dialogue(dict(it, _prefix=src.get("label", "")), sub)
             if str(j) in chapters:
                 it["chapter"] = chapters[str(j)]
             if "countdown" in src:
@@ -281,20 +310,42 @@ def build(spec, items, outname):
                                   ("\n".join(spec["day_guide"]), 26, WHITE, False, 0)])
         add(seg(str(work / "guide.png"), silence(10), str(work / "p01")))
 
-    counters = {}
+    counters, turns = {}, {}
+    turn_totals = {}
+    for it in items:
+        if "_scene" in it:
+            dk = it["_prefix"] + it["dialogue"]
+            turn_totals[dk] = turn_totals.get(dk, 0) + 1
+
     for i, it in enumerate(items, 1):
         key = (it["_prefix"], it["dir"])
         counters[key] = counters.get(key, 0) + 1
         num = it.get("num", counters[key])
         label = f"{it['_prefix']}Q{num}  {it['dir'] if it['dir'] != 'SYMBOL' else 'Symbol'}  {it.get('tag', '')}".strip()
+        scene = it.get("_scene")
+        who = ""
+        if scene:  # 对话：标签写「会話1 · 3/10  EN→JA · Mark Davis」
+            dk = it["_prefix"] + it["dialogue"]
+            turns[dk] = turns.get(dk, 0) + 1
+            who = it["_me"]["name"].split(" · ")[0]
+            label = f"{scene.split(' ')[0]} · {turns[dk]}/{turn_totals[dk]}  {it['dir']} · {who}"
+        starts_dialogue = bool(scene) and turns[dk] == 1
 
         if "chapter" in it:
             chapters.append(f"{stamp(t)} {it['chapter']}")
-            card(work / f"ch{i}.png", [(it["chapter"], 48, GOLD, True, 30),
-                                       ("セクション開始 · Section start", 26, GREY, False, 0)])
-            add(seg(str(work / f"ch{i}.png"), silence(3), str(work / f"ch{i}")))
         elif not use_chapters:
             chapters.append(f"{stamp(t)} {it['_prefix']}Q{num} {it['dir']}")
+        if "chapter" in it or starts_dialogue:
+            title = it.get("chapter") or scene
+            blocks = [(title, fit_size(title, True, 48, W - 160), GOLD, True, 30)]
+            if starts_dialogue:  # 场景卡：列出两位说话人
+                for sid, sp in it["_speakers"].items():
+                    lang = "English" if sp["lang"] == "en" else "日本語"
+                    blocks.append((f"{sid}  {sp['name']}（{lang}）", 28, WHITE, False, 14))
+            else:
+                blocks.append(("セクション開始 · Section start", 26, GREY, False, 0))
+            card(work / f"ch{i}.png", blocks)
+            add(seg(str(work / f"ch{i}.png"), silence(6 if starts_dialogue else 3), str(work / f"ch{i}")))
 
         if PREVIEW and key in seen and "chapter" not in it:
             continue
@@ -319,7 +370,8 @@ def build(spec, items, outname):
 
         src_lang = "en" if it["dir"] == "EN→JA" else "ja"
         tgt_lang = "ja" if src_lang == "en" else "en"
-        a_src = tts(it["src"], src_lang, i)
+        # 对话：原文用说话人本人的声音，参考译文用对方（另一种语言）的声音
+        a_src = tts(it["src"], src_lang, i, voice=it["_me"]["voice"] if scene else None)
         card(work / f"q{i}a.png", [(label, 40, GOLD, True, 40), ("LISTEN  ·  聞いてください", 56, WHITE, True, 0)])
         add(seg(str(work / f"q{i}a.png"), np.concatenate([silence(1.0), a_src, silence(0.4), beep()]), str(work / f"q{i}a")))
 
@@ -327,9 +379,10 @@ def build(spec, items, outname):
         countdown(n, lambda s: [(label, 40, GOLD, True, 40), ("INTERPRET  ·  通訳してください", 52, CYAN, True, 40),
                                 (str(s), 120, WHITE, True, 0)], f"q{i}")
 
-        a_ref = tts(it["ref"], tgt_lang, i + 1)
+        a_ref = tts(it["ref"], tgt_lang, i + 1, voice=it["_other"]["voice"] if scene else None)
+        src_head = f"原文 · Source（{who}）" if scene else "原文 · Source"
         card(work / f"q{i}r.png", [(label, 34, GOLD, True, 20),
-                                   ("原文 · Source", 24, GREY, False, 0), (it["src"], 30, WHITE, False, 24),
+                                   (src_head, 24, GREY, False, 0), (it["src"], 30, WHITE, False, 24),
                                    ("参考訳 · Reference", 24, GREY, False, 0), (it["ref"], 32, CYAN, True, 24),
                                    ("ポイント · Notes：" + it["note"], 26, GOLD, False, 0)])
         add(seg(str(work / f"q{i}r.png"), np.concatenate([silence(0.5), a_ref, silence(2.5)]), str(work / f"q{i}r")))
