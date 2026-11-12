@@ -103,7 +103,7 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 3. **生成**：`python scripts/make_video.py content/epNN_....json output/epNN.mp4`
 4. **抽查**：至少听 5 题，重点检查日语 TTS 有没有读错汉字和数字。读错的地方：在 `make_video.py` 的 `READING_FIXES` 里加一条（原文 → 语音用写法）。
 5. **上传**：
-   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享，Ellen 在 YouTube Studio 检查后改公开。
+   - YouTube：`python scripts/upload_youtube.py output/epNN.mp4`（先加 `--dry-run` 看一眼）。自动填标题、简介（含章节）、标签，并标注 AI 合成内容；上传为私享。**API 项目通过 YouTube 审核之前，这样上传的视频会被锁成私享、可能无法改公开**——在那之前 YouTube 也手动上传（拖进 YouTube Studio，简介粘贴 `_description.txt`）。
    - B站：手动上传，用 `_description.txt` 作简介，并勾选「AI 生成内容」。B站没有给个人的官方上传 API，不要用基于登录 Cookie 的第三方工具。
 
 ## 上传到 YouTube（准备只做一次）
@@ -115,7 +115,11 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 5. 第一次运行上传脚本时会打开浏览器，用 YouTube 频道所在的账号登录并允许。授权保存在 `.youtube_token.json`。
 
 - `client_secret*.json` 和 `.youtube_token.json` 已 gitignore，**绝不提交**。
-- 限制：未审核的 API 项目上传的视频会被 YouTube 锁成私享，需要手动改公开（想自动公开要申请 YouTube API 审核）；每天配额只够上传几个视频。
+- **最大的限制**：2020-07-28 之后建的 API 项目，在通过 YouTube API 审核（audit）之前，用 API 上传的视频会被锁成私享（Studio 里显示 "locked as private"），开发者反映**无法改成公开**。
+  - 第一次先用 1 分钟的测试视频上传，确认是否被锁；被锁就删掉测试视频。
+  - 解除方法：提交 Google 的「YouTube API Services – Audit and Quota Extension Form」，说明用途（个人频道每周上传 1 个自制教学视频）；可能要求提供隐私政策页面。审核通过前，YouTube 也手动上传。
+  - 审核结果（是否已通过、哪天提交）记在这里：_尚未提交_
+- 配额：每天默认 10,000 单位，一次上传约 1,600，每周 1 个视频足够。
 - OAuth 同意画面处于「测试」状态时，授权大约 7 天过期；脚本会自动重新打开浏览器让你再授权一次。
 
 ## 已知问题与经验

@@ -6,8 +6,8 @@
     python scripts/upload_youtube.py output/ep01_w1.mp4 --privacy unlisted
 
 - 标题 = <名字>_description.txt 的第一行（也可以用 --title 覆盖），简介 = 整个 _description.txt（含章节）。
-- 默认上传为 private：未通过 Google 审核的 API 项目上传的视频，YouTube 会强制设为私享，
-  上传后到 YouTube Studio 手动改成「公开」即可。
+- 默认上传为 private。注意：API 项目通过 YouTube API 审核（audit）之前，YouTube 会把 API 上传的视频
+  锁成私享（"locked as private"），可能无法改公开。审核前请先用测试视频确认，详见 CLAUDE.md。
 - 自动标注「AI 合成内容」（status.containsSyntheticMedia = true）。
 - 第一次运行会打开浏览器，请用你的 YouTube 账号登录并授权；授权结果存在 .youtube_token.json（已 gitignore）。
 
@@ -118,7 +118,8 @@ def main():
     url = f"https://youtu.be/{vid}"
     args.video.with_name(args.video.stem + "_youtube.txt").write_text(url + "\n", encoding="utf-8")
     print(f"已上传: {url}（{resp['status']['privacyStatus']}）")
-    print(f"下一步: 到 https://studio.youtube.com/video/{vid}/edit 检查后改为公开")
+    print(f"下一步: 打开 https://studio.youtube.com/video/{vid}/edit 检查；"
+          "如果显示 locked as private，说明 API 项目还没通过审核（见 CLAUDE.md），这个视频改不了公开")
 
 
 if __name__ == "__main__":
