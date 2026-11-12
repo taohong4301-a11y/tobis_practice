@@ -1,8 +1,8 @@
 """把题目 JSON 转成每日计划里的附录表格（Markdown），保证计划文档和视频用的是同一份题目。
 
 用法:
-    python scripts/make_appendix.py content/w2_part1_B.json      # 打印到终端
-    python scripts/make_appendix.py content/w2_numbers.json --numbers
+    python scripts/make_appendix.py content/part1_B.json      # 打印到终端
+    python scripts/make_appendix.py content/numbers_02.json --numbers
 """
 import json
 import sys
