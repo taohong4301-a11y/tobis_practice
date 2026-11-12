@@ -3,6 +3,8 @@
   "week": "2026-W46",
   "part": "Part 2 短文形式",
   "set": "W1 完全版",
+  "thumbnail": {"badge": "第1週", "badge_en": "Week 1", "headline": "ビジネス通訳 練習",
+                "lines": ["数字 20問", "英⇔日 40問", "ノート記号 30"]},
   "title": "TOBIS ビジネス通訳 第1週 完全版 · 数字20問＋英日40問＋ノート記号30 | Week 1 Practice",
   "sources": [
     {"file": "w1_numbers.json", "label": "数字 ", "countdown": 4,

@@ -3,6 +3,8 @@
   "week": "2026-W47",
   "part": "Part 1 会話形式",
   "set": "Vol.2",
+  "thumbnail": {"badge": "第2週", "badge_en": "Week 2", "headline": "会話形式 Part 1",
+                "lines": ["会話 4場面", "数字 20問", "定型表現 20"]},
   "title": "TOBIS ビジネス通訳 第2週 完全版 · 会話4場面＋数字20問＋定型表現20 | Week 2 Practice",
   "sources": [
     {"file": "numbers_02.json", "label": "数字 ", "countdown": 4,
