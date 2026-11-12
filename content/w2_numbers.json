@@ -1,0 +1,28 @@
+{
+  "week": "2026-W47",
+  "part": "数字ウォームアップ",
+  "set": "W2 付録 B",
+  "title": "TOBIS 数字ウォームアップ 第2週 20問 / Number warm-up",
+  "items": [
+    {"dir": "EN→JA", "src": "4.6 billion", "ref": "46億", "note": "billion = 10億 → 4.6 × 10 = 46億（おく）", "tag": ""},
+    {"dir": "EN→JA", "src": "275 million", "ref": "2億7,500万", "note": "million = 100万 → 275 × 100万 = 2億7,500万", "tag": ""},
+    {"dir": "EN→JA", "src": "12.8 billion dollars", "ref": "128億ドル", "note": "12.8 × 10億 = 128億", "tag": ""},
+    {"dir": "EN→JA", "src": "3.25 trillion yen", "ref": "3兆2,500億円", "note": "3.25兆 = 3兆（ちょう）2,500億", "tag": ""},
+    {"dir": "EN→JA", "src": "86,000", "ref": "8万6,000", "note": "86,000 ÷ 10,000 = 8.6万 = 8万6,000", "tag": ""},
+    {"dir": "EN→JA", "src": "1.07 million", "ref": "107万", "note": "1.07 × 100万 = 107万", "tag": ""},
+    {"dir": "EN→JA", "src": "930 billion", "ref": "9,300億", "note": "930 × 10億 = 9,300億", "tag": ""},
+    {"dir": "EN→JA", "src": "0.5 percentage points", "ref": "0.5ポイント", "note": "percentage point = ポイント（％ではない / not percent）", "tag": ""},
+    {"dir": "EN→JA", "src": "up 6.4% year on year", "ref": "前年比6.4%増", "note": "year on year = 前年比（ぜんねんひ）；up = 増（ぞう）", "tag": ""},
+    {"dir": "EN→JA", "src": "17.5 billion yen", "ref": "175億円", "note": "17.5 × 10億 = 175億", "tag": ""},
+    {"dir": "JA→EN", "src": "5,600万", "ref": "56 million", "note": "万 ÷ 100 = million → 5,600 ÷ 100 = 56 million", "tag": ""},
+    {"dir": "JA→EN", "src": "3億2,000万", "ref": "320 million", "note": "1億 = 100 million → 3.2億 = 320 million", "tag": ""},
+    {"dir": "JA→EN", "src": "840億円", "ref": "84 billion yen", "note": "億 ÷ 10 = billion → 840 ÷ 10 = 84 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "2兆7,000億円", "ref": "2.7 trillion yen", "note": "兆（ちょう）= trillion → 2.7兆 = 2.7 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "12万5,000", "ref": "125,000", "note": "12.5万 × 10,000 = 125,000", "tag": ""},
+    {"dir": "JA→EN", "src": "1兆2,000億", "ref": "1.2 trillion", "note": "1.2兆 = 1.2 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "3割", "ref": "30%", "note": "割（わり）= 10% → 3割 = 30%", "tag": ""},
+    {"dir": "JA→EN", "src": "2026年度", "ref": "fiscal 2026", "note": "年度（ねんど）= fiscal year → FY2026", "tag": ""},
+    {"dir": "JA→EN", "src": "6,500億ドル", "ref": "650 billion dollars", "note": "6,500 ÷ 10 = 650 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "1万8,000人", "ref": "18,000 people", "note": "1.8万 = 18,000", "tag": ""}
+  ]
+}

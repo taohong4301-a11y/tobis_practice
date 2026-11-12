@@ -1,0 +1,81 @@
+{
+  "week": "2026-W47",
+  "part": "Part 1 会話形式",
+  "set": "B",
+  "title": "TOBIS ビジネス通訳 Part 1 会話 第2回 · 4場面40ターン / Set B",
+  "dialogues": {
+    "D1": {
+      "scene": "会話1 価格交渉 · Price negotiation",
+      "speakers": {
+        "A": {"name": "Mark Davis · 米国EVメーカー 調達部長 / procurement manager", "lang": "en", "voice": "am_michael"},
+        "B": {"name": "佐藤 · 精密部品メーカー 営業部長 / sales director", "lang": "ja", "voice": "jm_kumo"}
+      }
+    },
+    "D2": {
+      "scene": "会話2 決算説明会の質疑応答 · Earnings call Q&A",
+      "speakers": {
+        "A": {"name": "Rachel Kim · 証券アナリスト / equity analyst", "lang": "en", "voice": "af_heart"},
+        "B": {"name": "山本 · 電子部品メーカー CFO", "lang": "ja", "voice": "jf_alpha"}
+      }
+    },
+    "D3": {
+      "scene": "会話3 システム移行の打ち合わせ · Cloud migration meeting",
+      "speakers": {
+        "A": {"name": "Daniel Hughes · 米国SaaS企業 営業担当 / account executive", "lang": "en", "voice": "bm_george"},
+        "B": {"name": "中村 · 保険会社 情報システム部長 / head of IT", "lang": "ja", "voice": "jf_alpha"}
+      }
+    },
+    "D4": {
+      "scene": "会話4 賃上げと出社方針 · Wages and return-to-office",
+      "speakers": {
+        "A": {"name": "Emily Carter · 本社 グローバル人事責任者 / global HR director", "lang": "en", "voice": "bf_emma"},
+        "B": {"name": "鈴木 · 日本法人 人事部長 / HR director, Japan", "lang": "ja", "voice": "jm_kumo"}
+      }
+    }
+  },
+  "items": [
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "Thank you for coming all the way to Detroit. As you know, we're planning to increase production of our compact EV to 120,000 units next year.", "ref": "はるばるデトロイトまでお越しいただき、ありがとうございます。ご存じの通り、当社は来年、小型EVの生産を12万台に増やす計画です。", "note": "120,000 = 12万（まん）；all the way = はるばる", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "お招きいただきありがとうございます。増産のお話は伺っております。当社としても、モーター部品の供給量を2割程度増やす準備を進めております。", "ref": "Thank you for inviting us. We've heard about the production increase, and we're preparing to raise our supply of motor components by about 20%.", "note": "2割（にわり）= 20%；伺う（うかがう）= hear (humble)；増産（ぞうさん）", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "That's good to hear. However, given the larger volume, we'd like to ask for a unit price reduction of 8%.", "ref": "それは心強いです。ただ、数量が増えることを踏まえ、単価を8%引き下げていただきたいと考えています。", "note": "unit price = 単価（たんか）；given = 〜を踏まえ（ふまえ）", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "8%の値下げは、正直申し上げて厳しい数字です。原材料のアルミ価格が、この1年で15%ほど上昇しておりますので。", "ref": "Frankly, an 8% price cut would be difficult for us. Aluminum prices have risen by about 15% over the past year.", "note": "値下げ（ねさげ）= price cut；正直申し上げて = frankly", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "I understand. What if we signed a three-year contract instead of renewing every year? That would give you more stable demand.", "ref": "承知しました。では、毎年更新する代わりに3年契約を結ぶのはいかがでしょうか。そうすれば、御社にとっても需要が安定します。", "note": "What if…? = 〜するのはいかがでしょうか；御社（おんしゃ）= your company (spoken)", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "3年契約であれば、検討の余地はございます。その場合、値下げ幅は5%が限界かと存じます。", "ref": "With a three-year contract, there is room for discussion. In that case, we think 5% would be the maximum reduction.", "note": "余地（よち）= room；値下げ幅（ねさげはば）= size of the price cut；存じます（ぞんじます）= think (humble)", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "Five percent is closer, but our target is 7%. Could you meet us halfway at 6%?", "ref": "5%ならだいぶ近づきましたが、当社の目標は7%です。間を取って6%でいかがでしょうか。", "note": "meet halfway = 間を取る（あいだをとる）", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "6%で合意するためには、支払い条件を現在の90日から60日に短縮していただく必要があります。", "ref": "To agree on 6%, we would need you to shorten the payment terms from the current 90 days to 60 days.", "note": "支払い条件（しはらいじょうけん）= payment terms；短縮（たんしゅく）", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "Sixty days should work. I'll need to confirm with our finance team, but I don't expect any problems.", "ref": "60日で問題ないと思います。財務チームに確認する必要はありますが、特に支障はないかと思います。", "note": "should work = 問題ない；支障（ししょう）= problem, obstacle", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "ありがとうございます。それでは本日の内容を議事録にまとめ、来週中に契約書の案をお送りいたします。", "ref": "Thank you. We'll summarize today's discussion in the minutes and send you a draft contract sometime next week.", "note": "議事録（ぎじろく）= minutes；契約書の案 = draft contract", "tag": ""},
+
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "第3四半期の売上高は、前年同期比9%増の4,820億円となりました。主な要因は、北米でのデータセンター向け需要の拡大です。", "ref": "Revenue for the third quarter rose 9% year on year to 482 billion yen, mainly driven by growing demand from data centers in North America.", "note": "4,820億 = 482 billion；第3四半期（だいさんしはんき）= third quarter", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "Thank you. Your operating margin fell from 11.2% to 9.8%. Could you explain what caused the decline?", "ref": "ありがとうございます。営業利益率は11.2%から9.8%に低下しました。低下の要因をご説明いただけますか。", "note": "operating margin = 営業利益率（えいぎょうりえきりつ）", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "主な要因は二つございます。一つは新工場の立ち上げ費用、もう一つは物流コストの上昇です。", "ref": "There are two main factors. One is the cost of starting up the new plant, and the other is higher logistics costs.", "note": "立ち上げ費用（たちあげひよう）= start-up costs", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "When do you expect the new plant to reach full capacity, and how much will it add to annual revenue?", "ref": "新工場がフル稼働に達するのはいつ頃の見込みでしょうか。また、年間売上高にどの程度寄与しますか。", "note": "full capacity = フル稼働（かどう）；add to revenue = 売上に寄与（きよ）する", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "来年の6月にはフル稼働に達する見込みです。年間で約1,200億円の売上の上乗せを想定しております。", "ref": "We expect it to reach full capacity by next June, adding about 120 billion yen in annual revenue.", "note": "1,200億 = 120 billion；上乗せ（うわのせ）= addition", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "You kept your full-year guidance unchanged. Given the weaker yen, isn't that a little conservative?", "ref": "通期の業績予想を据え置かれましたが、円安を考えると、やや保守的ではないでしょうか。", "note": "guidance = 業績予想（ぎょうせきよそう）；conservative = 保守的（ほしゅてき）；通期（つうき）= full year", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "ご指摘の通り、円安は追い風です。ただ、中国市場の先行きが不透明なため、現時点では慎重な見方を維持しております。", "ref": "As you point out, the weak yen is a tailwind. However, because the outlook for the Chinese market is uncertain, we are keeping a cautious view for now.", "note": "追い風（おいかぜ）= tailwind；先行き（さきゆき）= outlook；不透明（ふとうめい）= uncertain", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "On shareholder returns, are you considering another share buyback this fiscal year?", "ref": "株主還元についてですが、今年度、追加の自社株買いを検討されていますか。", "note": "shareholder returns = 株主還元（かぶぬしかんげん）；buyback = 自社株買い（じしゃかぶがい）", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "現時点で決定した事項はございませんが、配当性向30%以上という方針は維持いたします。", "ref": "Nothing has been decided at this point, but we will maintain our policy of a payout ratio of at least 30%.", "note": "配当性向（はいとうせいこう）= payout ratio", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "Thank you. That's very helpful. I have no further questions.", "ref": "ありがとうございます。大変参考になりました。質問は以上です。", "note": "very helpful = 大変参考になりました", "tag": ""},
+
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "Thanks for getting back to me, Ms. Nakamura. I understand you're evaluating our platform to replace your current customer management system.", "ref": "中村部長、ご連絡ありがとうございます。現在の顧客管理システムの後継として、当社のプラットフォームをご検討中と伺っています。", "note": "customer management system = 顧客管理（こきゃくかんり）システム；replace = 〜の後継（こうけい）として", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "はい。現行システムは導入から12年が経過しており、保守費用が年間で約3億円かかっています。", "ref": "Yes. Our current system was introduced 12 years ago, and maintenance costs us about 300 million yen a year.", "note": "3億 = 300 million；保守費用（ほしゅひよう）= maintenance costs；現行（げんこう）= current", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "Our clients in financial services typically cut those costs by 40 to 50% after migrating.", "ref": "当社の金融業界のお客様は、移行後にそうしたコストを通常4割から5割削減されています。", "note": "40 to 50% = 4割から5割；migrate = 移行（いこう）する", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "コスト削減は魅力的ですが、最も懸念しているのはデータの保管場所です。顧客データは国内に保管する必要があります。", "ref": "The cost savings are attractive, but our biggest concern is where the data is stored. Customer data must be kept in Japan.", "note": "懸念（けねん）= concern；保管（ほかん）= storage", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "That won't be a problem. We have two data centers in Tokyo and Osaka, and all data stays within Japan.", "ref": "その点は問題ございません。当社は東京と大阪に2つのデータセンターを持っており、すべてのデータは国内にとどまります。", "note": "stay within Japan = 国内にとどまる", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "それは安心しました。もう一点、システム障害が発生した場合の復旧目標時間を教えていただけますか。", "ref": "That's reassuring. One more thing: could you tell us your target recovery time in the event of a system failure?", "note": "障害（しょうがい）= failure, outage；復旧目標時間（ふっきゅうもくひょうじかん）= recovery time objective", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "Our recovery time objective is four hours, and we guarantee 99.9% availability in our service level agreement.", "ref": "復旧目標時間は4時間で、サービスレベル契約では99.9%の稼働率を保証しています。", "note": "SLA = サービスレベル契約（けいやく）；availability = 稼働率（かどうりつ）", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "承知しました。移行期間はどのくらいを見込んでいらっしゃいますか。社内では来年度中の切り替えを希望しています。", "ref": "I see. How long do you expect the migration to take? Internally, we'd like to switch over within the next fiscal year.", "note": "切り替え（きりかえ）= switchover；来年度（らいねんど）= next fiscal year", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "For a project of this size, we usually plan for nine to twelve months, including a three-month parallel run.", "ref": "この規模のプロジェクトですと、3か月間の並行稼働を含めて、通常9か月から12か月を想定しています。", "note": "parallel run = 並行稼働（へいこうかどう）；規模（きぼ）= size", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "分かりました。それでは、来月の経営会議に向けて、概算見積もりと導入スケジュールをご提出いただけますか。", "ref": "Understood. Could you then submit a rough estimate and an implementation schedule ahead of next month's management meeting?", "note": "概算見積もり（がいさんみつもり）= rough estimate；経営会議（けいえいかいぎ）= management meeting", "tag": ""},
+
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "本日は日本法人の賃上げ方針についてご報告いたします。来年4月から、基本給を平均で5%引き上げる予定です。", "ref": "Today I'd like to report on our wage policy for the Japanese subsidiary. From next April, we plan to raise base salaries by 5% on average.", "note": "賃上げ（ちんあげ）= wage increase；基本給（きほんきゅう）= base salary；日本法人（にほんほうじん）= Japanese subsidiary", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "Five percent is higher than in our other regions. What's behind that decision?", "ref": "5%というのは、他の地域よりも高い水準ですね。その判断の背景を教えてください。", "note": "What's behind…? = 〜の背景（はいけい）は", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "日本では人手不足が深刻で、特にエンジニアの採用競争が激しくなっています。昨年は内定辞退率が25%に達しました。", "ref": "Japan faces a serious labor shortage, and competition to hire engineers is especially fierce. Last year, 25% of the candidates we made offers to turned them down.", "note": "内定辞退率（ないていじたいりつ）= offer decline rate；人手不足（ひとでぶそく）", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "I see. And how will this affect total personnel costs for the Japanese business?", "ref": "なるほど。それによって、日本事業の総人件費はどの程度影響を受けますか。", "note": "personnel costs = 人件費（じんけんひ）", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "総人件費は年間で約14億円増える見込みですが、離職率の低下による採用コストの削減で、一部を相殺できると考えています。", "ref": "Total personnel costs are expected to rise by about 1.4 billion yen a year, but we think part of that can be offset by lower hiring costs as turnover falls.", "note": "14億 = 1.4 billion；相殺（そうさい）= offset；離職率（りしょくりつ）= turnover rate", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "That makes sense. On a different topic, headquarters is asking all regions to bring employees back to the office three days a week.", "ref": "よく分かりました。話は変わりますが、本社は全地域に対し、週3日の出社に戻すよう求めています。", "note": "on a different topic = 話は変わりますが；back to the office = 出社（しゅっしゃ）", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "その方針については、社員の反発が予想されます。社内調査では、約7割がリモートワークの継続を希望しています。", "ref": "We expect pushback from employees on that policy. In an internal survey, about 70% said they want to keep working remotely.", "note": "反発（はんぱつ）= pushback；7割（ななわり）= 70%", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "I appreciate your candor. Would a gradual approach work, for example two days now and three days from next year?", "ref": "率直なご意見に感謝します。たとえば、まずは週2日、来年から週3日といった段階的な方法ならいかがでしょうか。", "note": "candor = 率直（そっちょく）さ；gradual = 段階的（だんかいてき）", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "段階的な導入であれば、社員の理解も得やすいと思います。ただし、子育て中の社員には例外を認めていただきたいです。", "ref": "A gradual rollout would make it easier to win employees' understanding. However, we'd like you to allow exceptions for employees raising children.", "note": "子育て（こそだて）= raising children；例外（れいがい）= exception", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "That's reasonable. Please send me a proposal by the end of the month, and I'll present it at the global HR meeting.", "ref": "それは妥当ですね。月末までに提案書を送っていただければ、グローバル人事会議で私から説明します。", "note": "reasonable = 妥当（だとう）；proposal = 提案書（ていあんしょ）", "tag": ""}
+  ]
+}

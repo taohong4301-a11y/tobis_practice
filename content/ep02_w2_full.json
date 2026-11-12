@@ -1,0 +1,28 @@
+{
+  "episode": 2,
+  "week": "2026-W47",
+  "part": "Part 1 会話形式",
+  "set": "W2 完全版",
+  "title": "TOBIS ビジネス通訳 第2週 完全版 · 会話4場面＋数字20問＋定型表現20 | Week 2 Practice",
+  "sources": [
+    {"file": "w2_numbers.json", "label": "数字 ", "countdown": 4,
+     "chapters": {"1": "数字 英→日 1–10 · Numbers EN→JA（Day 1）",
+                  "11": "数字 日→英 1–10 · Numbers JA→EN（Day 2）"}},
+    {"file": "w2_phrases.json", "label": "定型 ",
+     "chapters": {"1": "定型表現 英→日 1–10 · Meeting phrases EN→JA（Day 1）",
+                  "11": "定型表現 日→英 1–10 · Meeting phrases JA→EN（Day 2）"}},
+    {"file": "w2_part1_B.json", "label": "会話 ",
+     "chapters": {"1": "会話1 価格交渉 · Price negotiation（Day 1・Day 5）",
+                  "11": "会話2 決算説明会 · Earnings call Q&A（Day 2・Day 5）",
+                  "21": "会話3 システム移行 · Cloud migration（Day 3・週末）",
+                  "31": "会話4 賃上げと出社 · Wages and RTO（Day 4・週末）"}}
+  ],
+  "day_guide": [
+    "Day 1：数字 英→日 1–10 → 定型表現 英→日 1–10 → 会話1 / Numbers EN→JA → Phrases EN→JA → Dialogue 1",
+    "Day 2：数字 日→英 1–10 → 定型表現 日→英 1–10 → 会話2 / Numbers JA→EN → Phrases JA→EN → Dialogue 2",
+    "Day 3：数字 全20問 → 会話3 / All 20 numbers → Dialogue 3",
+    "Day 4：定型表現 全20を時間計測 → 会話4 / All 20 phrases, timed → Dialogue 4",
+    "Day 5：会話1・2 を止めずに通しで録音（本番形式）/ Dialogues 1–2 in one take, exam style",
+    "週末テスト：会話3・4 を通しで録音して採点 / Weekly test: Dialogues 3–4 in one take, then score yourself"
+  ]
+}

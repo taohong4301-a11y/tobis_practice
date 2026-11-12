@@ -1,0 +1,28 @@
+{
+  "week": "2026-W47",
+  "part": "会話の定型表現",
+  "set": "W2 付録 C",
+  "title": "TOBIS 会話の定型表現 第2週 20 / Meeting phrases",
+  "items": [
+    {"dir": "EN→JA", "src": "Thank you for taking the time to meet with us today.", "ref": "本日はお時間をいただき、ありがとうございます。", "note": "take the time = お時間をいただく", "tag": ""},
+    {"dir": "EN→JA", "src": "Let me get straight to the point.", "ref": "単刀直入に申し上げます。", "note": "単刀直入（たんとうちょくにゅう）= straight to the point", "tag": ""},
+    {"dir": "EN→JA", "src": "Could you elaborate on that?", "ref": "その点について、もう少し詳しくご説明いただけますか。", "note": "elaborate = 詳しく説明する", "tag": ""},
+    {"dir": "EN→JA", "src": "That's a fair point.", "ref": "おっしゃることはもっともです。", "note": "fair point = もっともな指摘（してき）", "tag": ""},
+    {"dir": "EN→JA", "src": "I'm afraid that's not something we can agree to.", "ref": "申し訳ありませんが、その点はお受けいたしかねます。", "note": "〜かねる = cannot (polite refusal)", "tag": ""},
+    {"dir": "EN→JA", "src": "Let's circle back to this next week.", "ref": "この件は来週、改めて話し合いましょう。", "note": "circle back = 改めて（あらためて）話し合う", "tag": ""},
+    {"dir": "EN→JA", "src": "We'd need to run this by our head office.", "ref": "本社に確認する必要があります。", "note": "run … by ~ = 〜に確認する；head office = 本社（ほんしゃ）", "tag": ""},
+    {"dir": "EN→JA", "src": "Just to clarify, are you referring to the Japanese market only?", "ref": "確認ですが、日本市場のみのお話でしょうか。", "note": "just to clarify = 確認ですが", "tag": ""},
+    {"dir": "EN→JA", "src": "I think we're on the same page.", "ref": "認識は一致していると思います。", "note": "on the same page = 認識（にんしき）が一致している", "tag": ""},
+    {"dir": "EN→JA", "src": "I'll get back to you by the end of the week.", "ref": "今週中にご連絡いたします。", "note": "get back to you = ご連絡する；by the end of the week = 今週中に", "tag": ""},
+    {"dir": "JA→EN", "src": "いつもお世話になっております。", "ref": "Thank you for your continued support.", "note": "直訳しない / don't translate literally；場面により “Good to speak with you again.” も可", "tag": ""},
+    {"dir": "JA→EN", "src": "おっしゃる通りです。", "ref": "You're absolutely right.", "note": "おっしゃる = say (honorific)", "tag": ""},
+    {"dir": "JA→EN", "src": "持ち帰って検討させていただきます。", "ref": "Let us take this back and discuss it internally.", "note": "持ち帰る（もちかえる）= take back to the office；即答を避ける表現 / non-committal", "tag": ""},
+    {"dir": "JA→EN", "src": "念のため、確認させてください。", "ref": "Just to be sure, let me confirm.", "note": "念のため（ねんのため）= just to be sure", "tag": ""},
+    {"dir": "JA→EN", "src": "ご指摘ありがとうございます。", "ref": "Thank you for pointing that out.", "note": "指摘（してき）= point out", "tag": ""},
+    {"dir": "JA→EN", "src": "できる限り前向きに対応いたします。", "ref": "We'll do our best to accommodate that.", "note": "前向き（まえむき）に対応 = respond positively / accommodate", "tag": ""},
+    {"dir": "JA→EN", "src": "その点については、後ほど担当者からご説明いたします。", "ref": "The person in charge will explain that point later.", "note": "後ほど（のちほど）= later；担当者（たんとうしゃ）= person in charge", "tag": ""},
+    {"dir": "JA→EN", "src": "恐れ入りますが、もう一度おっしゃっていただけますか。", "ref": "I'm sorry, could you say that again?", "note": "恐れ入りますが（おそれいりますが）= excuse me, but", "tag": ""},
+    {"dir": "JA→EN", "src": "その件は、現在社内で調整中です。", "ref": "We're currently coordinating that internally.", "note": "調整中（ちょうせいちゅう）= being coordinated", "tag": ""},
+    {"dir": "JA→EN", "src": "引き続きよろしくお願いいたします。", "ref": "We look forward to continuing to work with you.", "note": "直訳しない / don't translate literally；引き続き（ひきつづき）= continuing", "tag": ""}
+  ]
+}

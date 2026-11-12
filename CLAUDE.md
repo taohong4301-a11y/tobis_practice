@@ -31,12 +31,20 @@ tobis-practice/
 │   ├── upload_youtube.py     # 视频 + 简介 → 上传到 YouTube（私享）
 │   └── download_models.sh    # 下载 Kokoro 语音模型
 ├── docs/
-│   └── TOBIS_W1_每日计划.md   # 第1周每日计划（附录 A/B/C 是视频题目的来源）
+│   ├── TOBIS_W1_每日计划.md   # 第1周每日计划（附录 A/B/C 是视频题目的来源）
+│   ├── TOBIS_W2_每日计划.md   # 第2周 Part 1 对话（附录由 make_appendix.py 从 JSON 生成）
+│   ├── W2_视频设计.md          # 第2周对话模式的视频设计（待审）
+│   ├── TOBIS_W3_每日计划.md   # 第3周 Part 3 演讲（计划草案 + 制作时间表）
+│   └── TOBIS_W4_每日计划.md   # 第4周 全真模考 + 考试周（计划草案 + 制作时间表）
 ├── content/
 │   ├── ep01_part2_A.json     # 第1期：Part 2 A 套 40 题（= 每日计划 附录 A）
 │   ├── w1_numbers.json       # 第1周 数字热身 20 题（= 附录 B）
 │   ├── w1_symbols.json       # 第1周 笔记符号 30 个（= 附录 C）
-│   └── ep01_w1_full.json     # 第1周完整版合集：数字 + A套 + 符号，带按天章节
+│   ├── ep01_w1_full.json     # 第1周完整版合集：数字 + A套 + 符号，带按天章节
+│   ├── w2_part1_B.json       # 第2周 Part 1 B 套：4 段对话 40 轮（带 dialogue/speaker）
+│   ├── w2_numbers.json       # 第2周 数字热身 20 题
+│   ├── w2_phrases.json       # 第2周 会议定型表現 20 句
+│   └── ep02_w2_full.json     # 第2周完整版合集（待审，对话模式实现后才能生成）
 ├── models/                   # 模型文件（gitignore）
 └── output/                   # 生成的视频（gitignore）
 ```
@@ -139,10 +147,10 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 
 ## 待办（按优先级）
 
-1. 生成第 1 期完整视频并抽查（content/ep01_part2_A.json 已就绪）。
-2. 第 2 期：Part 2 B 套 40 题（新题材，难度略升）。
-3. 新增 Part 1 模式：英日混合对话，一个人说英语、一个人说日语，每轮之后倒计时。JSON 增加 `speaker` 字段。
-4. 新增 Part 3 模式：60–90 秒演讲，分 2–3 段播放。
+1. ~~生成第 1 期完整视频~~：已完成，2026-11-12 上传 https://youtu.be/DxOJ4Khgj24 （私享，待 Ellen 改公开）。
+2. 第 2 周：题目和设计已写好（docs/W2_视频设计.md），**等 Ellen 审核**；审核后实现 Part 1 对话模式（按说话人固定声音、场景卡），加 3 条读音修正，先生成会話1 试听，再生成完整版。
+3. 第 3 周：在 11/20 前写 C 套 4 段演讲 + 句中数字 20 题，实现 Part 3 演讲模式（分 2–3 截播放），见 docs/TOBIS_W3_每日计划.md 的制作时间表。
+4. 第 4 周：在 11/27 前写 D、E 两套模考题，实现模考模式（无答案卡 + 答案对照表），见 docs/TOBIS_W4_每日计划.md。
 5. 生成 SRT 字幕文件（只在答案阶段显示）；自动生成封面图（1280×720，期数 + 主题）。
 6. 可选：接入商用 TTS（Azure / Google，用 Ellen 自己的 API key）作为第二种语音引擎，提高日语自然度。
 
