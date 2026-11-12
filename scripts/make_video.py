@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 import numpy as np
@@ -218,15 +219,18 @@ def seg(img, audio, out):
         return img, len(audio) / SR
     import soundfile as sf
     sf.write(f"{out}.wav", audio, SR)
+    # -threads 2：静态图片不需要多线程，少占内存（内存紧张时 libx264 会报 Generic error）
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", img, "-i", f"{out}.wav",
-           "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-pix_fmt", "yuv420p",
+           "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-pix_fmt", "yuv420p", "-threads", "2",
            "-r", "24", "-c:a", "aac", "-b:a", "128k", "-t", f"{len(audio) / SR:.3f}", f"{out}.mp4"]
-    for attempt in range(3):  # ffmpeg 偶尔会崩（例如同时跑两个渲染时），重试，免得 30 分钟的渲染白跑
+    waits = [5, 20, 60]  # 失败后等一会儿再试（内存或文件被占用通常是暂时的），免得 30 分钟的渲染白跑
+    for attempt in range(len(waits) + 1):
         if subprocess.run(cmd).returncode == 0:
             break
-        print(f"ffmpeg 失败，重试 {attempt + 1}/2: {out}", flush=True)
-    else:
-        sys.exit(f"ffmpeg 连续 3 次失败: {out}")
+        if attempt == len(waits):
+            sys.exit(f"ffmpeg 连续 {attempt + 1} 次失败: {out}")
+        print(f"ffmpeg 失败，{waits[attempt]} 秒后重试（{attempt + 1}/{len(waits)}）: {out}", flush=True)
+        time.sleep(waits[attempt])
     # 用编码后的真实时长（视频按帧取整会略长），否则章节时间越往后越早
     real = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                            f"{out}.mp4"], check=True, capture_output=True, text=True).stdout.strip()
@@ -419,6 +423,7 @@ def build(spec, items, outname):
     desc = out.with_name(out.stem + "_description.txt")
     desc.write_text(
         f"{spec['title']}\n\n"
+        + (f"{spec['series']}\n\n" if spec.get("series") else "")
         + "".join(s + "\n" for s in summary) + ("\n" if summary else "") +
         f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')}の練習用です。\n"
         f"Practice for the TOBIS business interpreting test (consecutive, {spec.get('part', 'Part 2')}).\n\n"

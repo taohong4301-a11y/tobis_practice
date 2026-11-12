@@ -48,7 +48,8 @@ def make(spec, out):
     centered(d, pcx, 120 + int(bs * 1.25) + 90, "EN ⇔ JA", True, 44, CYAN)
 
     # 左侧标题
-    mv.draw_text(d, 70, 64, "ビジネス通訳検定 対策", False, 36, GREY)
+    series = spec.get("series", "ビジネス通訳検定 対策").split(" / ")[0]  # 系列名（日文部分）
+    mv.draw_text(d, 70, 58, series, True, fit(d, series, True, 42, px0 - 70 - 40), GOLD)
     mv.draw_text(d, 64, 110, "TOBIS", True, 190, WHITE)
     hs = fit(d, t["headline"], True, 68, px0 - 70 - 40)
     mv.draw_text(d, 70, 340, t["headline"], True, hs, CYAN)

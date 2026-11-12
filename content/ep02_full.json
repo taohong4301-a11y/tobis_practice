@@ -5,7 +5,8 @@
   "set": "Vol.2",
   "thumbnail": {"badge": "第2週", "badge_en": "Week 2", "headline": "会話形式 Part 1",
                 "lines": ["会話 4場面", "数字 20問", "定型表現 20"]},
-  "title": "TOBIS ビジネス通訳 第2週 完全版 · 会話4場面＋数字20問＋定型表現20 | Week 2 Practice",
+  "title": "元気社畜の通訳ノート 第2週｜会話4場面＋数字20問＋定型表現20 | TOBIS Week 2",
+  "series": "元気社畜の通訳ノート / Energized Salaryman's Interpreting Notes",
   "sources": [
     {"file": "numbers_02.json", "label": "数字 ", "countdown": 4,
      "chapters": {"1": "数字 英→日 1–10 · Numbers EN→JA（Day 1）",
