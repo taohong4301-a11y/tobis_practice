@@ -1,0 +1,28 @@
+{
+  "part": "Part 2 短文形式",
+  "set": "模試E",
+  "title": "模試E Part 2 短文 / Mock E Part 2",
+  "items": [
+    {"dir": "EN→JA", "src": "Retail sales rose 2.8% in August from a year earlier, the 18th straight month of growth.", "ref": "8月の小売業販売額は前年同月比2.8%増で、18か月連続の増加となりました。", "note": "retail sales = 小売業販売額（こうりぎょうはんばいがく）；straight = 連続", "tag": ""},
+    {"dir": "EN→JA", "src": "The company will cut 1,200 jobs, or about 6% of its workforce, by the end of next year.", "ref": "同社は来年末までに、従業員の約6%にあたる1,200人の人員を削減します。", "note": "cut jobs = 人員削減（じんいんさくげん）；workforce = 従業員", "tag": ""},
+    {"dir": "EN→JA", "src": "Our order backlog reached a record 2.3 trillion yen at the end of September.", "ref": "当社の受注残高は、9月末時点で過去最高の2兆3,000億円に達しました。", "note": "order backlog = 受注残高（じゅちゅうざんだか）；2.3 trillion = 2兆3,000億", "tag": ""},
+    {"dir": "EN→JA", "src": "Long-term interest rates climbed to 1.8%, the highest level since 2008.", "ref": "長期金利は1.8%に上昇し、2008年以来の高い水準となりました。", "note": "long-term interest rates = 長期金利（ちょうききんり）；since 2008 = 2008年以来（いらい）", "tag": ""},
+    {"dir": "EN→JA", "src": "We are pleased to announce that our new app has been downloaded more than 5 million times.", "ref": "当社の新しいアプリのダウンロード数が、500万回を突破したことをお知らせいたします。", "note": "5 million = 500万；突破（とっぱ）= surpass", "tag": ""},
+    {"dir": "EN→JA", "src": "The airline expects passenger numbers on international routes to recover fully by next summer.", "ref": "同航空会社は、国際線の旅客数が来年夏までに完全に回復すると見込んでいます。", "note": "international routes = 国際線（こくさいせん）；passenger numbers = 旅客数（りょかくすう）", "tag": ""},
+    {"dir": "EN→JA", "src": "Unfortunately, the speaker's flight has been delayed, so the session will start 30 minutes late.", "ref": "あいにく講演者の便が遅れているため、セッションの開始は30分遅れとなります。", "note": "unfortunately = あいにく；speaker = 講演者（こうえんしゃ）", "tag": ""},
+    {"dir": "EN→JA", "src": "Two years ago, we began using AI to forecast demand at our 600 supermarkets.", "ref": "2年前、当社は600店舗のスーパーで、AIを使った需要予測を始めました。", "note": "forecast demand = 需要予測（じゅようよそく）", "tag": "連続 1/3"},
+    {"dir": "EN→JA", "src": "Since then, food waste has fallen by 35%, saving about 4.5 billion yen a year.", "ref": "それ以来、食品ロスは35%減り、年間約45億円のコスト削減につながっています。", "note": "food waste = 食品ロス；4.5 billion = 45億", "tag": "連続 2/3"},
+    {"dir": "EN→JA", "src": "We now plan to use the same system to set prices automatically for fresh food.", "ref": "今後は同じシステムを使って、生鮮食品の価格を自動で設定する計画です。", "note": "set prices = 価格を設定（せってい）する；fresh food = 生鮮食品（せいせんしょくひん）", "tag": "連続 3/3"},
+
+    {"dir": "JA→EN", "src": "10月の消費者物価指数は、前年同月比で3.1%上昇しました。", "ref": "The consumer price index rose 3.1% in October from a year earlier.", "note": "消費者物価指数（しょうひしゃぶっかしすう）= consumer price index", "tag": ""},
+    {"dir": "JA→EN", "src": "同社は、米国の同業他社を約4,700億円で買収すると発表しました。", "ref": "The company announced it would acquire a US rival for about 470 billion yen.", "note": "同業他社（どうぎょうたしゃ）= rival；4,700億 = 470 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "大手3銀行は、普通預金の金利を0.2%に引き上げると発表しました。", "ref": "Three major banks announced they would raise interest rates on ordinary deposits to 0.2%.", "note": "普通預金（ふつうよきん）= ordinary deposits；大手3銀行 = three major banks", "tag": ""},
+    {"dir": "JA→EN", "src": "今年の夏のボーナスの平均支給額は、前年比4.3%増の約96万円でした。", "ref": "The average summer bonus this year was about 960,000 yen, up 4.3% from last year.", "note": "96万 = 960,000；支給額（しきゅうがく）= amount paid", "tag": ""},
+    {"dir": "JA→EN", "src": "誠に恐縮ですが、会議室の予約を1時間延長していただけますでしょうか。", "ref": "I'm terribly sorry, but could you extend the meeting room booking by one hour?", "note": "恐縮（きょうしゅく）ですが = I'm terribly sorry, but；延長（えんちょう）= extend", "tag": ""},
+    {"dir": "JA→EN", "src": "日本の農林水産物の輸出額は、初めて1兆5,000億円を超えました。", "ref": "Japan's exports of agricultural, forestry and fishery products exceeded 1.5 trillion yen for the first time.", "note": "農林水産物（のうりんすいさんぶつ）= agricultural, forestry and fishery products；1兆5,000億 = 1.5 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "政府は、半導体産業の支援に向けて、今後5年間で10兆円規模の投資を行う方針です。", "ref": "The government plans to invest around 10 trillion yen over the next five years to support the semiconductor industry.", "note": "10兆円規模（きぼ）= around 10 trillion yen；支援（しえん）= support", "tag": ""},
+    {"dir": "JA→EN", "src": "当社は来年度、全国の店舗の照明をすべてLEDに切り替えます。", "ref": "Next fiscal year, we will switch all the lighting in our stores nationwide to LEDs.", "note": "照明（しょうめい）= lighting；切り替える = switch", "tag": "連続 1/3"},
+    {"dir": "JA→EN", "src": "これにより、電力使用量は年間約2割削減できる見込みです。", "ref": "This is expected to cut our electricity use by about 20% a year.", "note": "2割 = 20%；電力使用量（でんりょくしようりょう）= electricity use", "tag": "連続 2/3"},
+    {"dir": "JA→EN", "src": "投資額は約18億円ですが、3年で回収できると試算しています。", "ref": "The investment will be about 1.8 billion yen, but we estimate we can recover it in three years.", "note": "18億 = 1.8 billion；回収（かいしゅう）= recover；試算（しさん）= estimate", "tag": "連続 3/3"}
+  ]
+}

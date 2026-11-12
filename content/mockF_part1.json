@@ -1,0 +1,44 @@
+{
+  "part": "Part 1 会話形式",
+  "set": "模試F",
+  "title": "模試F Part 1 会話 / Mock F Part 1",
+  "dialogues": {
+    "F1": {
+      "scene": "会話F1 物流倉庫の契約更新 · Warehouse lease renewal",
+      "speakers": {
+        "A": {"name": "James Carter · 外資系EC企業 物流部長 / head of logistics", "lang": "en", "voice": "am_liam"},
+        "B": {"name": "石井 · 物流不動産会社 営業部長 / sales director", "lang": "ja", "voice": "jm_kumo"}
+      }
+    },
+    "F2": {
+      "scene": "会話F2 広告キャンペーンの振り返り · Ad campaign review",
+      "speakers": {
+        "A": {"name": "Olivia Grant · 広告代理店 アカウントディレクター / account director", "lang": "en", "voice": "af_nova"},
+        "B": {"name": "吉田 · 飲料メーカー マーケティング部長 / head of marketing", "lang": "ja", "voice": "jf_alpha"}
+      }
+    }
+  },
+  "items": [
+    {"dialogue": "F1", "speaker": "B", "dir": "JA→EN", "src": "本日は契約更新のご相談でお時間をいただき、ありがとうございます。現在の契約は来年6月末で満了となります。", "ref": "Thank you for your time today to discuss the contract renewal. The current contract expires at the end of next June.", "note": "満了（まんりょう）= expire；契約更新（けいやくこうしん）= contract renewal", "tag": ""},
+    {"dialogue": "F1", "speaker": "A", "dir": "EN→JA", "src": "Thank you. We'd like to renew for another five years, but we were surprised by the proposed 12% rent increase.", "ref": "ありがとうございます。さらに5年間更新したいと考えていますが、ご提示いただいた12%の賃料の値上げには驚きました。", "note": "renew = 更新（こうしん）する；proposed = ご提示（ていじ）の；rent increase = 賃料の値上げ", "tag": ""},
+    {"dialogue": "F1", "speaker": "B", "dir": "JA→EN", "src": "ご理解いただきたいのですが、このエリアの倉庫の空室率は1%を切っており、相場自体が上がっております。", "ref": "We hope you'll understand that the vacancy rate for warehouses in this area is below 1%, and market rents themselves have gone up.", "note": "空室率（くうしつりつ）= vacancy rate；相場（そうば）= market rate；1%を切る = below 1%", "tag": ""},
+    {"dialogue": "F1", "speaker": "A", "dir": "EN→JA", "src": "I understand the market is tight. But we've been a tenant for eight years and have never missed a payment.", "ref": "市場がひっ迫していることは理解しています。ただ、当社は8年間入居しており、支払いが遅れたことは一度もありません。", "note": "tight = ひっ迫（ぱく）；tenant = 入居者（にゅうきょしゃ）", "tag": ""},
+    {"dialogue": "F1", "speaker": "B", "dir": "JA→EN", "src": "それは重々承知しております。長期契約をしていただけるのであれば、値上げ幅を8%に抑えることも可能です。", "ref": "We are well aware of that. If you sign a long-term contract, we could limit the increase to 8%.", "note": "重々（じゅうじゅう）承知 = well aware；抑える（おさえる）= limit", "tag": ""},
+    {"dialogue": "F1", "speaker": "A", "dir": "EN→JA", "src": "What if we signed for seven years instead of five? Could you keep the increase to 5%?", "ref": "5年ではなく7年契約にした場合はいかがでしょうか。値上げを5%に抑えていただけますか。", "note": "What if …? = 〜した場合はいかがでしょうか", "tag": ""},
+    {"dialogue": "F1", "speaker": "B", "dir": "JA→EN", "src": "7年契約でしたら、6%までは対応できます。また、屋根に太陽光パネルを設置する費用を当社で負担いたします。", "ref": "With a seven-year contract, we can go as low as 6%. We will also cover the cost of installing solar panels on the roof.", "note": "太陽光（たいようこう）パネル = solar panels；負担（ふたん）= cover the cost", "tag": ""},
+    {"dialogue": "F1", "speaker": "A", "dir": "EN→JA", "src": "That's an interesting offer. How much electricity would the panels generate?", "ref": "興味深いご提案ですね。パネルでどのくらいの電力を発電できますか。", "note": "generate = 発電（はつでん）する", "tag": ""},
+    {"dialogue": "F1", "speaker": "B", "dir": "JA→EN", "src": "年間で約90万キロワット時を見込んでおり、倉庫の電力使用量の約3割をまかなえる計算です。", "ref": "We expect about 900,000 kilowatt-hours a year, which would cover about 30% of the warehouse's electricity use.", "note": "90万 = 900,000；キロワット時（じ）= kilowatt-hours；まかなう = cover", "tag": ""},
+    {"dialogue": "F1", "speaker": "A", "dir": "EN→JA", "src": "That would help us meet our emissions targets. Let me take the 6% offer back to headquarters, and I'll reply by Friday.", "ref": "それは当社の排出削減目標の達成に役立ちます。6%のご提案を本社に持ち帰り、金曜日までにお返事いたします。", "note": "emissions targets = 排出削減目標（はいしゅつさくげんもくひょう）；take back = 持ち帰る", "tag": ""},
+
+    {"dialogue": "F2", "speaker": "A", "dir": "EN→JA", "src": "Let me start with the results of the summer campaign. The online video was viewed 23 million times, well above our target of 15 million.", "ref": "まず、夏のキャンペーンの結果からご報告します。オンライン動画の再生回数は2,300万回で、目標の1,500万回を大きく上回りました。", "note": "23 million = 2,300万；views = 再生（さいせい）回数", "tag": ""},
+    {"dialogue": "F2", "speaker": "B", "dir": "JA→EN", "src": "それは素晴らしいですね。ただ、肝心の売上はどうだったのでしょうか。", "ref": "That's excellent. But what about sales, which is what really matters?", "note": "肝心（かんじん）の = what really matters", "tag": ""},
+    {"dialogue": "F2", "speaker": "A", "dir": "EN→JA", "src": "Sales of the new drink rose 14% during the campaign, but they fell back after it ended.", "ref": "キャンペーン期間中、新しい飲料の売上は14%増えましたが、終了後は元の水準に戻ってしまいました。", "note": "fall back = 元（もと）の水準に戻る", "tag": ""},
+    {"dialogue": "F2", "speaker": "B", "dir": "JA→EN", "src": "やはりそうでしたか。若い世代には認知されたものの、購入の習慣にはつながらなかったということですね。", "ref": "I thought so. So it raised awareness among younger people, but didn't turn into a buying habit.", "note": "認知（にんち）= awareness；つながる = lead to", "tag": ""},
+    {"dialogue": "F2", "speaker": "A", "dir": "EN→JA", "src": "Exactly. For the winter campaign, we suggest shifting 30% of the budget from video ads to in-store promotions.", "ref": "その通りです。冬のキャンペーンでは、予算の3割を動画広告から店頭での販促に移すことをご提案します。", "note": "in-store promotions = 店頭（てんとう）での販促（はんそく）；30% = 3割", "tag": ""},
+    {"dialogue": "F2", "speaker": "B", "dir": "JA→EN", "src": "具体的には、どのような施策をお考えですか。", "ref": "Specifically, what kind of measures do you have in mind?", "note": "施策（しさく）= measures；具体的（ぐたいてき）には = specifically", "tag": ""},
+    {"dialogue": "F2", "speaker": "A", "dir": "EN→JA", "src": "Free samples in 2,000 convenience stores, and a points campaign with a major payment app.", "ref": "コンビニ2,000店舗での無料サンプルの配布と、大手決済アプリと組んだポイントキャンペーンです。", "note": "free samples = 無料サンプルの配布（はいふ）；payment app = 決済（けっさい）アプリ", "tag": ""},
+    {"dialogue": "F2", "speaker": "B", "dir": "JA→EN", "src": "面白いですね。ただ、冬の予算は夏より2割少ない8,000万円ですが、それで足りますか。", "ref": "Interesting. But the winter budget is 80 million yen, 20% less than the summer one. Will that be enough?", "note": "8,000万 = 80 million；2割少ない = 20% less", "tag": ""},
+    {"dialogue": "F2", "speaker": "A", "dir": "EN→JA", "src": "It will be tight, but if the payment app shares the cost of the points, we can make it work.", "ref": "厳しいですが、決済アプリ側がポイントの費用を一部負担してくれれば、実現可能です。", "note": "share the cost = 費用を一部負担する；make it work = 実現（じつげん）可能", "tag": ""},
+    {"dialogue": "F2", "speaker": "B", "dir": "JA→EN", "src": "分かりました。来週の役員会で承認を取りますので、それまでに詳しい企画書をお願いします。", "ref": "Understood. I'll get approval at next week's executive meeting, so please send a detailed proposal before then.", "note": "役員会（やくいんかい）= executive meeting；企画書（きかくしょ）= proposal", "tag": ""}
+  ]
+}

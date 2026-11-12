@@ -1,0 +1,28 @@
+{
+  "part": "Part 2 短文形式",
+  "set": "模試G（本番リハーサル）",
+  "title": "模試G Part 2 短文 / Mock G Part 2",
+  "items": [
+    {"dir": "EN→JA", "src": "Japan's economy grew at an annualized rate of 2.1% in the July-September quarter.", "ref": "7〜9月期の日本の経済成長率は、年率換算で2.1%となりました。", "note": "annualized rate = 年率換算（ねんりつかんさん）", "tag": ""},
+    {"dir": "EN→JA", "src": "The company's shares jumped 15% after it raised its full-year forecast.", "ref": "同社の株価は、通期の業績予想を上方修正したことを受けて、15%急騰しました。", "note": "raise a forecast = 上方修正（じょうほうしゅうせい）；jump = 急騰（きゅうとう）", "tag": ""},
+    {"dir": "EN→JA", "src": "About 70% of companies plan to raise wages by 5% or more next spring.", "ref": "企業の約7割が、来春5%以上の賃上げを計画しています。", "note": "70% = 7割；next spring = 来春（らいしゅん）", "tag": ""},
+    {"dir": "EN→JA", "src": "The project will cost an estimated 640 billion yen and is scheduled to be completed in 2031.", "ref": "事業費は約6,400億円と見込まれ、2031年に完成する予定です。", "note": "640 billion = 6,400億", "tag": ""},
+    {"dir": "EN→JA", "src": "Global investment in clean energy is expected to exceed 2 trillion dollars this year.", "ref": "今年の世界のクリーンエネルギーへの投資額は、2兆ドルを超える見通しです。", "note": "2 trillion = 2兆", "tag": ""},
+    {"dir": "EN→JA", "src": "We regret to inform you that the product will be discontinued at the end of March.", "ref": "誠に残念ながら、本製品は3月末をもって販売を終了いたします。", "note": "discontinue = 販売終了；〜をもって = as of", "tag": ""},
+    {"dir": "EN→JA", "src": "The number of foreign workers in Japan reached a record 2.3 million last year.", "ref": "昨年、日本で働く外国人労働者の数は、過去最多の230万人に達しました。", "note": "2.3 million = 230万；過去最多（かこさいた）= record high", "tag": ""},
+    {"dir": "EN→JA", "src": "Our company was founded 80 years ago as a small textile maker in Osaka.", "ref": "当社は80年前、大阪の小さな繊維メーカーとして創業しました。", "note": "found = 創業（そうぎょう）する；textile = 繊維（せんい）", "tag": "連続 1/3"},
+    {"dir": "EN→JA", "src": "Today, more than half of our 260 billion yen in sales comes from carbon fiber for aircraft.", "ref": "現在では、2,600億円の売上高の半分以上を、航空機向けの炭素繊維が占めています。", "note": "260 billion = 2,600億；carbon fiber = 炭素繊維（たんそせんい）", "tag": "連続 2/3"},
+    {"dir": "EN→JA", "src": "We will build on this strength and aim to supply parts for hydrogen-powered planes by 2035.", "ref": "この強みを生かし、2035年までに水素航空機向けの部品を供給することを目指します。", "note": "build on = 〜を生かす；hydrogen = 水素（すいそ）", "tag": "連続 3/3"},
+
+    {"dir": "JA→EN", "src": "今年度の税収は、5年連続で過去最高となる約78兆円に達する見込みです。", "ref": "Tax revenue this fiscal year is expected to reach about 78 trillion yen, a record for the fifth straight year.", "note": "税収（ぜいしゅう）= tax revenue；78兆 = 78 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "同社は、国内の工場2か所を閉鎖し、生産をベトナムに移管すると発表しました。", "ref": "The company announced it would close two factories in Japan and transfer production to Vietnam.", "note": "閉鎖（へいさ）= close；移管（いかん）= transfer", "tag": ""},
+    {"dir": "JA→EN", "src": "日銀は、国債の買い入れ額を段階的に減らす方針を示しました。", "ref": "The Bank of Japan indicated it would gradually reduce its purchases of government bonds.", "note": "国債（こくさい）= government bonds；段階的（だんかいてき）に = gradually", "tag": ""},
+    {"dir": "JA→EN", "src": "インバウンド消費は、今年初めて8兆円を超える見通しです。", "ref": "Spending by inbound tourists is expected to exceed 8 trillion yen for the first time this year.", "note": "インバウンド消費（しょうひ）= inbound tourist spending", "tag": ""},
+    {"dir": "JA→EN", "src": "恐れ入りますが、ご請求書の金額に誤りがあるようですので、ご確認いただけますか。", "ref": "Excuse me, but there seems to be an error in the amount on the invoice. Could you check it?", "note": "請求書（せいきゅうしょ）= invoice；誤り（あやまり）= error", "tag": ""},
+    {"dir": "JA→EN", "src": "当社の女性管理職の比率は、昨年度の14%から18%に上昇しました。", "ref": "The share of women in management at our company rose from 14% last fiscal year to 18%.", "note": "女性管理職（じょせいかんりしょく）= women in management；比率（ひりつ）= share", "tag": ""},
+    {"dir": "JA→EN", "src": "大手航空2社は、燃料費の高騰を受けて、国際線の運賃を平均で7%引き上げます。", "ref": "Two major airlines will raise international fares by an average of 7% due to soaring fuel costs.", "note": "運賃（うんちん）= fares；燃料費（ねんりょうひ）= fuel costs；高騰（こうとう）= soar", "tag": ""},
+    {"dir": "JA→EN", "src": "当社は、店舗での接客に人型ロボットを試験的に導入しました。", "ref": "We have introduced humanoid robots on a trial basis to serve customers in our stores.", "note": "人型（ひとがた）ロボット = humanoid robot；接客（せっきゃく）= serve customers", "tag": "連続 1/3"},
+    {"dir": "JA→EN", "src": "3か月間の試験で、来店客の満足度は導入前と比べて9ポイント上昇しました。", "ref": "In a three-month trial, customer satisfaction rose 9 points compared with before the robots were introduced.", "note": "満足度（まんぞくど）= satisfaction；ポイント = points", "tag": "連続 2/3"},
+    {"dir": "JA→EN", "src": "この結果を受け、来年度中に全国120店舗に導入を拡大する計画です。", "ref": "Based on these results, we plan to expand the rollout to 120 stores nationwide next fiscal year.", "note": "拡大（かくだい）= expand；全国（ぜんこく）= nationwide", "tag": "連続 3/3"}
+  ]
+}

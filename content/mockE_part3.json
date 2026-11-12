@@ -1,0 +1,43 @@
+{
+  "part": "Part 3 スピーチ形式",
+  "set": "模試E",
+  "title": "模試E Part 3 スピーチ / Mock E Part 3",
+  "speeches": {
+    "E1": {
+      "title": "スピーチE1 キャッシュレス決済の未来 · The future of cashless payments",
+      "speaker": {"name": "議長 · フィンテック協会 / chair, fintech association", "lang": "en", "voice": "am_michael"},
+      "ref_voice": "jf_alpha"
+    },
+    "E2": {
+      "title": "スピーチE2 社長の年頭挨拶 · President's New Year address",
+      "speaker": {"name": "社長 · 機械メーカー / president, machinery maker", "lang": "ja", "voice": "jm_kumo"},
+      "ref_voice": "bm_george"
+    }
+  },
+  "items": [
+    {"speech": "E1", "segment": 1, "dir": "EN→JA",
+     "src": "Good afternoon, and welcome to this year's Asia Fintech Forum. When we held our first forum five years ago, about 30% of consumer payments in Japan were cashless. Today, that figure has risen to more than 45%, and the government's target of 80% no longer looks like a dream.",
+     "ref": "皆さま、こんにちは。今年のアジア・フィンテック・フォーラムへようこそ。5年前に第1回のフォーラムを開催した当時、日本の消費者の支払いのうち、キャッシュレス決済は約3割でした。現在、その比率は45%を超え、政府が掲げる8割という目標も、もはや夢ではなくなりました。",
+     "note": "cashless payments = キャッシュレス決済（けっさい）；30% = 3割；80% = 8割", "tag": "1/3"},
+    {"speech": "E1", "segment": 2, "dir": "EN→JA",
+     "src": "This growth has been driven mainly by QR code payments, which now handle more than 10 trillion yen a year. But growth brings new risks. Last year, losses from credit card fraud in Japan reached about 54 billion yen, the highest on record.",
+     "ref": "この成長を主に牽引してきたのはQRコード決済で、現在の取扱高は年間10兆円を超えています。しかし、成長には新たなリスクも伴います。昨年、国内のクレジットカードの不正利用による被害額は約540億円と、過去最悪となりました。",
+     "note": "54 billion = 540億；fraud = 不正利用（ふせいりよう）；drive = 牽引（けんいん）する；取扱高（とりあつかいだか）= transaction value", "tag": "2/3"},
+    {"speech": "E1", "segment": 3, "dir": "EN→JA",
+     "src": "Over the next two days, we will hear from regulators, banks and startups about how to keep payments both convenient and safe. I hope this forum will help us build a cashless society that everyone can trust. Thank you.",
+     "ref": "これから2日間、規制当局、銀行、スタートアップの皆さまから、決済の利便性と安全性をどう両立させるかについてお話を伺います。このフォーラムが、誰もが信頼できるキャッシュレス社会の実現につながることを願っております。ありがとうございました。",
+     "note": "regulators = 規制当局（きせいとうきょく）；convenient and safe = 利便性と安全性を両立（りょうりつ）させる", "tag": "3/3"},
+    {"speech": "E2", "segment": 1, "dir": "JA→EN",
+     "src": "新年あけましておめでとうございます。昨年度、当社グループの売上高は前年比6%増の8,700億円となり、2年連続で過去最高を更新しました。これもひとえに、社員の皆さん一人ひとりの努力のおかげです。",
+     "ref": "Happy New Year. Last fiscal year, our group's sales rose 6% to 870 billion yen, a record for the second year in a row. This is entirely thanks to the efforts of each and every one of you.",
+     "note": "8,700億 = 870 billion；ひとえに = entirely；一人ひとり = each and every one", "tag": "1/3"},
+    {"speech": "E2", "segment": 2, "dir": "JA→EN",
+     "src": "一方で、課題もあります。海外売上高の比率は55%に達しましたが、営業利益率は7.2%と、目標の10%には届いていません。原材料費の高騰に加え、価格の見直しが遅れたことが主な要因です。",
+     "ref": "On the other hand, we also face challenges. Overseas sales now account for 55% of the total, but our operating margin was 7.2%, short of our 10% target. The main reasons are soaring material costs and our delay in revising prices.",
+     "note": "営業利益率（えいぎょうりえきりつ）= operating margin；高騰（こうとう）= soar；届いていない = fall short of", "tag": "2/3"},
+    {"speech": "E2", "segment": 3, "dir": "JA→EN",
+     "src": "今年は、新しい中期経営計画の初年度です。3年間で総額1,500億円を成長分野に投資し、2028年度に営業利益率10%の達成を目指します。皆さん、共に挑戦し続けましょう。",
+     "ref": "This year is the first year of our new medium-term management plan. We will invest a total of 150 billion yen in growth areas over three years and aim to achieve an operating margin of 10% in fiscal 2028. Let's keep taking on challenges together.",
+     "note": "中期経営計画（ちゅうきけいえいけいかく）= medium-term plan；1,500億 = 150 billion；挑戦（ちょうせん）= challenge", "tag": "3/3"}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "part": "Part 3 スピーチ形式",
+  "set": "模試F",
+  "title": "模試F Part 3 スピーチ / Mock F Part 3",
+  "speeches": {
+    "F1": {
+      "title": "スピーチF1 データセンターへの投資 · Investing in data centers",
+      "speaker": {"name": "CFO · 米国クラウド企業 / US cloud company", "lang": "en", "voice": "bm_lewis"},
+      "ref_voice": "jm_kumo"
+    },
+    "F2": {
+      "title": "スピーチF2 地方銀行頭取の挨拶 · A regional bank's support for local firms",
+      "speaker": {"name": "頭取 · 地方銀行 / president, regional bank", "lang": "ja", "voice": "jf_alpha"},
+      "ref_voice": "af_heart"
+    }
+  },
+  "items": [
+    {"speech": "F1", "segment": 1, "dir": "EN→JA",
+     "src": "Thank you for joining our investor day. Demand for AI computing is growing faster than anyone expected. Over the past year, the data processed on our platform has tripled, and our cloud revenue in Asia rose 42% to 6.8 billion dollars.",
+     "ref": "当社のインベスター・デーにご参加いただき、ありがとうございます。AI向けの計算需要は、誰も予想しなかったほどの速さで伸びています。この1年で、当社のプラットフォームで処理されたデータ量は3倍になり、アジアのクラウド売上高は42%増の68億ドルとなりました。",
+     "note": "6.8 billion = 68億；tripled = 3倍；investor day = インベスター・デー（投資家説明会）", "tag": "1/3"},
+    {"speech": "F1", "segment": 2, "dir": "EN→JA",
+     "src": "To meet this demand, we will invest 15 billion dollars in Japan over the next four years. This includes two new data centers near Osaka, which will together use about 500 megawatts of power. All of that power will come from renewable sources.",
+     "ref": "この需要に応えるため、当社は今後4年間で日本に150億ドルを投資します。これには大阪近郊の2つの新しいデータセンターが含まれ、合わせて約50万キロワットの電力を使用します。その電力はすべて再生可能エネルギーでまかないます。",
+     "note": "15 billion = 150億；500 megawatts = 50万キロワット（1MW = 1,000kW）；renewable sources = 再生可能エネルギー", "tag": "2/3"},
+    {"speech": "F1", "segment": 3, "dir": "EN→JA",
+     "src": "We expect these investments to support about 7,000 jobs in the region. We are confident they will deliver strong returns for our shareholders and help Japan become a leading hub for AI in Asia. Thank you.",
+     "ref": "これらの投資により、地域で約7,000人の雇用が支えられる見込みです。株主の皆さまに高いリターンをもたらすとともに、日本がアジアにおけるAIの主要な拠点となることに貢献できると確信しております。ありがとうございました。",
+     "note": "7,000 jobs = 7,000人の雇用；hub = 拠点（きょてん）；confident = 確信（かくしん）している", "tag": "3/3"},
+    {"speech": "F2", "segment": 1, "dir": "JA→EN",
+     "src": "本日は、地域の中小企業の皆さまに向けた新たな支援策についてお話しいたします。当行と取引のある約1万8,000社のうち、およそ4社に1社が後継者不足という課題を抱えています。",
+     "ref": "Today I'd like to talk about new support measures for local small and medium-sized businesses. Of our roughly 18,000 corporate clients, about one in four faces a shortage of successors.",
+     "note": "1万8,000 = 18,000；4社に1社 = one in four；後継者（こうけいしゃ）= successor；当行（とうこう）= our bank", "tag": "1/3"},
+    {"speech": "F2", "segment": 2, "dir": "JA→EN",
+     "src": "そこで当行は、事業承継を支援する専門チームを20人体制で新設しました。今後3年間で、M&Aの仲介や後継者の育成を通じて、500社の事業承継を実現することを目標としています。",
+     "ref": "So we have set up a new 20-person team dedicated to business succession. Over the next three years, we aim to help 500 companies pass on their businesses through M&A brokerage and successor training.",
+     "note": "事業承継（じぎょうしょうけい）= business succession；仲介（ちゅうかい）= brokerage；育成（いくせい）= training", "tag": "2/3"},
+    {"speech": "F2", "segment": 3, "dir": "JA→EN",
+     "src": "また、脱炭素に取り組む企業向けに、総額300億円の低金利融資枠を設けます。地域経済の未来を、皆さまと共に切り開いてまいります。ご清聴ありがとうございました。",
+     "ref": "We will also set aside a total of 30 billion yen in low-interest loans for companies working on decarbonization. Together with you, we will shape the future of the regional economy. Thank you for your attention.",
+     "note": "300億 = 30 billion；融資枠（ゆうしわく）= loan facility；脱炭素（だつたんそ）= decarbonization；切り開く（きりひらく）= shape", "tag": "3/3"}
+  ]
+}

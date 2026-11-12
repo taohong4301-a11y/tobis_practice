@@ -1,0 +1,28 @@
+{
+  "part": "Part 2 短文形式",
+  "set": "模試F",
+  "title": "模試F Part 2 短文 / Mock F Part 2",
+  "items": [
+    {"dir": "EN→JA", "src": "The company's quarterly revenue rose 11% to 3.4 billion dollars, beating analysts' forecasts.", "ref": "同社の四半期売上高は11%増の34億ドルとなり、アナリスト予想を上回りました。", "note": "3.4 billion = 34億；beat forecasts = 予想を上回る（うわまわる）", "tag": ""},
+    {"dir": "EN→JA", "src": "Housing starts fell for the fifth month in a row as construction costs continued to rise.", "ref": "建設費の上昇が続く中、住宅着工件数は5か月連続で減少しました。", "note": "housing starts = 住宅着工件数（じゅうたくちゃっこうけんすう）", "tag": ""},
+    {"dir": "EN→JA", "src": "The bank will offer zero-interest loans of up to 30 million yen to small firms hit by the earthquake.", "ref": "同行は、地震の被害を受けた中小企業に、最大3,000万円の無利子融資を行います。", "note": "zero-interest loans = 無利子融資（むりしゆうし）；30 million = 3,000万；同行（どうこう）= the bank", "tag": ""},
+    {"dir": "EN→JA", "src": "Global smartphone shipments grew 4% last year to about 1.2 billion units.", "ref": "昨年の世界のスマートフォン出荷台数は、4%増の約12億台でした。", "note": "1.2 billion = 12億；shipments = 出荷台数（しゅっかだいすう）", "tag": ""},
+    {"dir": "EN→JA", "src": "Our board has approved a share buyback of up to 100 billion yen.", "ref": "当社の取締役会は、上限1,000億円の自社株買いを承認しました。", "note": "100 billion = 1,000億；up to = 上限（じょうげん）", "tag": ""},
+    {"dir": "EN→JA", "src": "Employees will be able to work from anywhere in Japan for up to 90 days a year.", "ref": "社員は年間最大90日まで、国内のどこからでも勤務できるようになります。", "note": "work from anywhere = どこからでも勤務（きんむ）できる", "tag": ""},
+    {"dir": "EN→JA", "src": "I'd like to confirm the details of tomorrow's factory visit.", "ref": "明日の工場見学の詳細について、確認させていただきたいと思います。", "note": "factory visit = 工場見学（こうじょうけんがく）；confirm = 確認させていただく", "tag": ""},
+    {"dir": "EN→JA", "src": "Last spring, a cyberattack shut down the ordering system of one of our suppliers for ten days.", "ref": "昨年春、サイバー攻撃により、当社の取引先1社の受注システムが10日間停止しました。", "note": "cyberattack = サイバー攻撃（こうげき）；ordering system = 受注（じゅちゅう）システム", "tag": "連続 1/3"},
+    {"dir": "EN→JA", "src": "As a result, deliveries to our 140 stores were delayed and we lost about 2 billion yen in sales.", "ref": "その結果、当社の140店舗への配送が遅れ、約20億円の売上を失いました。", "note": "2 billion = 20億；deliveries = 配送（はいそう）", "tag": "連続 2/3"},
+    {"dir": "EN→JA", "src": "We now require all major suppliers to pass an annual security audit.", "ref": "現在は、主要な取引先すべてに、毎年のセキュリティ監査を受けることを義務付けています。", "note": "security audit = セキュリティ監査（かんさ）；require = 義務付ける（ぎむづける）", "tag": "連続 3/3"},
+
+    {"dir": "JA→EN", "src": "同社の上半期の営業利益は、前年同期比31%減の420億円でした。", "ref": "The company's operating profit for the first half fell 31% year on year to 42 billion yen.", "note": "上半期（かみはんき）= first half；420億 = 42 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "日経平均株価は、一時4%以上下落しました。", "ref": "The Nikkei Stock Average fell more than 4% at one point.", "note": "日経平均株価（にっけいへいきんかぶか）= Nikkei Stock Average；一時（いちじ）= at one point", "tag": ""},
+    {"dir": "JA→EN", "src": "今年の新卒採用の計画数は、前年より15%多い約1,600人です。", "ref": "We plan to hire about 1,600 new graduates this year, 15% more than last year.", "note": "新卒採用（しんそつさいよう）= hiring new graduates", "tag": ""},
+    {"dir": "JA→EN", "src": "電気料金は、来月から平均で月額約400円値上がりします。", "ref": "Electricity bills will rise by about 400 yen a month on average from next month.", "note": "電気料金（でんきりょうきん）= electricity bills；値上がり（ねあがり）= rise", "tag": ""},
+    {"dir": "JA→EN", "src": "大変恐れ入りますが、お見積もりの有効期限を今月末まで延ばしていただけないでしょうか。", "ref": "I'm very sorry to ask, but could you extend the validity of the quotation until the end of this month?", "note": "有効期限（ゆうこうきげん）= validity；今月末（こんげつまつ）= end of this month", "tag": ""},
+    {"dir": "JA→EN", "src": "世界の航空需要は、2040年までに現在の約2倍になると予測されています。", "ref": "Global air travel demand is forecast to roughly double from current levels by 2040.", "note": "航空需要（こうくうじゅよう）= air travel demand；予測（よそく）= forecast", "tag": ""},
+    {"dir": "JA→EN", "src": "同社は、不採算事業から撤退し、医療機器事業に経営資源を集中させる方針です。", "ref": "The company plans to exit unprofitable businesses and concentrate its resources on medical devices.", "note": "不採算（ふさいさん）= unprofitable；撤退（てったい）= exit；経営資源（けいえいしげん）= resources", "tag": ""},
+    {"dir": "JA→EN", "src": "当社は、来年4月から社員の副業を全面的に解禁します。", "ref": "From next April, we will fully allow employees to take on side jobs.", "note": "副業（ふくぎょう）= side job；解禁（かいきん）= allow", "tag": "連続 1/3"},
+    {"dir": "JA→EN", "src": "社内調査では、社員の約4割が副業に関心があると回答しました。", "ref": "In an internal survey, about 40% of employees said they were interested in side jobs.", "note": "4割 = 40%；回答（かいとう）する = answer", "tag": "連続 2/3"},
+    {"dir": "JA→EN", "src": "副業で得た知識や人脈を、本業にも生かしてほしいと考えています。", "ref": "We hope employees will apply the knowledge and connections they gain from side jobs to their main work.", "note": "人脈（じんみゃく）= connections；本業（ほんぎょう）= main job；生かす = apply", "tag": "連続 3/3"}
+  ]
+}

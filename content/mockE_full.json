@@ -1,0 +1,47 @@
+{
+  "episode": "mockE",
+  "part": "Part 1・2・3",
+  "set": "模試E",
+  "mode": "exam",
+  "title": "元気社畜の通訳ノート 模試E｜Part 1・2・3 本番形式 約60分 | TOBIS Mock E",
+  "series": "元気社畜の通訳ノート / Energized Salaryman's Interpreting Notes",
+  "summary": [
+    "本番と同じ流れで Part 1（会話2場面）→ Part 2（短文20問）→ Part 3（スピーチ2本）を通しで練習します。途中で止めずに録音し、終わってから解答例で確認してください。",
+    "A full mock exam in the real order: Part 1 (2 dialogues) → Part 2 (20 short items) → Part 3 (2 speeches). Record yourself without stopping, then check the answer sheet."
+  ],
+  "thumbnail": {
+    "badge": "模試E",
+    "badge_en": "Mock E",
+    "headline": "本番形式 約60分",
+    "lines": [
+      "Part 1 会話",
+      "Part 2 20問",
+      "Part 3 スピーチ"
+    ]
+  },
+  "sources": [
+    {
+      "file": "mockE_part1.json",
+      "label": "Part 1 ",
+      "chapters": {
+        "1": "Part 1 会話形式 · Dialogues"
+      }
+    },
+    {
+      "file": "mockE_part2.json",
+      "label": "Part 2 ",
+      "chapters": {
+        "1": "Part 2 英→日 · Short passages EN→JA",
+        "11": "Part 2 日→英 · Short passages JA→EN"
+      }
+    },
+    {
+      "file": "mockE_part3.json",
+      "label": "Part 3 ",
+      "chapters": {
+        "1": "Part 3 スピーチ形式 · Speeches"
+      }
+    }
+  ],
+  "use_on": "11/30（第4週 月）"
+}

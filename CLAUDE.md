@@ -46,7 +46,12 @@ tobis-practice/
 │   ├── part1_B.json          # Vol.2：Part 1 B 套 4 段对话 40 轮（带 dialogue/speaker）
 │   ├── numbers_02.json       # Vol.2：数字热身 20 题
 │   ├── phrases_01.json       # Vol.2：会议定型表現 20 句
-│   └── ep02_full.json        # Vol.2 第2週 完全版合集（待审，对话模式实现后才能生成）
+│   ├── ep02_full.json        # Vol.2 第2週 完全版合集（已上传）
+│   ├── ex01_full.json        # 【お試し】会話1 示例（已上传）
+│   ├── part2_C.json / part1_D.json / templates_01.json / numbers_03.json / part3_intro.json  # Vol.3 素材
+│   ├── ep03_full.json        # Vol.3 第3週 合集（待审，11/22 生成）
+│   ├── mock{E,F,G}_part{1,2,3}.json  # 模考 E/F/G：Part 1 对话 2 段 · Part 2 20 题 · Part 3 演讲 2 段
+│   └── mock{E,F,G}_full.json # 模考合集（"mode": "exam" = 不出答案卡，模考模式待实现）
 ├── models/                   # 模型文件（gitignore）
 └── output/                   # 生成的视频（gitignore）
 ```
@@ -154,7 +159,8 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 ## 已知问题与经验
 
 - 日语 TTS 用 misaki 的 `JAG2P(version="pyopenjtalk")` → Kokoro。不用默认的 cutlet 模式（要 fugashi + 约 770MB 的 unidic 词典）；`pyopenjtalk-plus` 在 Windows/macOS 有预编译包（原版 pyopenjtalk 在 Windows 要 cmake 编译，会装失败）。
-- `norm_ja()` 已处理：千分位逗号、小数点（8.5 → 8点5）、% → パーセント、〜 → から；读错的词写进 `READING_FIXES`（只改语音，画面不变）。已收录：自社株買い、設備投資、FinOps、7〜9月期。
+- `norm_ja()` 已处理：千分位逗号、小数点后逐位读（0.25 → れいてんにご，14.2 → じゅうよんてんに）、% → パーセント、〜 → から；读错的词写进 `READING_FIXES`（只改语音，画面不变）。已收录：自社株買い、設備投資、FinOps、7〜9月期、間を取って、50対50。单独的「月末」用正则改成 げつまつ（3月末・今月末・来月末 不能改，pyopenjtalk 本来读对——2026-11-13 发现过这个坑）。
+- 写题时避开的写法：「銀行3行」（读成 さんぎょう，写「3銀行」）、「取引先約…」（被切成 先約，写「取引のある約…」）、「年10%」（读成 とし，写「年率10%」）。
 - 抽查读音最快的方法：对所有日语句子跑 `pyopenjtalk.g2p(norm_ja(text), kana=True)`，看片假名，不用一题题听。
 - Windows 上 winget 装的 ffmpeg 要开新终端才在 PATH 里。
 - 日语声音偶尔会读错多音汉字，上传前必须抽查。
@@ -166,8 +172,8 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 1. ~~生成第 1 期完整视频~~：已完成，2026-11-12 上传 https://youtu.be/Defi33Zgb_0 （私享，待 Ellen 改公开；第一次上传因频道未电话验证失败，已于同日重传）。
 2. **按 docs/TOBIS_冲刺总计划.md 第 6 节的制作时间表做。** 目标 3 級：Part 1・2 占约 85% 时间，Part 3 只做入门。
 3. ~~Vol.2（第 2 周）~~：已完成，2026-11-12 上传 https://youtu.be/-LjZuKdLQgI （私享，待改公开）。另有【お試し】示例 https://youtu.be/xfryjUsr4ZI 。系列名：元気社畜の通訳ノート（推荐 handle @GenkiShachikuNote）。
-4. Vol.3（第 3 周）：11/16–19 写 Part 2 C 套 40 + Part 1 D 套 4 段 + 出力テンプレート 30 + 句中数字 20 + Part 3 入门 2 段（需要演讲模式），11/20 交审，11/22 生成。
-5. 第 4 周：11/23–26 写模考 E、F + 模考模式（无答案卡）+ 答案表；冲刺周：模考 G + 根据 Ellen 错误日志编错题合集。
+4. Vol.3（第 3 周）：**题目已写好**（2026-11-13，全文见 docs/TOBIS_W3_每日计划.md 附录 A–E），等审核；11/22 前实现演讲模式（speech/segment，按演讲人固定声音、分截播放），再生成。
+5. 第 4 周 + 冲刺周：模考 E、F、G **题目已写好**，答案在 docs/答案/（模考前不要给 Ellen 看答案）；要实现模考模式（"mode": "exam"：不出答案卡，只有 听→提示音→倒计时）；冲刺周的错题合集等 Ellen 12/4 的错误日志。
 6. 生成 SRT 字幕文件（只在答案阶段显示）；自动生成封面图（1280×720，期数 + 主题）。
 7. 可选：接入商用 TTS（Azure / Google，用 Ellen 自己的 API key）作为第二种语音引擎，提高日语自然度。
 

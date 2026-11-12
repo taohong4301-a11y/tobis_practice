@@ -1,0 +1,43 @@
+{
+  "part": "Part 3 スピーチ形式",
+  "set": "模試G（本番リハーサル）",
+  "title": "模試G Part 3 スピーチ / Mock G Part 3",
+  "speeches": {
+    "G1": {
+      "title": "スピーチG1 日英ビジネスセミナーでの挨拶 · Remarks at a UK-Japan business seminar",
+      "speaker": {"name": "会長 · 日英ビジネス協議会 / chair, UK-Japan business council", "lang": "en", "voice": "bm_george"},
+      "ref_voice": "jm_kumo"
+    },
+    "G2": {
+      "title": "スピーチG2 株主総会での社長挨拶 · President's remarks at the AGM",
+      "speaker": {"name": "社長 · 化学メーカー / president, chemical company", "lang": "ja", "voice": "jm_kumo"},
+      "ref_voice": "af_heart"
+    }
+  },
+  "items": [
+    {"speech": "G1", "segment": 1, "dir": "EN→JA",
+     "src": "Good evening, ladies and gentlemen. It's a great pleasure to welcome you to this seminar. Trade between our two countries reached a record 38 billion pounds last year, and Japanese companies now employ more than 150,000 people across the UK.",
+     "ref": "皆さま、こんばんは。本日はこのセミナーにお越しいただき、大変うれしく思います。昨年、両国間の貿易額は過去最高の380億ポンドに達し、日本企業は現在、英国全土で15万人以上を雇用しています。",
+     "note": "38 billion = 380億；150,000 = 15万；employ = 雇用（こよう）する", "tag": "1/3"},
+    {"speech": "G1", "segment": 2, "dir": "EN→JA",
+     "src": "Our partnership is no longer just about cars and banking. Some of the fastest growth is in offshore wind, life sciences and video games. In offshore wind alone, Japanese investment in UK projects has passed 6 billion pounds.",
+     "ref": "両国のパートナーシップは、もはや自動車や銀行だけのものではありません。特に成長が著しいのは、洋上風力、ライフサイエンス、そしてゲームの分野です。洋上風力だけを見ても、英国の事業への日本からの投資額は60億ポンドを超えています。",
+     "note": "offshore wind = 洋上風力（ようじょうふうりょく）；6 billion = 60億；no longer = もはや〜ではない", "tag": "2/3"},
+    {"speech": "G1", "segment": 3, "dir": "EN→JA",
+     "src": "Tonight, I encourage you to meet new partners and share ideas. I am confident that the next decade of UK-Japan business will be even more successful than the last. Thank you, and enjoy the evening.",
+     "ref": "今夜はぜひ、新しいパートナーと出会い、アイデアを共有していただきたいと思います。日英のビジネスにとって、これからの10年は、これまでの10年以上に実り多いものになると確信しております。ありがとうございました。どうぞ今夜をお楽しみください。",
+     "note": "next decade = これからの10年；encourage = ぜひ〜していただきたい；実り多い（みのりおおい）= successful", "tag": "3/3"},
+    {"speech": "G2", "segment": 1, "dir": "JA→EN",
+     "src": "株主の皆さまには、日頃より格別のご支援を賜り、厚く御礼申し上げます。当期の売上高は前期比4%増の1兆3,200億円、純利益は11%増の980億円となりました。",
+     "ref": "I would like to express my sincere gratitude to our shareholders for your continued support. This fiscal year, sales rose 4% from the previous year to 1.32 trillion yen, and net profit rose 11% to 98 billion yen.",
+     "note": "1兆3,200億 = 1.32 trillion；980億 = 98 billion；格別（かくべつ）のご支援を賜り（たまわり）= your continued support；当期（とうき）= this fiscal year", "tag": "1/3"},
+    {"speech": "G2", "segment": 2, "dir": "JA→EN",
+     "src": "配当につきましては、1株あたり年間120円と、前期から20円の増配とさせていただきました。また、総額500億円を上限とする自社株買いを実施いたします。",
+     "ref": "As for dividends, we have raised the annual dividend by 20 yen from the previous year to 120 yen per share. We will also buy back up to 50 billion yen of our own shares.",
+     "note": "増配（ぞうはい）= dividend increase；500億 = 50 billion；上限（じょうげん）= up to", "tag": "2/3"},
+    {"speech": "G2", "segment": 3, "dir": "JA→EN",
+     "src": "今後は、半導体材料と医療分野を成長の柱とし、2030年までに売上高2兆円を目指してまいります。引き続きご支援を賜りますよう、よろしくお願い申し上げます。",
+     "ref": "Going forward, we will make semiconductor materials and healthcare the pillars of our growth and aim for sales of 2 trillion yen by 2030. We humbly ask for your continued support.",
+     "note": "柱（はしら）= pillar；2兆 = 2 trillion；引き続き（ひきつづき）= continued", "tag": "3/3"}
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "part": "Part 1 会話形式",
+  "set": "模試E",
+  "title": "模試E Part 1 会話 / Mock E Part 1",
+  "dialogues": {
+    "E1": {
+      "scene": "会話E1 オフィス移転の打ち合わせ · Office relocation",
+      "speakers": {
+        "A": {"name": "Laura Bennett · 外資系企業 総務責任者 / head of facilities", "lang": "en", "voice": "af_bella"},
+        "B": {"name": "森 · 不動産会社 法人営業 / corporate real estate agent", "lang": "ja", "voice": "jm_kumo"}
+      }
+    },
+    "E2": {
+      "scene": "会話E2 共同研究の打ち合わせ · Joint R&D meeting",
+      "speakers": {
+        "A": {"name": "Michael Grant · 米国バイオ企業 研究開発責任者 / head of R&D", "lang": "en", "voice": "am_eric"},
+        "B": {"name": "佐々木 · 製薬会社 研究所長 / lab director", "lang": "ja", "voice": "jf_alpha"}
+      }
+    }
+  },
+  "items": [
+    {"dialogue": "E1", "speaker": "A", "dir": "EN→JA", "src": "We're planning to move our Tokyo office next year. We currently have about 250 employees, and we expect that to grow to 400 within three years.", "ref": "来年、東京オフィスの移転を計画しています。現在の社員数は約250人ですが、3年以内に400人に増える見込みです。", "note": "move an office = オフィスを移転（いてん）する；within three years = 3年以内に", "tag": ""},
+    {"dialogue": "E1", "speaker": "B", "dir": "JA→EN", "src": "承知しました。ハイブリッド勤務を前提にすると、400人規模でも1,500平方メートル程度で足りるかと思います。", "ref": "I see. Assuming hybrid working, about 1,500 square meters should be enough even for 400 people.", "note": "平方メートル（へいほうメートル）= square meters；〜を前提にすると = assuming", "tag": ""},
+    {"dialogue": "E1", "speaker": "A", "dir": "EN→JA", "src": "That sounds reasonable. Our budget for rent is around 12 million yen a month. Is that realistic in central Tokyo?", "ref": "妥当な広さですね。賃料の予算は月額約1,200万円です。都心でこの予算は現実的でしょうか。", "note": "12 million = 1,200万；rent = 賃料（ちんりょう）；realistic = 現実的（げんじつてき）", "tag": ""},
+    {"dialogue": "E1", "speaker": "B", "dir": "JA→EN", "src": "丸の内や大手町では難しいですが、品川や渋谷の新しいビルであれば、十分に可能です。", "ref": "It would be difficult in Marunouchi or Otemachi, but it's quite possible in a new building in Shinagawa or Shibuya.", "note": "十分に（じゅうぶんに）可能 = quite possible", "tag": ""},
+    {"dialogue": "E1", "speaker": "A", "dir": "EN→JA", "src": "Shibuya would be attractive for hiring young engineers. How long would the fit-out take after signing the lease?", "ref": "渋谷なら若手エンジニアの採用に有利です。賃貸借契約を結んでから、内装工事にはどのくらいかかりますか。", "note": "fit-out = 内装工事（ないそうこうじ）；lease = 賃貸借契約（ちんたいしゃくけいやく）", "tag": ""},
+    {"dialogue": "E1", "speaker": "B", "dir": "JA→EN", "src": "通常は4か月から5か月です。ただし、来年は工事業者の人手不足で、半年ほどかかる可能性もございます。", "ref": "Usually four to five months. However, next year it may take about six months because contractors are short of workers.", "note": "工事業者（こうじぎょうしゃ）= contractors；人手不足（ひとでぶそく）= labor shortage", "tag": ""},
+    {"dialogue": "E1", "speaker": "A", "dir": "EN→JA", "src": "Then we should sign by the end of March at the latest. Could you shortlist three buildings for us by next week?", "ref": "それなら、遅くとも3月末までには契約すべきですね。来週までに候補のビルを3つに絞っていただけますか。", "note": "at the latest = 遅く（おそく）とも；shortlist = 候補を絞る（しぼる）", "tag": ""},
+    {"dialogue": "E1", "speaker": "B", "dir": "JA→EN", "src": "かしこまりました。各物件の賃料、共益費、入居可能時期を一覧にしてお送りします。", "ref": "Certainly. I'll send you a list showing the rent, common area charges and move-in dates for each property.", "note": "共益費（きょうえきひ）= common area charges；入居（にゅうきょ）= move in；物件（ぶっけん）= property", "tag": ""},
+    {"dialogue": "E1", "speaker": "A", "dir": "EN→JA", "src": "Thank you. Also, please check whether the buildings have backup power, since our servers must run 24 hours a day.", "ref": "ありがとうございます。また、当社のサーバーは24時間稼働させる必要があるため、非常用電源があるかどうかも確認してください。", "note": "backup power = 非常用電源（ひじょうようでんげん）；run = 稼働（かどう）", "tag": ""},
+    {"dialogue": "E1", "speaker": "B", "dir": "JA→EN", "src": "承知いたしました。72時間対応の非常用発電機を備えたビルを中心にご提案いたします。", "ref": "Understood. We'll focus our proposals on buildings with emergency generators that can run for 72 hours.", "note": "非常用発電機（ひじょうようはつでんき）= emergency generator；〜を中心に = focus on", "tag": ""},
+
+    {"dialogue": "E2", "speaker": "B", "dir": "JA→EN", "src": "本日はお越しいただきありがとうございます。早速ですが、共同研究の進捗についてご報告いたします。", "ref": "Thank you for coming today. Let me get right to it and report on the progress of our joint research.", "note": "早速ですが（さっそくですが）= let me get right to it；進捗（しんちょく）= progress", "tag": ""},
+    {"dialogue": "E2", "speaker": "A", "dir": "EN→JA", "src": "Thank you. We were pleased to see the early results. How many compounds have you tested so far?", "ref": "ありがとうございます。初期の結果を拝見し、大変うれしく思いました。これまでに何種類の化合物を試験しましたか。", "note": "compound = 化合物（かごうぶつ）；拝見（はいけん）する = see (humble)", "tag": ""},
+    {"dialogue": "E2", "speaker": "B", "dir": "JA→EN", "src": "これまでに約3,200種類を試験し、そのうち有望な候補が12種類見つかりました。", "ref": "We have tested about 3,200 compounds so far, and found 12 promising candidates.", "note": "有望（ゆうぼう）= promising；候補（こうほ）= candidate", "tag": ""},
+    {"dialogue": "E2", "speaker": "A", "dir": "EN→JA", "src": "That's an excellent hit rate. When do you think we could start animal studies?", "ref": "非常に高い成功率ですね。動物実験はいつごろ開始できるとお考えですか。", "note": "hit rate = 成功率；animal studies = 動物実験（どうぶつじっけん）", "tag": ""},
+    {"dialogue": "E2", "speaker": "B", "dir": "JA→EN", "src": "来年の4月を予定しております。ただし、そのためには追加で約8億円の研究費が必要です。", "ref": "We're planning for next April. However, that will require about 800 million yen in additional research funding.", "note": "8億 = 800 million；研究費（けんきゅうひ）= research funding", "tag": ""},
+    {"dialogue": "E2", "speaker": "A", "dir": "EN→JA", "src": "Under our agreement, costs are split equally. I'll need board approval for our share, which is 400 million yen.", "ref": "契約上、費用は折半することになっています。当社負担分の4億円については、取締役会の承認が必要です。", "note": "split equally = 折半（せっぱん）する；share = 負担分（ふたんぶん）；400 million = 4億", "tag": ""},
+    {"dialogue": "E2", "speaker": "B", "dir": "JA→EN", "src": "承知しました。取締役会でのご説明用に、詳しいデータをまとめた資料をご用意いたします。", "ref": "Understood. We'll prepare materials with detailed data for your presentation to the board.", "note": "資料（しりょう）= materials；ご用意（ようい）いたします = prepare", "tag": ""},
+    {"dialogue": "E2", "speaker": "A", "dir": "EN→JA", "src": "That would help. Another question: who will own the patents if a drug is developed?", "ref": "助かります。もう一つ質問ですが、医薬品が開発された場合、特許は誰が保有することになりますか。", "note": "patent = 特許（とっきょ）；own = 保有（ほゆう）する", "tag": ""},
+    {"dialogue": "E2", "speaker": "B", "dir": "JA→EN", "src": "現在の契約では両社の共有となっております。販売地域については、日本とアジアを当社、欧米を御社が担当する案でいかがでしょうか。", "ref": "Under the current agreement, they will be jointly owned. For sales territories, how about we take Japan and Asia, and you take Europe and the Americas?", "note": "共有（きょうゆう）= jointly owned；欧米（おうべい）= Europe and the Americas", "tag": ""},
+    {"dialogue": "E2", "speaker": "A", "dir": "EN→JA", "src": "That seems fair. Let's ask our legal teams to draft an amendment to the agreement by the end of the year.", "ref": "公平な案だと思います。年内に契約の修正案を作成するよう、両社の法務チームに依頼しましょう。", "note": "amendment = 修正案（しゅうせいあん）；legal team = 法務（ほうむ）チーム", "tag": ""}
+  ]
+}

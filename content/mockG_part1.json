@@ -1,0 +1,44 @@
+{
+  "part": "Part 1 会話形式",
+  "set": "模試G（本番リハーサル）",
+  "title": "模試G Part 1 会話 / Mock G Part 1",
+  "dialogues": {
+    "G1": {
+      "scene": "会話G1 技術ライセンス契約 · Technology licensing",
+      "speakers": {
+        "A": {"name": "Daniel Park · 電池メーカー 事業開発部長 / head of business development", "lang": "en", "voice": "am_onyx"},
+        "B": {"name": "中島 · 素材メーカー 知的財産部長 / head of intellectual property", "lang": "ja", "voice": "jm_kumo"}
+      }
+    },
+    "G2": {
+      "scene": "会話G2 社外取締役との面談 · Meeting with an outside director",
+      "speakers": {
+        "A": {"name": "Margaret Hughes · 社外取締役 / outside director", "lang": "en", "voice": "bf_alice"},
+        "B": {"name": "岡田 · 社長 / president", "lang": "ja", "voice": "jf_alpha"}
+      }
+    }
+  },
+  "items": [
+    {"dialogue": "G1", "speaker": "B", "dir": "JA→EN", "src": "本日は、当社の電池材料技術のライセンスについてご検討いただき、ありがとうございます。", "ref": "Thank you for considering a license for our battery materials technology today.", "note": "電池材料（でんちざいりょう）= battery materials；ライセンス = license", "tag": ""},
+    {"dialogue": "G1", "speaker": "A", "dir": "EN→JA", "src": "Thank you. Your technology could extend battery life by 30%. We'd like to use it in our plants in three countries.", "ref": "ありがとうございます。御社の技術によって、電池の寿命を3割延ばせる可能性があります。当社の3か国の工場で使用したいと考えています。", "note": "battery life = 電池の寿命（じゅみょう）；30% = 3割", "tag": ""},
+    {"dialogue": "G1", "speaker": "B", "dir": "JA→EN", "src": "ありがとうございます。ライセンス料は、一時金5億円と、売上高の3%のロイヤルティーを考えております。", "ref": "Thank you. For the license fee, we're thinking of an upfront payment of 500 million yen plus a 3% royalty on sales.", "note": "一時金（いちじきん）= upfront payment；5億 = 500 million；ロイヤルティー = royalty", "tag": ""},
+    {"dialogue": "G1", "speaker": "A", "dir": "EN→JA", "src": "Three percent is high for our industry. Most licenses we sign are around 1.5%.", "ref": "3%は当社の業界では高い水準です。当社が結ぶライセンス契約の多くは1.5%前後です。", "note": "around = 前後（ぜんご）", "tag": ""},
+    {"dialogue": "G1", "speaker": "B", "dir": "JA→EN", "src": "当社の技術は独自性が高く、代替技術がございません。2.5%が下限かと存じます。", "ref": "Our technology is highly original, and there is no alternative. We believe 2.5% is the minimum.", "note": "独自性（どくじせい）= originality；代替（だいたい）= alternative；下限（かげん）= minimum", "tag": ""},
+    {"dialogue": "G1", "speaker": "A", "dir": "EN→JA", "src": "What if we increased the upfront payment to 800 million yen? Could you accept a 2% royalty then?", "ref": "一時金を8億円に増やした場合はいかがでしょうか。そうすれば、2%のロイヤルティーでお受けいただけますか。", "note": "800 million = 8億", "tag": ""},
+    {"dialogue": "G1", "speaker": "B", "dir": "JA→EN", "src": "その条件であれば、社内で前向きに検討いたします。ただし、技術の使用は電気自動車向けに限らせていただきます。", "ref": "Under those terms, we will consider it positively internally. However, we would limit the use of the technology to electric vehicles.", "note": "限らせていただく = limit (humble)", "tag": ""},
+    {"dialogue": "G1", "speaker": "A", "dir": "EN→JA", "src": "We also make batteries for home energy storage. Could you include that market as well?", "ref": "当社は家庭用の蓄電池も製造しています。その市場も対象に含めていただけますか。", "note": "home energy storage = 家庭用蓄電池（ちくでんち）", "tag": ""},
+    {"dialogue": "G1", "speaker": "B", "dir": "JA→EN", "src": "家庭用については、別途ロイヤルティーを1%上乗せさせていただく形であれば、対応可能です。", "ref": "For home use, we can accommodate that if a separate 1% is added to the royalty.", "note": "別途（べっと）= separately；上乗せ（うわのせ）= add", "tag": ""},
+    {"dialogue": "G1", "speaker": "A", "dir": "EN→JA", "src": "That seems workable. Let's have our lawyers prepare a term sheet by the end of the month.", "ref": "それなら実現できそうです。月末までに、双方の弁護士に条件概要書を作成してもらいましょう。", "note": "term sheet = 条件概要書（じょうけんがいようしょ）；lawyer = 弁護士（べんごし）", "tag": ""},
+
+    {"dialogue": "G2", "speaker": "A", "dir": "EN→JA", "src": "Thank you for meeting me before the board meeting. I'd like to discuss the proposed acquisition in India.", "ref": "取締役会の前にお時間をいただき、ありがとうございます。インドでの買収案についてお話ししたいと思います。", "note": "proposed acquisition = 買収案（ばいしゅうあん）；outside director = 社外取締役", "tag": ""},
+    {"dialogue": "G2", "speaker": "B", "dir": "JA→EN", "src": "はい、ぜひご意見を伺いたいと思っておりました。買収額は約2,400億円を予定しています。", "ref": "Yes, I was hoping to hear your views. We plan to pay about 240 billion yen for the acquisition.", "note": "2,400億 = 240 billion；ご意見を伺う = hear your views", "tag": ""},
+    {"dialogue": "G2", "speaker": "A", "dir": "EN→JA", "src": "That's about 20 times the target's annual profit. Isn't that expensive?", "ref": "それは買収先の年間利益の約20倍に当たります。割高ではないでしょうか。", "note": "target = 買収先（ばいしゅうさき）；expensive = 割高（わりだか）", "tag": ""},
+    {"dialogue": "G2", "speaker": "B", "dir": "JA→EN", "src": "確かに割高に見えますが、インド市場は年率10%以上で成長しており、5年後には利益が3倍になると見込んでいます。", "ref": "It may look expensive, but the Indian market is growing more than 10% a year, and we expect profits to triple in five years.", "note": "3倍 = triple；見込む（みこむ）= expect", "tag": ""},
+    {"dialogue": "G2", "speaker": "A", "dir": "EN→JA", "src": "That assumption seems optimistic. What happens to our balance sheet if growth is only half that?", "ref": "その前提は楽観的に思えます。成長率がその半分にとどまった場合、当社の財務状況はどうなりますか。", "note": "optimistic = 楽観的（らっかんてき）；balance sheet = 財務状況（ざいむじょうきょう）", "tag": ""},
+    {"dialogue": "G2", "speaker": "B", "dir": "JA→EN", "src": "その場合でも、自己資本比率は40%を維持できる試算です。ただ、減損のリスクがあることは否定できません。", "ref": "Even in that case, our estimates show we could keep our equity ratio at 40%. But I can't deny there is a risk of impairment.", "note": "自己資本比率（じこしほんひりつ）= equity ratio；減損（げんそん）= impairment；否定（ひてい）できない = can't deny", "tag": ""},
+    {"dialogue": "G2", "speaker": "A", "dir": "EN→JA", "src": "I appreciate your honesty. I think the board should see a downside scenario before voting.", "ref": "率直にお話しいただき感謝します。採決の前に、取締役会は悲観シナリオを確認すべきだと思います。", "note": "downside scenario = 悲観（ひかん）シナリオ；voting = 採決（さいけつ）", "tag": ""},
+    {"dialogue": "G2", "speaker": "B", "dir": "JA→EN", "src": "おっしゃる通りです。来週の取締役会までに、3つのシナリオを用意いたします。", "ref": "You're absolutely right. We'll prepare three scenarios before next week's board meeting.", "note": "シナリオ = scenario；用意（ようい）= prepare", "tag": ""},
+    {"dialogue": "G2", "speaker": "A", "dir": "EN→JA", "src": "Also, please explain how we will keep the local management team. Many deals fail when key people leave.", "ref": "また、現地の経営陣をどのように引き留めるのかも説明してください。主要な人材が辞めて失敗する買収は少なくありません。", "note": "management team = 経営陣（けいえいじん）；keep = 引き留める（ひきとめる）", "tag": ""},
+    {"dialogue": "G2", "speaker": "B", "dir": "JA→EN", "src": "承知しました。経営陣の報酬の一部を、5年間の業績に連動させる仕組みを提案する予定です。", "ref": "Understood. We plan to propose linking part of the management team's pay to performance over five years.", "note": "報酬（ほうしゅう）= pay；業績に連動（れんどう）させる = link to performance", "tag": ""}
+  ]
+}
