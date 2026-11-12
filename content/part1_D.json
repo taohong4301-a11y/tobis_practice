@@ -1,0 +1,81 @@
+{
+  "week": "2026-W48",
+  "part": "Part 1 会話形式",
+  "set": "D",
+  "title": "TOBIS ビジネス通訳 Part 1 会話 · 4場面40ターン / Set D",
+  "dialogues": {
+    "D1": {
+      "scene": "会話D1 合弁交渉 · Joint venture talks",
+      "speakers": {
+        "A": {"name": "Sarah Lin · シンガポール食品会社 副社長 / VP", "lang": "en", "voice": "af_sarah"},
+        "B": {"name": "高橋 · 菓子メーカー 経営企画部長 / head of corporate planning", "lang": "ja", "voice": "jm_kumo"}
+      }
+    },
+    "D2": {
+      "scene": "会話D2 製品リコールの説明 · Product recall briefing",
+      "speakers": {
+        "A": {"name": "Thomas Weber · 欧州販売代理店 / European distributor", "lang": "en", "voice": "bm_lewis"},
+        "B": {"name": "小林 · 家電メーカー 品質保証部長 / head of quality assurance", "lang": "ja", "voice": "jf_alpha"}
+      }
+    },
+    "D3": {
+      "scene": "会話D3 買収後の統合 · Post-merger integration",
+      "speakers": {
+        "A": {"name": "Kevin O'Brien · 買収された米国子会社 COO", "lang": "en", "voice": "am_adam"},
+        "B": {"name": "渡辺 · 日本の親会社 執行役員 / executive officer", "lang": "ja", "voice": "jm_kumo"}
+      }
+    },
+    "D4": {
+      "scene": "会話D4 展示会での商談 · Trade show meeting",
+      "speakers": {
+        "A": {"name": "Priya Shah · 英国小売チェーン バイヤー / buyer", "lang": "en", "voice": "bf_isabella"},
+        "B": {"name": "松本 · 調理器具メーカー 海外営業 / overseas sales", "lang": "ja", "voice": "jf_alpha"}
+      }
+    }
+  },
+  "items": [
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "We see strong demand for Japanese snacks in Southeast Asia, and we'd like to set up a joint venture with you in Singapore.", "ref": "東南アジアでは日本のお菓子の需要が非常に強く、シンガポールで御社と合弁会社を設立したいと考えています。", "note": "joint venture = 合弁会社（ごうべんがいしゃ）；set up = 設立（せつりつ）する", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "大変ありがたいお話です。出資比率については、どのようにお考えでしょうか。", "ref": "That's a very welcome proposal. What do you have in mind for the equity split?", "note": "出資比率（しゅっしひりつ）= equity split；ありがたいお話 = welcome proposal", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "We were thinking 51% for us and 49% for you, since we'll handle distribution across the region.", "ref": "当社が51%、御社が49%を考えています。地域全体の流通は当社が担当しますので。", "note": "distribution = 流通（りゅうつう）；handle = 担当（たんとう）する", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "ブランドと製造技術は当社が提供しますので、50対50が妥当ではないかと考えております。", "ref": "Since we'll be providing the brand and the manufacturing technology, we think a 50-50 split would be fair.", "note": "50対50（ごじゅったいごじゅう）= 50-50；妥当（だとう）= fair", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "I see your point. What if we split it 50-50, but we appoint the CEO for the first three years?", "ref": "おっしゃることは分かります。では、出資比率は50対50とし、最初の3年間は当社がCEOを指名するというのはいかがでしょうか。", "note": "appoint = 指名（しめい）する；I see your point = おっしゃることは分かります", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "それであれば前向きに検討できます。初期投資の規模はどの程度を想定されていますか。", "ref": "In that case, we can consider it positively. How large an initial investment do you have in mind?", "note": "初期投資（しょきとうし）= initial investment；規模（きぼ）= size", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "Around 20 million Singapore dollars, mainly for a production line and a regional warehouse.", "ref": "約2,000万シンガポールドルで、主に生産ラインと地域の物流倉庫に充てる予定です。", "note": "20 million = 2,000万；warehouse = 倉庫（そうこ）", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "承知しました。現地事業は、何年目に黒字化する前提でしょうか。", "ref": "Understood. In which year do you expect the local business to turn a profit?", "note": "黒字化（くろじか）= turn a profit；前提（ぜんてい）= assumption", "tag": ""},
+    {"dialogue": "D1", "speaker": "A", "dir": "EN→JA", "src": "We expect to break even in the third year and reach sales of 50 million dollars by the fifth year.", "ref": "3年目に損益分岐点に達し、5年目までに売上高5,000万ドルを目指しています。", "note": "break even = 損益分岐点（そんえきぶんきてん）に達する；50 million = 5,000万", "tag": ""},
+    {"dialogue": "D1", "speaker": "B", "dir": "JA→EN", "src": "分かりました。社内で協議のうえ、来月末までに正式なお返事をいたします。", "ref": "Understood. We'll discuss this internally and give you a formal answer by the end of next month.", "note": "協議のうえ（きょうぎのうえ）= after discussing；正式（せいしき）= formal", "tag": ""},
+
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "本日はお忙しいところお時間をいただき、ありがとうございます。電気ケトルの不具合について、ご説明いたします。", "ref": "Thank you for taking the time today despite your busy schedule. I'd like to explain the defect in our electric kettles.", "note": "不具合（ふぐあい）= defect；お忙しいところ = despite your busy schedule", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "Thank you. How many units are affected, and how many have been sold in Europe?", "ref": "ありがとうございます。対象となる台数と、欧州での販売台数を教えてください。", "note": "affected = 対象となる；units = 台数（だいすう）", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "対象は全世界で約18万台、そのうち欧州で販売されたのは約4万2,000台です。", "ref": "About 180,000 units are affected worldwide, of which about 42,000 were sold in Europe.", "note": "18万 = 180,000；4万2,000 = 42,000", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "Have there been any injuries? Our customers will want to know whether the product is safe to use.", "ref": "けが人は出ていますか。お客様は、製品を安全に使えるのかどうかを知りたがるはずです。", "note": "injury = けが；safe to use = 安全に使える", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "これまでに軽いやけどが3件報告されていますが、重大な事故は確認されておりません。", "ref": "Three cases of minor burns have been reported so far, but no serious accidents have been confirmed.", "note": "やけど = burn；重大（じゅうだい）= serious", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "What is the cause? And will you replace the products or offer refunds?", "ref": "原因は何でしょうか。また、製品の交換と返金のどちらで対応されますか。", "note": "replace = 交換（こうかん）；refund = 返金（へんきん）", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "原因は電源部品の設計上の問題です。お客様には無償で新しい製品と交換いたします。", "ref": "The cause is a design problem with a power component. We'll replace the products with new ones free of charge.", "note": "無償（むしょう）= free of charge；設計上（せっけいじょう）= design", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "We'll need support with the logistics. Could you cover the shipping costs for collecting the returned units?", "ref": "物流面での支援が必要になります。返品の回収にかかる送料を、御社でご負担いただけますか。", "note": "cover the cost = 負担（ふたん）する；collect = 回収（かいしゅう）", "tag": ""},
+    {"dialogue": "D2", "speaker": "B", "dir": "JA→EN", "src": "はい、回収と配送の費用はすべて当社が負担いたします。総額で約5億円を見込んでおります。", "ref": "Yes, we will cover all collection and delivery costs. We expect the total to be about 500 million yen.", "note": "5億 = 500 million；見込む（みこむ）= expect", "tag": ""},
+    {"dialogue": "D2", "speaker": "A", "dir": "EN→JA", "src": "Thank you. Please send us the customer notice in English, German and French by Friday.", "ref": "ありがとうございます。お客様向けのお知らせを、英語、ドイツ語、フランス語で金曜日までにお送りください。", "note": "customer notice = お客様向けのお知らせ", "tag": ""},
+
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "It's been six months since the acquisition. Overall, I think the integration is going well.", "ref": "買収から半年がたちました。全体としては、統合は順調に進んでいると思います。", "note": "acquisition = 買収（ばいしゅう）；integration = 統合（とうごう）", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "そう伺って安心しました。ただ、システムの統合が予定より3か月遅れていると聞いております。", "ref": "I'm relieved to hear that. However, I understand the systems integration is three months behind schedule.", "note": "遅れる（おくれる）= be behind；聞いております = I understand", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "That's right. Our accounting data formats are very different, so the migration is taking longer.", "ref": "その通りです。会計データの形式が大きく異なるため、移行に時間がかかっています。", "note": "format = 形式（けいしき）；migration = 移行（いこう）", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "決算の締めに影響が出ないよう、来年3月までには必ず完了させてください。", "ref": "Please make sure it's completed by next March so that it doesn't affect the year-end closing.", "note": "決算の締め（けっさんのしめ）= closing the books；必ず = make sure", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "We'll do our best. On another issue, about 8% of our engineers have left since the deal was announced.", "ref": "全力を尽くします。別の問題ですが、買収の発表以降、当社のエンジニアの約8%が退職しました。", "note": "do our best = 全力を尽くす（ぜんりょくをつくす）；leave = 退職（たいしょく）する", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "それは深刻ですね。主な理由は何でしょうか。報酬の問題でしょうか。", "ref": "That's serious. What's the main reason? Is it about compensation?", "note": "報酬（ほうしゅう）= compensation", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "Partly, but many are worried that decisions now take too long because everything needs approval from Tokyo.", "ref": "それもありますが、何でも東京の承認が必要なため、意思決定に時間がかかりすぎると心配している社員が多いのです。", "note": "approval = 承認（しょうにん）；decision-making = 意思決定（いしけってい）", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "ご指摘はもっともです。1億円以下の案件については、現地で決裁できるよう権限を移すことを検討します。", "ref": "That's a fair point. We'll consider delegating authority so that projects under 100 million yen can be approved locally.", "note": "決裁（けっさい）= approval；権限を移す = delegate authority；1億 = 100 million", "tag": ""},
+    {"dialogue": "D3", "speaker": "A", "dir": "EN→JA", "src": "That would make a big difference. We'd also like to introduce a retention bonus for key engineers.", "ref": "それは大きな違いになります。また、主要なエンジニアを対象に、引き留めのための賞与を導入したいと考えています。", "note": "retention bonus = 引き留め（ひきとめ）のための賞与（しょうよ）", "tag": ""},
+    {"dialogue": "D3", "speaker": "B", "dir": "JA→EN", "src": "分かりました。対象人数と総額の案を、来週の取締役会までにまとめてください。", "ref": "Understood. Please put together a proposal on the number of people covered and the total amount before next week's board meeting.", "note": "取締役会（とりしまりやくかい）= board meeting；案 = proposal", "tag": ""},
+
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "ブースにお越しいただきありがとうございます。こちらが今年の新製品、軽量の鉄製フライパンです。", "ref": "Thank you for visiting our booth. This is our new product this year, a lightweight iron frying pan.", "note": "軽量（けいりょう）= lightweight；鉄製（てつせい）= iron", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "It's surprisingly light. How much does it weigh compared with a regular iron pan?", "ref": "意外に軽いですね。普通の鉄のフライパンと比べて、重さはどのくらいですか。", "note": "surprisingly = 意外に（いがいに）；weigh = 重さ", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "一般的な製品より約4割軽く、重さは800グラムです。IHにもガスにも対応しています。", "ref": "It's about 40% lighter than typical products and weighs 800 grams. It works on both induction and gas stoves.", "note": "4割 = 40%；IH = induction；対応（たいおう）= work with", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "Our customers care about price. What would the wholesale price be for an order of 5,000 units?", "ref": "当社のお客様は価格を重視します。5,000個を注文した場合、卸値はいくらになりますか。", "note": "wholesale price = 卸値（おろしね）；care about = 重視（じゅうし）する", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "5,000個でしたら、1個あたり18ポンドでご提供できます。1万個以上なら16ポンドです。", "ref": "For 5,000 units, we can offer them at 18 pounds each. For 10,000 or more, it's 16 pounds.", "note": "1個あたり = per unit；1万 = 10,000", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "That's competitive. How long is your lead time, and can you ship directly to our warehouse in Manchester?", "ref": "競争力のある価格ですね。納期はどのくらいで、マンチェスターの当社倉庫へ直接出荷していただけますか。", "note": "lead time = 納期（のうき）；ship = 出荷（しゅっか）する", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "ご注文から約10週間で納品できます。マンチェスターへの直送も可能です。", "ref": "We can deliver about ten weeks after you place the order. Direct shipping to Manchester is also possible.", "note": "納品（のうひん）= delivery；直送（ちょくそう）= direct shipping", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "We'd like to start with a trial order of 2,000 units for our spring promotion. Is that possible?", "ref": "春の販促に向けて、まずは2,000個の試験的な注文から始めたいのですが、可能でしょうか。", "note": "trial order = 試験的な注文；promotion = 販促（はんそく）", "tag": ""},
+    {"dialogue": "D4", "speaker": "B", "dir": "JA→EN", "src": "はい、可能です。ただし、2,000個の場合は1個あたり20ポンドとなりますが、よろしいでしょうか。", "ref": "Yes, that's possible. However, for 2,000 units the price would be 20 pounds each. Would that be acceptable?", "note": "よろしいでしょうか = would that be acceptable", "tag": ""},
+    {"dialogue": "D4", "speaker": "A", "dir": "EN→JA", "src": "That's fine. Please send me the quote and a sample, and I'll get back to you within two weeks.", "ref": "結構です。見積もりとサンプルを送っていただければ、2週間以内にお返事します。", "note": "quote = 見積もり（みつもり）；get back to you = お返事する", "tag": ""}
+  ]
+}

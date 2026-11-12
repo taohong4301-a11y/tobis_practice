@@ -1,0 +1,36 @@
+{
+  "week": "2026-W48",
+  "part": "Part 3 スピーチ形式",
+  "set": "入門",
+  "title": "TOBIS Part 3 スピーチ入門 2本 / Speech intro",
+  "speeches": {
+    "S1": {
+      "title": "スピーチ1 サプライチェーンの強靭化 · Building resilient supply chains",
+      "speaker": {"name": "CEO · 精密機器メーカー / precision equipment maker", "lang": "en", "voice": "bm_george"},
+      "ref_voice": "jm_kumo"
+    },
+    "S2": {
+      "title": "スピーチ2 県の観光戦略 · A prefecture's tourism strategy",
+      "speaker": {"name": "観光局長 · 県庁 / director of tourism, prefectural government", "lang": "ja", "voice": "jf_alpha"},
+      "ref_voice": "af_heart"
+    }
+  },
+  "items": [
+    {"speech": "S1", "segment": 1, "dir": "EN→JA",
+     "src": "Good morning, everyone. Three years ago, a single fire at one of our suppliers stopped our production lines for six weeks and cost us 40 million dollars in lost sales. That experience changed the way we think about our supply chain. Since then, we have increased the number of suppliers for our key components from 120 to 180.",
+     "ref": "皆さま、おはようございます。3年前、取引先1社の工場で起きた火災により、当社の生産ラインは6週間止まり、4,000万ドルの売上を失いました。この経験によって、サプライチェーンに対する考え方が大きく変わりました。それ以来、主要部品の調達先を120社から180社に増やしました。",
+     "note": "40 million = 4,000万；supplier = 取引先・調達先（ちょうたつさき）；key components = 主要部品", "tag": "1/2"},
+    {"speech": "S1", "segment": 2, "dir": "EN→JA",
+     "src": "We have also raised our inventory of critical parts from 30 days to 60 days. This costs us about 15 million dollars a year, but we see it as insurance. Our goal is simple: no single event should be able to stop our factories for more than one week. Thank you.",
+     "ref": "また、重要部品の在庫を30日分から60日分に引き上げました。これには年間約1,500万ドルのコストがかかりますが、私たちはこれを保険だと考えています。目標はシンプルです。どのような出来事が起きても、工場が1週間以上止まることがないようにすることです。ありがとうございました。",
+     "note": "15 million = 1,500万；inventory = 在庫（ざいこ）；insurance = 保険（ほけん）", "tag": "2/2"},
+    {"speech": "S2", "segment": 1, "dir": "JA→EN",
+     "src": "本日は、本県の観光戦略についてご説明いたします。昨年、本県を訪れた外国人観光客は約85万人で、2019年と比べて1.4倍に増えました。一方で、観光客の7割以上が県庁所在地に集中しており、その他の地域にはあまり足を運んでいただけていないのが現状です。",
+     "ref": "Today I'd like to explain our prefecture's tourism strategy. Last year, about 850,000 foreign tourists visited the prefecture, 1.4 times as many as in 2019. On the other hand, more than 70% of them are concentrated in the prefectural capital, and few visit other areas.",
+     "note": "85万 = 850,000；1.4倍 = 1.4 times；県庁所在地（けんちょうしょざいち）= prefectural capital；足を運ぶ = visit", "tag": "1/2"},
+    {"speech": "S2", "segment": 2, "dir": "JA→EN",
+     "src": "そこで県では、今後3年間で総額24億円を投じ、地方の観光地を結ぶバス路線の拡充や、多言語の案内表示の整備を進めます。2028年までに、外国人観光客の宿泊数を現在の2倍の150万泊にすることを目指します。ご清聴ありがとうございました。",
+     "ref": "So over the next three years, the prefecture will invest a total of 2.4 billion yen to expand bus routes linking regional tourist spots and to install multilingual signs. We aim to double the number of nights foreign tourists stay here to 1.5 million by 2028. Thank you for your attention.",
+     "note": "24億 = 2.4 billion；150万泊 = 1.5 million nights；ご清聴（せいちょう）ありがとうございました = Thank you for your attention", "tag": "2/2"}
+  ]
+}

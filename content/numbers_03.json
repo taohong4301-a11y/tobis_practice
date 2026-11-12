@@ -1,0 +1,28 @@
+{
+  "week": "2026-W48",
+  "part": "句中数字",
+  "set": "Vol.3 数字",
+  "title": "TOBIS 句中数字 20 / Numbers in context",
+  "items": [
+    {"dir": "EN→JA", "src": "sales of 1.24 trillion yen, up 7.3%", "ref": "売上高は7.3%増の1兆2,400億円", "note": "1.24 trillion = 1兆（ちょう）2,400億", "tag": ""},
+    {"dir": "EN→JA", "src": "a net loss of 36 billion yen", "ref": "360億円の純損失", "note": "36 billion = 360億；net loss = 純損失（じゅんそんしつ）", "tag": ""},
+    {"dir": "EN→JA", "src": "about 2.8 million visitors", "ref": "約280万人の来場者", "note": "2.8 million = 280万；visitors = 来場者（らいじょうしゃ）", "tag": ""},
+    {"dir": "EN→JA", "src": "an investment of 1.5 billion dollars", "ref": "15億ドルの投資", "note": "1.5 billion = 15億", "tag": ""},
+    {"dir": "EN→JA", "src": "down 0.4 percentage points to 2.6%", "ref": "0.4ポイント低下して2.6%", "note": "percentage points = ポイント", "tag": ""},
+    {"dir": "EN→JA", "src": "a 12% stake worth 95 billion yen", "ref": "950億円相当の12%の株式", "note": "stake = 株式・持ち分（もちぶん）；95 billion = 950億；相当（そうとう）= worth", "tag": ""},
+    {"dir": "EN→JA", "src": "320,000 jobs", "ref": "32万人分の雇用", "note": "320,000 = 32万；雇用（こよう）= jobs", "tag": ""},
+    {"dir": "EN→JA", "src": "the 150-yen line against the dollar", "ref": "1ドル150円の水準", "note": "the 150-yen line = 150円の水準（すいじゅん）", "tag": ""},
+    {"dir": "EN→JA", "src": "a 3.5-trillion-yen economic package", "ref": "3兆5,000億円の経済対策", "note": "economic package = 経済対策（けいざいたいさく）", "tag": ""},
+    {"dir": "EN→JA", "src": "two-thirds of respondents", "ref": "回答者の3分の2", "note": "two-thirds = 3分の2；respondents = 回答者（かいとうしゃ）", "tag": ""},
+    {"dir": "JA→EN", "src": "前年同期比14.2%増の6,350億円", "ref": "up 14.2% year on year to 635 billion yen", "note": "6,350億 = 635 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "約4,500万人の利用者", "ref": "about 45 million users", "note": "4,500万 = 45 million", "tag": ""},
+    {"dir": "JA→EN", "src": "総額2兆8,000億円の予算", "ref": "a budget totaling 2.8 trillion yen", "note": "2兆8,000億 = 2.8 trillion", "tag": ""},
+    {"dir": "JA→EN", "src": "1株あたり85円の配当", "ref": "a dividend of 85 yen per share", "note": "1株あたり（ひとかぶあたり）= per share；配当（はいとう）", "tag": ""},
+    {"dir": "JA→EN", "src": "3年ぶりの高水準", "ref": "the highest level in three years", "note": "Xぶり = first time in X", "tag": ""},
+    {"dir": "JA→EN", "src": "従業員の4人に1人", "ref": "one in four employees", "note": "4人に1人 = one in four", "tag": ""},
+    {"dir": "JA→EN", "src": "7,800億円の赤字", "ref": "a deficit of 780 billion yen", "note": "赤字（あかじ）= deficit, loss；7,800億 = 780 billion", "tag": ""},
+    {"dir": "JA→EN", "src": "約2割の値上げ", "ref": "a price increase of about 20%", "note": "2割 = 20%；値上げ（ねあげ）= price increase", "tag": ""},
+    {"dir": "JA→EN", "src": "時価総額50兆円", "ref": "a market capitalization of 50 trillion yen", "note": "時価総額（じかそうがく）= market cap", "tag": ""},
+    {"dir": "JA→EN", "src": "1日あたり120万バレル", "ref": "1.2 million barrels a day", "note": "120万 = 1.2 million", "tag": ""}
+  ]
+}

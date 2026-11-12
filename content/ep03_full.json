@@ -1,0 +1,38 @@
+{
+  "episode": 3,
+  "week": "2026-W48",
+  "part": "Part 1・Part 2",
+  "set": "Vol.3",
+  "title": "元気社畜の通訳ノート 第3週｜Part 2 40問＋会話4場面＋出力テンプレート30 | TOBIS Week 3",
+  "series": "元気社畜の通訳ノート / Energized Salaryman's Interpreting Notes",
+  "thumbnail": {"badge": "第3週", "badge_en": "Week 3", "headline": "出力テンプレート＋会話",
+                "lines": ["Part 2 40問", "会話 4場面", "テンプレート 30"]},
+  "sources": [
+    {"file": "templates_01.json", "label": "型 ",
+     "chapters": {"1": "出力テンプレート 1–15 · Output patterns（Day 1）",
+                  "16": "出力テンプレート 16–30 · Output patterns（Day 2）"}},
+    {"file": "numbers_03.json", "label": "数字 ", "countdown": 5,
+     "chapters": {"1": "句中数字 英→日 1–10 · Numbers in context EN→JA（Day 2）",
+                  "11": "句中数字 日→英 1–10 · Numbers in context JA→EN（Day 3）"}},
+    {"file": "part2_C.json", "label": "Cセット ",
+     "chapters": {"1": "Cセット 英→日 1–10 · Set C EN→JA（Day 1）",
+                  "11": "Cセット 英→日 11–20 · Set C EN→JA（Day 1）",
+                  "21": "Cセット 日→英 1–10 · Set C JA→EN（Day 3）",
+                  "31": "Cセット 日→英 11–20 · Set C JA→EN（Day 3）"}},
+    {"file": "part1_D.json", "label": "会話 ",
+     "chapters": {"1": "会話D1 合弁交渉 · Joint venture talks（Day 2）",
+                  "11": "会話D2 製品リコール · Product recall（Day 2）",
+                  "21": "会話D3 買収後の統合 · Post-merger integration（Day 4）",
+                  "31": "会話D4 展示会の商談 · Trade show meeting（Day 4）"}},
+    {"file": "part3_intro.json", "label": "スピーチ ",
+     "chapters": {"1": "スピーチ入門 S1・S2 · Speech intro（Day 5）"}}
+  ],
+  "day_guide": [
+    "Day 1：テンプレート 1–15 → Cセット 英→日 1–20 / Patterns 1–15 → Set C EN→JA",
+    "Day 2：句中数字 英→日 → テンプレート 16–30 → 会話D1・D2 / Numbers → Patterns 16–30 → Dialogues D1–D2",
+    "Day 3：句中数字 日→英 → Cセット 日→英 1–20 / Numbers → Set C JA→EN",
+    "Day 4：テンプレート 全30（時間計測）→ 会話D3・D4 / All 30 patterns, timed → Dialogues D3–D4",
+    "Day 5：スピーチ入門 S1・S2 → 今週の間違い / Speech intro → this week's mistakes",
+    "週末：半模試・週テスト / Weekend: half mock and weekly test"
+  ]
+}
