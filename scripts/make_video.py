@@ -164,18 +164,19 @@ READING_FIXES = {
 }
 
 
-def tts(text, lang, idx, voice=None):
-    """voice 不指定时按题号轮换；对话题按说话人固定声音。"""
+def tts(text, lang, idx, voice=None, speed=None):
+    """voice 不指定时按题号轮换；对话题按说话人固定声音。speed 不指定时用 TOBIS_SPEED。"""
     if PREVIEW:
         return silence(1.5)
     kokoro, g2p = engines()
+    speed = speed or SPEED
     if lang == "ja":
         r = g2p(norm_ja(text))
         ph = r[0] if isinstance(r, tuple) else r
-        s, _ = kokoro.create(ph, voice=voice or JA_VOICES[idx % len(JA_VOICES)], speed=SPEED, is_phonemes=True)
+        s, _ = kokoro.create(ph, voice=voice or JA_VOICES[idx % len(JA_VOICES)], speed=speed, is_phonemes=True)
     else:
         voice = voice or EN_VOICES[idx % len(EN_VOICES)]
-        s, _ = kokoro.create(text, voice=voice, speed=SPEED, lang="en-gb" if voice.startswith("b") else "en-us")
+        s, _ = kokoro.create(text, voice=voice, speed=speed, lang="en-gb" if voice.startswith("b") else "en-us")
     return s.astype(np.float32)
 
 
@@ -316,10 +317,17 @@ def build(spec, items, outname):
             add(seg(str(work / f"{key}c{s}.png"), silence(1.0), str(work / f"{key}c{s}")))
 
     summary = spec.get("summary", [])  # 可选：内容概要（日文、英文各一段），显示在开头卡和简介里
+    mode = spec.get("mode", "practice")  # practice（默认）/ shadow（跟读）/ exam（模考，待实现）
+    if mode == "shadow":
+        how = ("① ゆっくり聞く → ② 声に出してくり返す → ③ 音声に重ねて読む（シャドーイング）",
+               "Listen (slow) → repeat aloud → shadow along at normal speed.")
+    else:
+        how = ("合図音のあと、カウントダウン中に通訳し、答えを確認してください。",
+               "Listen → beep → interpret during the countdown → check the answer.")
     card(work / "intro.png", [(spec["title"], 44 if not summary else 38, WHITE, True, 24)]
          + [(s, 26, CYAN, False, 10) for s in summary] + ([("", 10, GREY, False, 10)] if summary else [])
-         + [("合図音のあと、カウントダウン中に通訳し、答えを確認してください。", 30 if not summary else 26, GREY, False, 10),
-            ("Listen → beep → interpret during the countdown → check the answer.", 26 if not summary else 22, GREY, False, 10),
+         + [(how[0], 30 if not summary else 26, GREY, False, 10),
+            (how[1], 26 if not summary else 22, GREY, False, 10),
             ("音声は AI 合成、問題はオリジナルの模擬問題です。 / AI-generated voice; original practice questions.", 22, GREY, False, 0)])
     add(seg(str(work / "intro.png"), silence(10 if summary else 5), str(work / "p00")))
 
@@ -369,6 +377,34 @@ def build(spec, items, outname):
         if PREVIEW and key in seen and "chapter" not in it:
             continue
         seen.add(key)
+
+        if mode == "shadow":  # 跟读：只用日语那一句 ① 慢速听 → ② 停顿跟读 → ③ 正常速度重叠跟读
+            ja, en = (it["src"], it["ref"]) if it["dir"] == "JA→EN" else (it["ref"], it["src"])
+            voice = None
+            sh_label = f"{it['_prefix']}{num}"
+            if scene:  # 对话里的日语句子用日语说话人的声音（原话或口译示范）
+                ja_sp = it["_me"] if it["dir"] == "JA→EN" else it["_other"]
+                voice = ja_sp["voice"]
+                sh_label = (f"{scene.split(' ')[0]} · {turns[dk]}/{turn_totals[dk]} · "
+                            + (who if it["dir"] == "JA→EN" else "通訳例 / interpretation"))
+            a_slow = tts(ja, "ja", i, voice=voice, speed=0.8)
+            a_norm = tts(ja, "ja", i, voice=voice)
+
+            def sh_blocks(step):
+                b = [(sh_label, 32, GOLD, True, 16), (step, 30, CYAN, True, 24),
+                     (ja, 40, WHITE, True, 20), (en, 24, GREY, False, 16)]
+                if it.get("note"):
+                    b.append(("ポイント · Notes：" + it["note"], 22, GOLD, False, 0))
+                return b
+
+            card(work / f"q{i}a.png", sh_blocks("① 聞く · Listen"))
+            add(seg(str(work / f"q{i}a.png"), np.concatenate([silence(0.8), a_slow, silence(0.6)]), str(work / f"q{i}a")))
+            card(work / f"q{i}b.png", sh_blocks("② くり返す · Repeat"))
+            add(seg(str(work / f"q{i}b.png"), silence(len(a_norm) / SR * 1.3 + 1.5), str(work / f"q{i}b")))
+            card(work / f"q{i}c.png", sh_blocks("③ 重ねて読む · Shadow"))
+            add(seg(str(work / f"q{i}c.png"), np.concatenate([silence(0.6), a_norm, silence(1.5)]), str(work / f"q{i}c")))
+            print(f"{i}/{len(items)} done", flush=True)
+            continue
 
         if it["dir"] == "SYMBOL":
             card(work / f"q{i}a.png", [(label, 40, GOLD, True, 40),
@@ -432,8 +468,11 @@ def build(spec, items, outname):
         + "".join(s + "\n" for s in summary) + ("\n" if summary else "") +
         f"TOBIS（ビジネス通訳検定）逐次通訳 {spec.get('part', 'Part 2 短文形式')}の練習用です。\n"
         f"Practice for the TOBIS business interpreting test (consecutive, {spec.get('part', 'Part 2')}).\n\n"
-        "合図音のあと、カウントダウン中に通訳し、参考訳と比べてください。録音して聞き直すのがおすすめです。\n"
-        "After the beep, interpret during the countdown, then compare with the reference. Record yourself and review.\n\n"
+        + ("各文を ① ゆっくり聞く → ② 声に出してくり返す → ③ 音声に重ねて読む、の3ステップで練習します。画面の日本語を見ながらで大丈夫です。\n"
+           "Each sentence: listen at slow speed → repeat aloud → shadow along at normal speed. It's fine to read the text on screen.\n\n"
+           if mode == "shadow" else
+           "合図音のあと、カウントダウン中に通訳し、参考訳と比べてください。録音して聞き直すのがおすすめです。\n"
+           "After the beep, interpret during the countdown, then compare with the reference. Record yourself and review.\n\n")
         + guide +
         "※ 音声は AI 合成（Kokoro TTS）です。問題はオリジナルの模擬問題で、CAIS の公式試験問題とは関係ありません。\n"
         "※ AI-generated voice (Kokoro TTS). Original practice questions, not affiliated with CAIS.\n\n"

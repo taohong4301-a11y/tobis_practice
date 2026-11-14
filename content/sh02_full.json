@@ -1,0 +1,29 @@
+{
+  "episode": "sh02",
+  "week": "2026-W47",
+  "part": "会議日本語シャドーイング",
+  "set": "第2週 シャドーイング",
+  "mode": "shadow",
+  "title": "元気社畜の通訳ノート 会議日本語シャドーイング 第2週 | Business Japanese Shadowing Week 2",
+  "series": "元気社畜の通訳ノート / Energized Salaryman's Interpreting Notes",
+  "summary": [
+    "第2週の商談・決算説明会・システム移行・人事の会話と、会議の定型表現から、日本語の文だけを集めました。ゆっくり聞く → くり返す → 重ねて読む、で会議の日本語を口になじませます。",
+    "Every Japanese sentence from this week's four business dialogues and meeting phrases. Listen slowly, repeat, then shadow, to get meeting Japanese into your mouth."
+  ],
+  "thumbnail": {"badge": "第2週", "badge_en": "Shadowing", "headline": "会議日本語シャドーイング",
+                "lines": ["聞く→くり返す→重ねる", "会話 40文", "定型表現 20"]},
+  "sources": [
+    {"file": "part1_B.json", "label": "会話 ",
+     "chapters": {"1": "会話1・2 シャドーイング · Dialogues 1–2（月 / Mon）",
+                  "21": "会話3・4 シャドーイング · Dialogues 3–4（水 / Wed）"}},
+    {"file": "phrases_01.json", "label": "定型 ",
+     "chapters": {"1": "定型表現 20 シャドーイング · Meeting phrases（金 / Fri）"}}
+  ],
+  "day_guide": [
+    "月 Mon：会話1・2（20文）",
+    "水 Wed：会話3・4（20文）",
+    "金 Fri：定型表現 20文 / meeting phrases",
+    "火・木 Tue/Thu：本物の日本語（決算説明会・日銀会見など）/ real business Japanese",
+    "コツ：AI音声のイントネーションはまねしすぎず、リズムと言い回しを口になじませる / Copy the rhythm and phrasing, not the AI intonation"
+  ]
+}

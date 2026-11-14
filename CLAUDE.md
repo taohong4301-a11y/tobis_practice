@@ -121,6 +121,19 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 - 说话人的 `lang` 必须和 `dir` 一致，不一致时脚本直接报错。
 - 新声音先用一段对话出样片试听（10 轮约 7 分钟，生成约 4 分钟）。
 
+### 跟读模式（"mode": "shadow"）
+
+合集 JSON 加 `"mode": "shadow"`，就不做口译题，而是把每题的**日语句子**（日→英题取原文，英→日题取参考译文）做成跟读：
+① 0.8 倍速听（显示日文＋英文意思＋要点）→ ② 停顿跟读（句长 × 1.3 + 1.5 秒）→ ③ 正常速度重叠跟读。
+对话里的句子用日语说话人的声音。例：`content/sh02_full.json`（第 2 周：B 套对话 40 句 + 定型表現 20 句）。
+**每周都要做一个**（周一・三・五用），真人商务日语（ログミーFinance、日銀记者会见）放在周二・四。
+
+### Anki 词块卡组（2026-11-14 起）
+
+- 词块表 `anki/chunks.tsv`（手工整理：src / 题号 / 日语 / 平假名读音 / 英语），`python scripts/make_anki.py` → `output/anki/TOBIS_chunks.apkg`（双向卡 + Kokoro 日语语音 + 原题例句）。`--check` 只查读音和例句。
+- 收「词块/搭配」不收单词；不收模考 E/F/G 的词（会泄题）。新素材卡住的表达加进 chunks.tsv 重新生成，guid 固定，重新导入不丢进度。
+- 学习顺序 = `make_anki.py` 的 ORDER（下一次视频要用的先学）。用法和每天计划见 `docs/Anki_词块卡组.md`。
+
 ### 封面和附录
 
 - 封面：合集 JSON 加 `thumbnail` 字段，`python scripts/make_thumbnail.py content/epNN_full.json output/epNN_thumb.png`。
@@ -174,8 +187,9 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 3. ~~Vol.2（第 2 周）~~：已完成，2026-11-12 上传 https://youtu.be/-LjZuKdLQgI （私享，待改公开）。另有【お試し】示例 https://youtu.be/xfryjUsr4ZI 。系列名：元気社畜の通訳ノート（推荐 handle @GenkiShachikuNote）。
 4. Vol.3（第 3 周）：**题目已写好**（2026-11-13，全文见 docs/TOBIS_W3_每日计划.md 附录 A–E），等审核；11/22 前实现演讲模式（speech/segment，按演讲人固定声音、分截播放），再生成。
 5. 第 4 周 + 冲刺周：模考 E、F、G **题目已写好**，答案在 docs/答案/（模考前不要给 Ellen 看答案）；要实现模考模式（"mode": "exam"：不出答案卡，只有 听→提示音→倒计时）；冲刺周的错题合集等 Ellen 12/4 的错误日志。
-6. 生成 SRT 字幕文件（只在答案阶段显示）；自动生成封面图（1280×720，期数 + 主题）。
-7. 可选：接入商用 TTS（Azure / Google，用 Ellen 自己的 API key）作为第二种语音引擎，提高日语自然度。
+6. 跟读音轨：第 2 周 `sh02_full.json` 已生成（待上传）；第 3 周 `sh03` 随 Vol.3 一起做（D 套对话 + 出力テンプレート），第 4 周模考周可以复用前面的音轨。
+7. 生成 SRT 字幕文件（只在答案阶段显示）。封面图已完成（scripts/make_thumbnail.py）。
+8. 可选：接入商用 TTS（Azure / Google，用 Ellen 自己的 API key）作为第二种语音引擎，提高日语自然度。
 
 ## 备考时间线（供出题节奏参考）
 
