@@ -130,7 +130,7 @@ Windows：kokoro-onnx 需要 Python 3.10–3.12，用 `py -3.12` 或 pyenv 的 3
 
 ### Anki 词块卡组（2026-11-14 起）
 
-- 词块表 `anki/chunks.tsv`（手工整理：src / 题号 / 日语 / 平假名读音 / 英语），`python scripts/make_anki.py` → `output/anki/TOBIS_chunks.apkg`（双向卡 + Kokoro 日语语音 + 原题例句）。`--check` 只查读音和例句。
+- 词块表 `anki/chunks.tsv`（视频素材，手工整理：src / 题号 / 日语 / 平假名读音 / 英语）+ `anki/topics.tsv`（10 个话题的扩充词块，没有例句）。目标每天 50 个词块、12/1 学完，Ellen 决定两个方向都学（每天 100 张新卡，复习上限设 300）。`python scripts/make_anki.py` → `output/anki/TOBIS_chunks.apkg`（双向卡 + Kokoro 日语语音 + 原题例句）。`--check` 只查读音和例句。
 - 收「词块/搭配」不收单词；不收模考 E/F/G 的词（会泄题）。新素材卡住的表达加进 chunks.tsv 重新生成，guid 固定，重新导入不丢进度。
 - 学习顺序 = `make_anki.py` 的 ORDER（下一次视频要用的先学）。用法和每天计划见 `docs/Anki_词块卡组.md`。
 

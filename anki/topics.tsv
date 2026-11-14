@@ -1,0 +1,407 @@
+# TOBIS 话题扩充词块（手工整理，没有对应的视频题，所以没有例句）。列：topic<TAB>ja<TAB>reading<TAB>en
+# 10 个 TOBIS 常考话题，每个约 40 个；顺序 = 学习顺序（按出题频率）。
+# 和 chunks.tsv 重复的词块，make_anki.py 会报出来。
+業績・決算	増収増益	ぞうしゅう ぞうえき	higher sales and higher profit
+業績・決算	減収減益	げんしゅう げんえき	lower sales and lower profit
+業績・決算	増収減益	ぞうしゅう げんえき	higher sales but lower profit
+業績・決算	黒字に転換する	くろじに てんかんする	swing to a profit
+業績・決算	赤字に転落する	あかじに てんらくする	fall into the red
+業績・決算	最終利益	さいしゅう りえき	net income (bottom line)
+業績・決算	経常利益	けいじょう りえき	ordinary (recurring) profit
+業績・決算	売上総利益	うりあげ そうりえき	gross profit
+業績・決算	粗利益率	あらりえきりつ	gross margin
+業績・決算	業績予想を上方修正する	ぎょうせき よそうを じょうほう しゅうせいする	raise one's earnings forecast
+業績・決算	下方修正する	かほう しゅうせいする	revise downward / cut (a forecast)
+業績・決算	市場予想を上回る	しじょう よそうを うわまわる	beat market expectations
+業績・決算	市場予想を下回る	しじょう よそうを したまわる	miss market expectations
+業績・決算	決算短信	けっさん たんしん	earnings report (summary filing)
+業績・決算	中間決算	ちゅうかん けっさん	interim (first-half) results
+業績・決算	本決算	ほんけっさん	full-year results
+業績・決算	四半期決算	しはんき けっさん	quarterly results
+業績・決算	上期	かみき	first half (of the fiscal year)
+業績・決算	前年同期	ぜんねん どうき	the same period last year
+業績・決算	増益	ぞうえき	higher profit
+業績・決算	減益	げんえき	lower profit
+業績・決算	過去最高益	かこ さいこうえき	record profit
+業績・決算	営業赤字	えいぎょう あかじ	operating loss
+業績・決算	特別損失を計上する	とくべつ そんしつを けいじょうする	book an extraordinary loss
+業績・決算	減損損失	げんそん そんしつ	impairment loss
+業績・決算	為替差益	かわせ さえき	foreign exchange gains
+業績・決算	為替の影響を除く	かわせの えいきょうを のぞく	excluding currency effects
+業績・決算	値上げ効果	ねあげ こうか	effect of price increases
+業績・決算	コスト増を吸収する	コストぞうを きゅうしゅうする	absorb higher costs
+業績・決算	収益性を高める	しゅうえきせいを たかめる	improve profitability
+業績・決算	1株当たり利益	ひとかぶ あたり りえき	earnings per share (EPS)
+業績・決算	自己資本利益率	じこ しほん りえきりつ	return on equity (ROE)
+業績・決算	中期経営計画	ちゅうき けいえい けいかく	medium-term management plan
+業績・決算	通期見通し	つうき みとおし	full-year outlook
+業績・決算	無配	むはい	no dividend
+業績・決算	減配	げんぱい	dividend cut
+業績・決算	株価が急騰する	かぶかが きゅうとうする	shares surge
+業績・決算	株価が急落する	かぶかが きゅうらくする	shares plunge
+業績・決算	業績が低迷する	ぎょうせきが ていめいする	results are sluggish
+業績・決算	受注残高	じゅちゅう ざんだか	order backlog
+業績・決算	需要が一巡する	じゅようが いちじゅんする	demand levels off (has run its course)
+業績・決算	売上高が伸び悩む	うりあげだかが のびなやむ	sales growth stalls
+金融市場	日本銀行	にっぽん ぎんこう	Bank of Japan (BOJ)
+金融市場	金融政策決定会合	きんゆう せいさく けってい かいごう	BOJ monetary policy meeting
+金融市場	金融緩和	きんゆう かんわ	monetary easing
+金融市場	金融引き締め	きんゆう ひきしめ	monetary tightening
+金融市場	利下げ	りさげ	rate cut
+金融市場	マイナス金利を解除する	マイナス きんりを かいじょする	end negative interest rates
+金融市場	長期金利	ちょうき きんり	long-term interest rates
+金融市場	国債	こくさい	government bonds (JGBs)
+金融市場	国債の買い入れを減らす	こくさいの かいいれを へらす	reduce bond purchases
+金融市場	米連邦準備制度理事会	べい れんぽう じゅんび せいど りじかい	the Federal Reserve (Fed)
+金融市場	物価目標	ぶっか もくひょう	inflation target
+金融市場	物価の安定	ぶっかの あんてい	price stability
+金融市場	為替介入	かわせ かいにゅう	currency intervention
+金融市場	円高	えんだか	strong yen
+金融市場	ドル高	ドルだか	strong dollar
+金融市場	円安が進む	えんやすが すすむ	the yen weakens further
+金融市場	株式市場	かぶしき しじょう	stock market
+金融市場	東証株価指数	とうしょう かぶか しすう	TOPIX
+金融市場	上場する	じょうじょうする	list (on an exchange)
+金融市場	新規株式公開	しんき かぶしき こうかい	initial public offering (IPO)
+金融市場	株価が反発する	かぶかが はんぱつする	shares rebound
+金融市場	値上がりする	ねあがりする	rise (in price)
+金融市場	年初来高値	ねんしょらい たかね	year-to-date high
+金融市場	上場来高値	じょうじょうらい たかね	all-time high (since listing)
+金融市場	売買代金	ばいばい だいきん	trading value
+金融市場	投資家	とうしか	investors
+金融市場	利回り	りまわり	yield
+金融市場	債券	さいけん	bonds
+金融市場	資金調達	しきん ちょうたつ	fundraising / financing
+金融市場	社債を発行する	しゃさいを はっこうする	issue corporate bonds
+金融市場	金融機関	きんゆう きかん	financial institutions
+金融市場	資産運用	しさん うんよう	asset management
+金融市場	新NISA	しん ニーサ	new NISA (tax-free investment scheme)
+金融市場	景気の下振れリスク	けいきの したぶれ リスク	downside risks to the economy
+金融市場	市場の動揺	しじょうの どうよう	market turmoil
+金融市場	ボラティリティが高まる	ボラティリティが たかまる	volatility rises
+金融市場	様子見	ようすみ	wait-and-see
+金融市場	利益確定の売り	りえき かくていの うり	profit-taking
+金融市場	追加利上げ	ついか りあげ	a further rate hike
+人事・労働	春闘	しゅんとう	spring wage negotiations
+人事・労働	ベースアップ	ベースアップ	base pay increase
+人事・労働	賃上げ率	ちんあげりつ	wage increase rate
+人事・労働	初任給	しょにんきゅう	starting salary
+人事・労働	実質賃金	じっしつ ちんぎん	real wages
+人事・労働	有効求人倍率	ゆうこう きゅうじん ばいりつ	jobs-to-applicants ratio
+人事・労働	失業率	しつぎょうりつ	unemployment rate
+人事・労働	正社員	せいしゃいん	full-time (regular) employees
+人事・労働	非正規雇用	ひせいき こよう	non-regular employment
+人事・労働	派遣社員	はけん しゃいん	temporary (agency) workers
+人事・労働	中途採用	ちゅうと さいよう	mid-career hiring
+人事・労働	新卒採用	しんそつ さいよう	hiring new graduates
+人事・労働	人材を確保する	じんざいを かくほする	secure talent
+人事・労働	人材不足	じんざい ぶそく	talent shortage
+人事・労働	働き方改革	はたらきかた かいかく	work-style reform
+人事・労働	長時間労働	ちょうじかん ろうどう	long working hours
+人事・労働	残業を減らす	ざんぎょうを へらす	reduce overtime
+人事・労働	有給休暇	ゆうきゅう きゅうか	paid leave
+人事・労働	育児休業	いくじ きゅうぎょう	childcare leave
+人事・労働	男性の育休取得率	だんせいの いくきゅう しゅとくりつ	rate of men taking childcare leave
+人事・労働	在宅勤務	ざいたく きんむ	working from home
+人事・労働	副業を解禁する	ふくぎょうを かいきんする	allow side jobs
+人事・労働	早期退職を募集する	そうき たいしょくを ぼしゅうする	offer early retirement
+人事・労働	人員削減	じんいん さくげん	job cuts
+人事・労働	定年を延長する	ていねんを えんちょうする	raise the retirement age
+人事・労働	再雇用	さいこよう	rehiring (after retirement)
+人事・労働	年功序列	ねんこう じょれつ	seniority-based system
+人事・労働	成果主義	せいか しゅぎ	performance-based system
+人事・労働	ジョブ型雇用	ジョブがた こよう	job-based employment
+人事・労働	人事評価	じんじ ひょうか	performance evaluation
+人事・労働	昇進	しょうしん	promotion
+人事・労働	異動	いどう	transfer / reassignment
+人事・労働	女性管理職比率	じょせい かんりしょく ひりつ	ratio of women in management
+人事・労働	外国人労働者	がいこくじん ろうどうしゃ	foreign workers
+人事・労働	労働組合	ろうどう くみあい	labor union
+人事・労働	労使交渉	ろうし こうしょう	labor-management negotiations
+人事・労働	福利厚生	ふくり こうせい	employee benefits
+人事・労働	リスキリング	リスキリング	reskilling
+人事・労働	離職を防ぐ	りしょくを ふせぐ	prevent turnover
+人事・労働	人的資本	じんてき しほん	human capital
+供給網・製造	供給網	きょうきゅうもう	supply chain
+供給網・製造	調達	ちょうたつ	procurement
+供給網・製造	部品不足	ぶひん ぶそく	parts shortage
+供給網・製造	半導体不足	はんどうたい ぶそく	chip shortage
+供給網・製造	生産拠点	せいさん きょてん	production base
+供給網・製造	生産を移管する	せいさんを いかんする	transfer production
+供給網・製造	国内回帰	こくない かいき	reshoring
+供給網・製造	現地生産	げんち せいさん	local production
+供給網・製造	稼働を停止する	かどうを ていしする	suspend operations
+供給網・製造	操業を再開する	そうぎょうを さいかいする	resume operations
+供給網・製造	減産	げんさん	production cut
+供給網・製造	生産能力を増強する	せいさん のうりょくを ぞうきょうする	boost production capacity
+供給網・製造	量産	りょうさん	mass production
+供給網・製造	歩留まり	ぶどまり	(manufacturing) yield
+供給網・製造	品質管理	ひんしつ かんり	quality control
+供給網・製造	検査不正	けんさ ふせい	inspection fraud
+供給網・製造	在庫を圧縮する	ざいこを あっしゅくする	reduce inventory
+供給網・製造	過剰在庫	かじょう ざいこ	excess inventory
+供給網・製造	納期遅れ	のうき おくれ	delivery delay
+供給網・製造	物流の2024年問題	ぶつりゅうの にせんにじゅうよねん もんだい	the 2024 logistics problem (driver overtime cap)
+供給網・製造	海上運賃	かいじょう うんちん	ocean freight rates
+供給網・製造	港湾	こうわん	ports
+供給網・製造	調達先を分散する	ちょうたつさきを ぶんさんする	diversify suppliers
+供給網・製造	特定の国への依存	とくていの くにへの いぞん	dependence on a particular country
+供給網・製造	地政学リスク	ちせいがく リスク	geopolitical risk
+供給網・製造	経済安全保障	けいざい あんぜん ほしょう	economic security
+供給網・製造	輸出規制	ゆしゅつ きせい	export controls
+供給網・製造	関税を引き上げる	かんぜいを ひきあげる	raise tariffs
+供給網・製造	原材料価格の高騰	げんざいりょう かかくの こうとう	soaring raw material prices
+供給網・製造	価格転嫁	かかく てんか	passing on costs to prices
+供給網・製造	自動化	じどうか	automation
+供給網・製造	省人化	しょうじんか	labor-saving
+供給網・製造	設備の老朽化	せつびの ろうきゅうか	aging equipment
+供給網・製造	部品メーカー	ぶひん メーカー	parts makers
+供給網・製造	完成車メーカー	かんせいしゃ メーカー	automakers
+供給網・製造	取引条件	とりひき じょうけん	terms of business
+供給網・製造	下請け	したうけ	subcontractor
+供給網・製造	発注する	はっちゅうする	place an order
+供給網・製造	受注する	じゅちゅうする	win an order
+供給網・製造	工場の稼働率	こうじょうの かどうりつ	factory utilization rate
+ESG・エネルギー	脱炭素	だつたんそ	decarbonization
+ESG・エネルギー	カーボンニュートラル	カーボンニュートラル	carbon neutral
+ESG・エネルギー	排出量実質ゼロ	はいしゅつりょう じっしつ ゼロ	net-zero emissions
+ESG・エネルギー	二酸化炭素	にさんか たんそ	carbon dioxide (CO2)
+ESG・エネルギー	再エネ	さいエネ	renewables (short for 再生可能エネルギー)
+ESG・エネルギー	太陽光発電	たいようこう はつでん	solar power
+ESG・エネルギー	洋上風力発電	ようじょう ふうりょく はつでん	offshore wind power
+ESG・エネルギー	原子力発電所	げんしりょく はつでんしょ	nuclear power plant
+ESG・エネルギー	原発を再稼働する	げんぱつを さいかどうする	restart a nuclear plant
+ESG・エネルギー	火力発電	かりょく はつでん	thermal power
+ESG・エネルギー	石炭火力	せきたん かりょく	coal-fired power
+ESG・エネルギー	液化天然ガス	えきか てんねん ガス	liquefied natural gas (LNG)
+ESG・エネルギー	水素	すいそ	hydrogen
+ESG・エネルギー	蓄電池	ちくでんち	storage battery
+ESG・エネルギー	電気料金	でんき りょうきん	electricity rates
+ESG・エネルギー	電力不足	でんりょく ぶそく	power shortage
+ESG・エネルギー	省エネ	しょうエネ	energy saving
+ESG・エネルギー	排出量取引	はいしゅつりょう とりひき	emissions trading
+ESG・エネルギー	炭素税	たんそぜい	carbon tax
+ESG・エネルギー	気候変動	きこう へんどう	climate change
+ESG・エネルギー	持続可能な	じぞく かのうな	sustainable
+ESG・エネルギー	環境負荷を減らす	かんきょう ふかを へらす	reduce environmental impact
+ESG・エネルギー	サステナビリティ情報の開示	サステナビリティ じょうほうの かいじ	sustainability disclosure
+ESG・エネルギー	統合報告書	とうごう ほうこくしょ	integrated report
+ESG・エネルギー	企業の社会的責任	きぎょうの しゃかいてき せきにん	corporate social responsibility (CSR)
+ESG・エネルギー	人権デューデリジェンス	じんけん デューデリジェンス	human rights due diligence
+ESG・エネルギー	グリーンボンド	グリーンボンド	green bond
+ESG・エネルギー	ESG投資	イーエスジー とうし	ESG investing
+ESG・エネルギー	生物多様性	せいぶつ たようせい	biodiversity
+ESG・エネルギー	循環型経済	じゅんかんがた けいざい	circular economy
+ESG・エネルギー	プラスチックごみ	プラスチックごみ	plastic waste
+ESG・エネルギー	リサイクル率	リサイクルりつ	recycling rate
+ESG・エネルギー	電動化	でんどうか	electrification
+ESG・エネルギー	ハイブリッド車	ハイブリッドしゃ	hybrid vehicles
+ESG・エネルギー	充電インフラ	じゅうでん インフラ	charging infrastructure
+ESG・エネルギー	エネルギー安全保障	エネルギー あんぜん ほしょう	energy security
+ESG・エネルギー	化石燃料	かせき ねんりょう	fossil fuels
+ESG・エネルギー	原油価格	げんゆ かかく	crude oil prices
+ESG・エネルギー	非化石電源	ひかせき でんげん	non-fossil power sources
+ESG・エネルギー	猛暑	もうしょ	extreme heat
+会議・交渉	本日の議題	ほんじつの ぎだい	today's agenda
+会議・交渉	次の議題に移ります	つぎの ぎだいに うつります	let's move on to the next item
+会議・交渉	結論から申し上げますと	けつろんから もうしあげますと	to get to the conclusion first
+会議・交渉	補足させていただきます	ほそく させて いただきます	let me add something
+会議・交渉	ご質問はございますか	ごしつもんは ございますか	are there any questions?
+会議・交渉	少々お待ちください	しょうしょう おまち ください	just a moment, please
+会議・交渉	先ほど申し上げた通り	さきほど もうしあげた とおり	as I mentioned earlier
+会議・交渉	ご理解いただけますと幸いです	ごりかい いただけますと さいわいです	we would appreciate your understanding
+会議・交渉	ご検討いただけますでしょうか	ごけんとう いただけますでしょうか	could you consider …?
+会議・交渉	条件を詰める	じょうけんを つめる	work out the terms
+会議・交渉	落としどころ	おとしどころ	a compromise / middle ground
+会議・交渉	譲歩する	じょうほする	make a concession
+会議・交渉	歩み寄る	あゆみよる	meet each other halfway
+会議・交渉	合意に至る	ごういに いたる	reach an agreement
+会議・交渉	基本合意	きほん ごうい	basic agreement (MOU)
+会議・交渉	覚書を交わす	おぼえがきを かわす	sign a memorandum
+会議・交渉	契約を締結する	けいやくを ていけつする	conclude a contract
+会議・交渉	秘密保持契約	ひみつ ほじ けいやく	non-disclosure agreement (NDA)
+会議・交渉	見積もりを出す	みつもりを だす	provide a quote
+会議・交渉	値引き	ねびき	discount
+会議・交渉	発注書	はっちゅうしょ	purchase order
+会議・交渉	請求書	せいきゅうしょ	invoice
+会議・交渉	支払期日	しはらい きじつ	payment due date
+会議・交渉	先方	せんぽう	the other party
+会議・交渉	当方	とうほう	our side
+会議・交渉	上司と相談する	じょうしと そうだんする	consult one's boss
+会議・交渉	決裁を仰ぐ	けっさいを あおぐ	seek (management) approval
+会議・交渉	根回し	ねまわし	laying the groundwork (informal consensus building)
+会議・交渉	稟議書	りんぎしょ	approval request document
+会議・交渉	日程を調整する	にっていを ちょうせいする	arrange the schedule
+会議・交渉	ご都合はいかがでしょうか	ごつごうは いかがでしょうか	would that work for you?
+会議・交渉	打ち合わせを設定する	うちあわせを せっていする	set up a meeting
+会議・交渉	資料を共有する	しりょうを きょうゆうする	share the materials
+会議・交渉	画面を共有する	がめんを きょうゆうする	share the screen
+会議・交渉	音声が途切れる	おんせいが とぎれる	the audio cuts out
+会議・交渉	ご足労いただき	ごそくろう いただき	thank you for taking the trouble to come
+会議・交渉	取り急ぎ	とりいそぎ	for now / in haste (email)
+会議・交渉	何卒よろしくお願い申し上げます	なにとぞ よろしく おねがい もうしあげます	we humbly ask for your kind consideration
+会議・交渉	ご確認のほどよろしくお願いいたします	ごかくにんの ほど よろしく おねがい いたします	please kindly confirm
+会議・交渉	差し支えなければ	さしつかえ なければ	if you don't mind
+会議・交渉	お手数をおかけしますが	おてすうを おかけしますが	sorry to trouble you, but
+会議・交渉	ご期待に沿えず申し訳ございません	ごきたいに そえず もうしわけ ございません	we're sorry we couldn't meet your expectations
+マクロ・政策	国内総生産	こくない そうせいさん	gross domestic product (GDP)
+マクロ・政策	実質GDP	じっしつ ジーディーピー	real GDP
+マクロ・政策	年率換算	ねんりつ かんさん	annualized
+マクロ・政策	景気回復	けいき かいふく	economic recovery
+マクロ・政策	景気後退	けいき こうたい	recession
+マクロ・政策	個人消費	こじん しょうひ	consumer spending
+マクロ・政策	企業の投資意欲	きぎょうの とうし いよく	corporate appetite for investment
+マクロ・政策	物価高	ぶっかだか	high prices
+マクロ・政策	インフレ率	インフレりつ	inflation rate
+マクロ・政策	デフレ脱却	デフレ だっきゃく	exit from deflation
+マクロ・政策	貿易収支	ぼうえき しゅうし	trade balance
+マクロ・政策	貿易赤字	ぼうえき あかじ	trade deficit
+マクロ・政策	経常収支	けいじょう しゅうし	current account balance
+マクロ・政策	輸入	ゆにゅう	imports
+マクロ・政策	財政赤字	ざいせい あかじ	fiscal deficit
+マクロ・政策	補正予算	ほせい よさん	supplementary budget
+マクロ・政策	税制改正	ぜいせい かいせい	tax reform
+マクロ・政策	消費税	しょうひぜい	consumption tax
+マクロ・政策	減税	げんぜい	tax cut
+マクロ・政策	給付金	きゅうふきん	(cash) benefit payment
+マクロ・政策	補助金	ほじょきん	subsidy
+マクロ・政策	規制緩和	きせい かんわ	deregulation
+マクロ・政策	成長戦略	せいちょう せんりゃく	growth strategy
+マクロ・政策	少子化対策	しょうしか たいさく	measures against the falling birthrate
+マクロ・政策	人口減少	じんこう げんしょう	population decline
+マクロ・政策	社会保障費	しゃかい ほしょうひ	social security spending
+マクロ・政策	自由貿易協定	じゆう ぼうえき きょうてい	free trade agreement (FTA)
+マクロ・政策	世界経済の減速	せかい けいざいの げんそく	global economic slowdown
+マクロ・政策	内閣府	ないかくふ	Cabinet Office
+マクロ・政策	経済産業省	けいざい さんぎょうしょう	Ministry of Economy, Trade and Industry (METI)
+マクロ・政策	財務省	ざいむしょう	Ministry of Finance
+マクロ・政策	厚生労働省	こうせい ろうどうしょう	Ministry of Health, Labour and Welfare
+マクロ・政策	閣議決定する	かくぎ けっていする	approve at a cabinet meeting
+マクロ・政策	法案が成立する	ほうあんが せいりつする	a bill is passed
+マクロ・政策	首相	しゅしょう	prime minister
+マクロ・政策	政府関係者	せいふ かんけいしゃ	government officials
+マクロ・政策	統計	とうけい	statistics
+マクロ・政策	速報値	そくほうち	preliminary figure
+マクロ・政策	改定値	かいていち	revised figure
+マクロ・政策	景気判断を引き下げる	けいき はんだんを ひきさげる	downgrade the economic assessment
+マクロ・政策	緩やかに回復している	ゆるやかに かいふく している	is recovering moderately
+IT・データ	DX推進	ディーエックス すいしん	promoting digital transformation (DX)
+IT・データ	クラウドサービス	クラウドサービス	cloud services
+IT・データ	情報漏えい	じょうほう ろうえい	data leak
+IT・データ	個人情報	こじん じょうほう	personal information
+IT・データ	サイバー攻撃	サイバー こうげき	cyberattack
+IT・データ	ランサムウェアの被害	ランサムウェアの ひがい	ransomware damage
+IT・データ	不正アクセス	ふせい アクセス	unauthorized access
+IT・データ	セキュリティ対策を強化する	セキュリティ たいさくを きょうかする	strengthen security measures
+IT・データ	システム開発	システム かいはつ	system development
+IT・データ	基幹システム	きかん システム	core (business) system
+IT・データ	業務効率化	ぎょうむ こうりつか	improving operational efficiency
+IT・データ	人工知能	じんこう ちのう	artificial intelligence
+IT・データ	大規模言語モデル	だいきぼ げんご モデル	large language model
+IT・データ	データセンターを建設する	データセンターを けんせつする	build a data center
+IT・データ	通信障害	つうしん しょうがい	network outage
+IT・データ	半導体メーカー	はんどうたい メーカー	chipmakers
+IT・データ	先端半導体	せんたん はんどうたい	advanced chips
+IT・データ	電子商取引	でんし しょうとりひき	e-commerce
+IT・データ	キャッシュレス決済	キャッシュレス けっさい	cashless payments
+IT・データ	アプリ利用者	アプリ りようしゃ	app users
+IT・データ	IT人材	アイティー じんざい	IT professionals
+IT・データ	外部委託する	がいぶ いたくする	outsource
+IT・データ	データを活用する	データを かつようする	make use of data
+IT・データ	利便性を高める	りべんせいを たかめる	improve convenience
+IT・データ	試験運用	しけん うんよう	pilot operation
+IT・データ	本格導入	ほんかく どうにゅう	full-scale introduction
+IT・データ	実証実験	じっしょう じっけん	proof-of-concept trial
+IT・データ	不具合を修正する	ふぐあいを しゅうせいする	fix a bug
+IT・データ	更新プログラム	こうしん プログラム	software update (patch)
+IT・データ	サービスを開始する	サービスを かいしする	launch a service
+IT・データ	サービスを終了する	サービスを しゅうりょうする	discontinue a service
+IT・データ	利用規約	りよう きやく	terms of use
+IT・データ	著作権	ちょさくけん	copyright
+IT・データ	知的財産	ちてき ざいさん	intellectual property
+IT・データ	特許を取得する	とっきょを しゅとくする	obtain a patent
+IT・データ	研究開発費	けんきゅう かいはつひ	R&D spending
+IT・データ	新興企業	しんこう きぎょう	startups / emerging companies
+IT・データ	通信量	つうしんりょう	data traffic
+IT・データ	顔認証	かお にんしょう	facial recognition
+IT・データ	システムを刷新する	システムを さっしんする	overhaul a system
+M&A・ガバナンス	株式を取得する	かぶしきを しゅとくする	acquire shares
+M&A・ガバナンス	株式公開買い付け	かぶしき こうかい かいつけ	tender offer (TOB)
+M&A・ガバナンス	完全子会社化	かんぜん こがいしゃか	making it a wholly owned subsidiary
+M&A・ガバナンス	経営統合	けいえい とうごう	business integration (merger)
+M&A・ガバナンス	事業を売却する	じぎょうを ばいきゃくする	sell a business
+M&A・ガバナンス	事業再編	じぎょう さいへん	business restructuring
+M&A・ガバナンス	不採算事業	ふさいさん じぎょう	unprofitable business
+M&A・ガバナンス	撤退する	てったいする	withdraw / exit
+M&A・ガバナンス	資本業務提携	しほん ぎょうむ ていけい	capital and business alliance
+M&A・ガバナンス	出資する	しゅっしする	invest in / take a stake
+M&A・ガバナンス	筆頭株主	ひっとう かぶぬし	largest shareholder
+M&A・ガバナンス	物言う株主	ものいう かぶぬし	activist shareholder
+M&A・ガバナンス	株主総会	かぶぬし そうかい	shareholders' meeting
+M&A・ガバナンス	議決権	ぎけつけん	voting rights
+M&A・ガバナンス	社外取締役	しゃがい とりしまりやく	outside director
+M&A・ガバナンス	代表取締役社長	だいひょう とりしまりやく しゃちょう	president and CEO
+M&A・ガバナンス	最高経営責任者	さいこう けいえい せきにんしゃ	chief executive officer
+M&A・ガバナンス	経営陣	けいえいじん	management team
+M&A・ガバナンス	就任する	しゅうにんする	take office
+M&A・ガバナンス	辞任する	じにんする	resign
+M&A・ガバナンス	後任	こうにん	successor
+M&A・ガバナンス	企業統治	きぎょう とうち	corporate governance
+M&A・ガバナンス	内部統制	ないぶ とうせい	internal control
+M&A・ガバナンス	不祥事	ふしょうじ	scandal / misconduct
+M&A・ガバナンス	第三者委員会	だいさんしゃ いいんかい	third-party committee
+M&A・ガバナンス	再発防止策	さいはつ ぼうしさく	measures to prevent recurrence
+M&A・ガバナンス	謝罪会見	しゃざい かいけん	apology press conference
+M&A・ガバナンス	株式の持ち合いを解消する	かぶしきの もちあいを かいしょうする	unwind cross-shareholdings
+M&A・ガバナンス	政策保有株	せいさく ほゆうかぶ	strategic shareholdings
+M&A・ガバナンス	企業価値を高める	きぎょう かちを たかめる	enhance corporate value
+M&A・ガバナンス	資本効率	しほん こうりつ	capital efficiency
+M&A・ガバナンス	株価純資産倍率	かぶか じゅんしさん ばいりつ	price-to-book ratio (PBR)
+M&A・ガバナンス	上場廃止	じょうじょう はいし	delisting
+M&A・ガバナンス	買収提案	ばいしゅう ていあん	takeover proposal
+M&A・ガバナンス	敵対的買収	てきたいてき ばいしゅう	hostile takeover
+M&A・ガバナンス	買収額	ばいしゅうがく	acquisition price
+M&A・ガバナンス	相乗効果	そうじょう こうか	synergies
+M&A・ガバナンス	デューデリジェンス	デューデリジェンス	due diligence
+M&A・ガバナンス	独占禁止法	どくせん きんしほう	Antimonopoly Act
+M&A・ガバナンス	公正取引委員会	こうせい とりひき いいんかい	Japan Fair Trade Commission (JFTC)
+消費・観光・社会	インバウンド需要	インバウンド じゅよう	inbound tourism demand
+消費・観光・社会	免税売上高	めんぜい うりあげだか	duty-free sales
+消費・観光・社会	百貨店	ひゃっかてん	department stores
+消費・観光・社会	客単価	きゃくたんか	average spend per customer
+消費・観光・社会	来店客数	らいてん きゃくすう	customer traffic
+消費・観光・社会	既存店売上高	きそんてん うりあげだか	same-store sales
+消費・観光・社会	値上げラッシュ	ねあげ ラッシュ	a wave of price hikes
+消費・観光・社会	節約志向	せつやく しこう	frugal consumer mindset
+消費・観光・社会	消費者心理	しょうひしゃ しんり	consumer sentiment
+消費・観光・社会	プライベートブランド	プライベートブランド	private brand (store brand)
+消費・観光・社会	外国人観光客	がいこくじん かんこうきゃく	foreign tourists
+消費・観光・社会	オーバーツーリズム	オーバーツーリズム	overtourism
+消費・観光・社会	宿泊施設	しゅくはく しせつ	accommodation facilities
+消費・観光・社会	客室稼働率	きゃくしつ かどうりつ	hotel occupancy rate
+消費・観光・社会	航空便	こうくうびん	flights
+消費・観光・社会	運賃を値上げする	うんちんを ねあげする	raise fares
+消費・観光・社会	地価	ちか	land prices
+消費・観光・社会	公示地価	こうじ ちか	official land prices
+消費・観光・社会	住宅ローン	じゅうたく ローン	housing loan / mortgage
+消費・観光・社会	空き家	あきや	vacant houses
+消費・観光・社会	オフィス空室率	オフィス くうしつりつ	office vacancy rate
+消費・観光・社会	再開発	さいかいはつ	redevelopment
+消費・観光・社会	地方創生	ちほう そうせい	regional revitalization
+消費・観光・社会	自然災害	しぜん さいがい	natural disasters
+消費・観光・社会	被災地	ひさいち	disaster-hit areas
+消費・観光・社会	復興	ふっこう	reconstruction
+消費・観光・社会	感染症	かんせんしょう	infectious diseases
+消費・観光・社会	医療費	いりょうひ	medical costs
+消費・観光・社会	介護	かいご	nursing care
+消費・観光・社会	年金	ねんきん	pension
+消費・観光・社会	食品ロス	しょくひん ロス	food waste
+消費・観光・社会	値ごろ感	ねごろかん	affordability / sense of good value
+消費・観光・社会	売れ行きが好調	うれゆきが こうちょう	selling well
+消費・観光・社会	品薄	しなうす	short supply / hard to find
+消費・観光・社会	新商品を発売する	しんしょうひんを はつばいする	launch a new product
+消費・観光・社会	市場規模	しじょう きぼ	market size
+消費・観光・社会	市場シェア	しじょう シェア	market share
+消費・観光・社会	顧客満足度	こきゃく まんぞくど	customer satisfaction
+消費・観光・社会	購買意欲	こうばい いよく	willingness to buy
+消費・観光・社会	物価上昇に賃金が追いつかない	ぶっか じょうしょうに ちんぎんが おいつかない	wages aren't keeping up with prices

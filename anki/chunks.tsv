@@ -1,0 +1,495 @@
+# TOBIS Anki 词块表（手工整理）。列：src<TAB>item<TAB>ja<TAB>reading<TAB>en
+# src：N=数字单位  A=ep01_part2_A  B=part1_B  P=phrases_01  T=templates_01  C=part2_C  D=part1_D  N3=numbers_03  S=part3_intro
+# item = 该 JSON 里第几题（从 1 起）；例句从这一题自动取。item 为 0 时没有例句。
+# reading：平假名，词之间空格；片假名/英文字母照写。ja 里有「〜」时，语音读例句。
+# deck 1 = N A B P（已生成的 Vol.1・Vol.2 素材）；deck 2 = T C D N3 S（Vol.3 素材）
+N	0	万	まん	ten thousand (10,000)
+N	0	100万	ひゃくまん	one million
+N	0	10億	じゅうおく	one billion
+N	0	1兆	いっちょう	one trillion
+N	0	1割	いちわり	10% (one tenth)
+N	0	ポイント	ポイント	percentage point (not percent)
+N	0	年度	ねんど	fiscal year (FY)
+A	1	売上高	うりあげだか	net sales / revenue
+A	1	前年比〜%増	ぜんねんひ 〜パーセント ぞう	up X% year on year
+A	1	旺盛な需要	おうせいな じゅよう	strong demand
+A	1	〜に支えられ	〜に ささえられ	driven by (a positive cause)
+A	1	半導体材料	はんどうたい ざいりょう	semiconductor materials
+A	2	政策金利	せいさく きんり	policy rate
+A	2	〜%に据え置く	〜パーセントに すえおく	leave unchanged at X%
+A	2	利上げ	りあげ	rate hike
+A	2	示唆する	しさする	hint at / suggest
+A	2	来年早々	らいねん そうそう	early next year
+A	3	週休3日制	しゅうきゅう みっかせい	four-day work week
+A	3	試験的に導入する	しけんてきに どうにゅうする	introduce on a trial basis
+A	3	〜を対象に	〜を たいしょうに	for / targeting (a group)
+A	3	従業員	じゅうぎょういん	employees
+A	3	事業所	じぎょうしょ	office / business site
+A	4	規制当局の承認	きせい とうきょくの しょうにん	regulatory approval
+A	4	〜が前提となる	〜が ぜんていと なる	be subject to
+A	4	下半期	しもはんき	second half (of the fiscal year)
+A	4	〜する見込みです	〜する みこみです	be expected to
+A	4	合併	がっぺい	merger
+A	5	円安を背景に	えんやすを はいけいに	thanks to / on the back of the weak yen
+A	5	訪日客	ほうにちきゃく	inbound visitors (to Japan)
+A	5	過去最高	かこ さいこう	record high
+A	5	〜に達する	〜に たっする	reach / hit
+A	5	7〜9月期	しちがつから くがつき	July–September quarter
+A	6	解約率	かいやくりつ	churn rate
+A	6	仕組みを見直す	しくみを みなおす	redesign the process
+A	6	〜に低下する	〜に ていかする	fall to
+A	7	自社株買い	じしゃ かぶがい	share buyback
+A	7	発行済み株式	はっこうずみ かぶしき	shares outstanding
+A	7	最大〜株	さいだい 〜かぶ	up to X shares
+A	8	〜に変更となる	〜に へんこうと なる	be moved / changed to
+A	8	オンラインでの開催	オンラインでの かいさい	be held online
+A	8	ご注意ください	ごちゅうい ください	please note
+A	9	人手不足	ひとで ぶそく	labor shortage
+A	9	物流業界	ぶつりゅう ぎょうかい	logistics industry
+A	9	配送コスト	はいそう コスト	delivery costs
+A	10	排出量	はいしゅつりょう	emissions
+A	10	〜年比で	〜ねんひで	from X levels (compared with year X)
+A	10	削減する	さくげんする	cut / reduce
+A	10	〜を目指す	〜を めざす	aim to
+A	11	データ基盤	データ きばん	data platform
+A	11	維持費	いじひ	maintenance cost
+A	11	〜に移行する	〜に いこうする	migrate / move to
+A	12	3割	さんわり	30%
+A	12	膨らむ	ふくらむ	balloon / swell
+A	12	〜に伴い	〜に ともない	as … / along with
+A	12	利用料	りようりょう	usage fee / bill
+A	13	立ち上げる	たちあげる	set up / launch
+A	13	利用状況	りよう じょうきょう	usage
+A	13	見直す	みなおす	review / rethink
+A	14	〜か月連続で	〜かげつ れんぞくで	for the Xth consecutive month
+A	14	電子部品	でんし ぶひん	electronic components
+A	14	東南アジア向け	とうなんアジア むけ	to / for Southeast Asia
+A	14	輸出	ゆしゅつ	exports
+A	15	雇用を生み出す	こようを うみだす	create jobs
+A	15	投資額	とうしがく	investment amount
+A	16	年間配当	ねんかん はいとう	annual dividend
+A	16	1株当たり	ひとかぶ あたり	per share
+A	16	議案を承認する	ぎあんを しょうにんする	approve a proposal
+A	16	株主	かぶぬし	shareholders
+A	16	引き上げる	ひきあげる	raise
+A	17	若手社員	わかて しゃいん	younger employees
+A	17	新入社員	しんにゅう しゃいん	new hires
+A	17	育成	いくせい	training / developing (people)
+A	17	管理職	かんりしょく	managers
+A	17	〜一方	〜いっぽう	while / although
+A	18	火災に見舞われる	かさいに みまわれる	be hit by a fire
+A	18	〜を余儀なくされる	〜を よぎなく される	be forced to
+A	18	生産停止	せいさん ていし	production halt
+A	18	主要部品	しゅよう ぶひん	key components
+A	19	〜に依存する	〜に いぞんする	rely on / depend on
+A	19	組立ライン	くみたて ライン	assembly line
+A	20	安全在庫	あんぜん ざいこ	safety stock
+A	20	積み増す	つみます	build up / increase (stock)
+A	20	サプライヤーを認定する	サプライヤーを にんていする	qualify a supplier
+A	21	営業利益	えいぎょう りえき	operating profit
+A	21	第2四半期	だいに しはんき	second quarter
+A	21	前年同期比	ぜんねん どうきひ	year on year (vs. same period last year)
+A	21	〜%減	〜パーセント げん	down X%
+A	22	最低賃金	さいてい ちんぎん	minimum wage
+A	22	方針を固める	ほうしんを かためる	decide on / firm up a policy
+A	22	全国平均	ぜんこく へいきん	national average
+A	22	来年度	らいねんど	next fiscal year
+A	23	議事録	ぎじろく	minutes (of a meeting)
+A	23	関係者全員	かんけいしゃ ぜんいん	everyone involved
+A	23	共有いたします	きょうゆう いたします	I will share (humble)
+A	23	正午	しょうご	noon
+A	24	大幅に上昇する	おおはばに じょうしょうする	rise sharply
+A	24	輸入原材料	ゆにゅう げんざいりょう	imported raw materials
+A	24	〜の影響で	〜の えいきょうで	because of / due to
+A	25	新築マンション	しんちく マンション	new condominium (not "mansion")
+A	25	都心	としん	city center / central Tokyo
+A	25	〜を超える	〜を こえる	top / exceed
+A	26	弊社	へいしゃ	our company (humble)
+A	26	前向きに検討する	まえむきに けんとうする	give positive consideration (often non-committal)
+A	26	本件	ほんけん	this matter
+A	27	生成AI	せいせい エーアイ	generative AI
+A	27	問い合わせ対応	といあわせ たいおう	handling inquiries
+A	27	短縮する	たんしゅくする	shorten / cut (time)
+A	28	少子高齢化	しょうし こうれいか	aging population and falling birthrate
+A	28	後継者不足	こうけいしゃ ぶそく	shortage of successors
+A	28	中小企業	ちゅうしょう きぎょう	small and medium-sized companies
+A	28	深刻になる	しんこくに なる	become serious
+A	29	リコールの対象	リコールの たいしょう	covered by the recall
+A	30	日経平均株価	にっけい へいきん かぶか	Nikkei Stock Average
+A	30	終値	おわりね	closing price
+A	30	一時	いちじ	at one point / briefly
+A	30	値下がりする	ねさがりする	fall (in price)
+A	31	海外拠点	かいがい きょてん	overseas base / office
+A	31	〜を開設する	〜を かいせつする	open (an office)
+A	32	日系	にっけい	Japanese(-owned)
+A	32	導入支援	どうにゅう しえん	implementation support
+A	32	生産管理システム	せいさん かんり システム	production management system
+A	32	製造業	せいぞうぎょう	manufacturing / manufacturers
+A	33	現地スタッフ	げんち スタッフ	local staff
+A	34	担当者	たんとうしゃ	person in charge
+A	34	席を外す	せきを はずす	be away from one's desk
+A	34	ただいま	ただいま	at the moment
+A	35	設備投資	せつび とうし	capital expenditure (capex)
+A	35	来期	らいき	next fiscal year (next term)
+A	35	今期	こんき	this fiscal year (this term)
+A	36	消費者物価指数	しょうひしゃ ぶっか しすう	consumer price index (CPI)
+A	36	生鮮食品を除く	せいせん しょくひんを のぞく	excluding fresh food
+A	37	予定より遅れている	よていより おくれている	behind schedule
+A	37	稼働	かどう	go-live / operation
+A	37	年内	ねんない	within this year
+A	38	調査を実施する	ちょうさを じっしする	conduct a survey
+A	39	見通しが立たない	みとおしが たたない	can't see a clear outlook / path
+A	39	約半数	やく はんすう	about half
+A	40	社内公募制度	しゃない こうぼ せいど	internal job posting system
+A	40	メンター制度	メンター せいど	mentoring program
+A	40	定着率	ていちゃくりつ	retention rate
+A	40	〜に取り組む	〜に とりくむ	work on / tackle
+B	1	はるばるお越しいただき	はるばる おこし いただき	thank you for coming all the way
+B	1	ご存じの通り	ごぞんじの とおり	as you know
+B	1	小型EV	こがた イーブイ	compact EV
+B	2	お招きいただき	おまねき いただき	thank you for inviting us
+B	2	伺っております	うかがって おります	we've heard (humble)
+B	2	増産	ぞうさん	production increase
+B	2	供給量	きょうきゅうりょう	supply (volume)
+B	2	準備を進める	じゅんびを すすめる	be preparing
+B	3	単価	たんか	unit price
+B	3	〜を踏まえ	〜を ふまえ	given / in light of
+B	3	引き下げる	ひきさげる	reduce / lower
+B	3	心強い	こころづよい	good to hear / reassuring
+B	4	値下げ	ねさげ	price cut
+B	4	正直申し上げて	しょうじき もうしあげて	frankly
+B	4	原材料	げんざいりょう	raw materials
+B	5	3年契約を結ぶ	さんねん けいやくを むすぶ	sign a three-year contract
+B	5	更新する	こうしんする	renew
+B	5	〜するのはいかがでしょうか	〜するのは いかがでしょうか	what if we …? / how about …?
+B	5	御社	おんしゃ	your company (spoken)
+B	5	需要が安定する	じゅようが あんていする	demand becomes stable
+B	6	検討の余地	けんとうの よち	room for discussion
+B	6	値下げ幅	ねさげはば	size of the price cut
+B	6	〜かと存じます	〜かと ぞんじます	I believe (humble)
+B	6	限界	げんかい	the limit / maximum
+B	7	間を取る	あいだを とる	meet halfway
+B	8	支払い条件	しはらい じょうけん	payment terms
+B	8	〜で合意する	〜で ごういする	agree on
+B	9	特に支障はない	とくに ししょうは ない	no particular problem
+B	9	財務チーム	ざいむ チーム	finance team
+B	10	議事録にまとめる	ぎじろくに まとめる	summarize in the minutes
+B	10	契約書の案	けいやくしょの あん	draft contract
+B	10	来週中に	らいしゅうちゅうに	sometime next week
+B	11	主な要因	おもな よういん	the main factor
+B	11	需要の拡大	じゅようの かくだい	growing demand
+B	11	北米	ほくべい	North America
+B	12	営業利益率	えいぎょう りえきりつ	operating margin
+B	13	立ち上げ費用	たちあげ ひよう	start-up costs
+B	13	物流コスト	ぶつりゅう コスト	logistics costs
+B	14	フル稼働	フル かどう	full capacity
+B	14	〜に寄与する	〜に きよする	contribute to / add to
+B	14	年間売上高	ねんかん うりあげだか	annual revenue
+B	15	上乗せ	うわのせ	addition / boost
+B	15	想定する	そうていする	assume / expect
+B	16	業績予想	ぎょうせき よそう	earnings guidance / forecast
+B	16	通期	つうき	full year
+B	16	保守的	ほしゅてき	conservative
+B	17	ご指摘の通り	ごしてきの とおり	as you point out
+B	17	追い風	おいかぜ	tailwind
+B	17	先行きが不透明	さきゆきが ふとうめい	the outlook is uncertain
+B	17	慎重な見方	しんちょうな みかた	a cautious view
+B	17	維持する	いじする	maintain / keep
+B	18	株主還元	かぶぬし かんげん	shareholder returns
+B	19	配当性向	はいとう せいこう	payout ratio
+B	19	現時点で	げんじてんで	at this point
+B	20	大変参考になりました	たいへん さんこうに なりました	that's very helpful
+B	20	質問は以上です	しつもんは いじょうです	I have no further questions
+B	21	ご連絡ありがとうございます	ごれんらく ありがとう ございます	thanks for getting back to me
+B	21	顧客管理システム	こきゃく かんり システム	customer management system (CRM)
+B	21	〜の後継として	〜の こうけいとして	to replace / as a successor to
+B	21	ご検討中	ごけんとうちゅう	(you are) evaluating / considering
+B	22	現行システム	げんこう システム	current system
+B	22	保守費用	ほしゅ ひよう	maintenance costs
+B	22	〜年が経過する	〜ねんが けいかする	X years have passed
+B	23	移行後	いこうご	after migrating
+B	23	金融業界	きんゆう ぎょうかい	financial services industry
+B	23	4割から5割	よんわりから ごわり	40 to 50%
+B	24	懸念	けねん	concern
+B	24	保管場所	ほかん ばしょ	storage location
+B	24	国内に保管する	こくないに ほかんする	keep (data) in Japan
+B	24	魅力的	みりょくてき	attractive
+B	25	国内にとどまる	こくないに とどまる	stay within Japan
+B	25	その点は問題ございません	そのてんは もんだい ございません	that won't be a problem (polite)
+B	26	システム障害	システム しょうがい	system failure / outage
+B	26	復旧目標時間	ふっきゅう もくひょう じかん	recovery time objective (RTO)
+B	26	それは安心しました	それは あんしん しました	that's reassuring
+B	26	もう一点	もう いってん	one more thing
+B	27	稼働率	かどうりつ	availability / uptime
+B	27	サービスレベル契約	サービスレベル けいやく	service level agreement (SLA)
+B	27	保証する	ほしょうする	guarantee
+B	28	切り替え	きりかえ	switchover
+B	28	移行期間	いこう きかん	migration period
+B	28	社内では	しゃないでは	internally
+B	29	並行稼働	へいこう かどう	parallel run
+B	29	規模	きぼ	size / scale
+B	30	概算見積もり	がいさん みつもり	rough estimate
+B	30	経営会議	けいえい かいぎ	management meeting
+B	30	〜に向けて	〜に むけて	ahead of / toward
+B	30	ご提出いただけますか	ごていしゅつ いただけますか	could you submit …?
+B	31	ご報告いたします	ごほうこく いたします	I'd like to report (humble)
+B	31	賃上げ	ちんあげ	wage increase
+B	31	基本給	きほんきゅう	base salary
+B	31	日本法人	にほん ほうじん	Japanese subsidiary
+B	32	高い水準	たかい すいじゅん	a high level
+B	32	判断の背景	はんだんの はいけい	what's behind the decision
+B	33	採用競争	さいよう きょうそう	competition to hire
+B	33	競争が激しい	きょうそうが はげしい	competition is fierce
+B	33	内定辞退率	ないてい じたいりつ	offer decline rate
+B	34	総人件費	そう じんけんひ	total personnel costs
+B	35	離職率	りしょくりつ	turnover rate
+B	35	相殺する	そうさいする	offset
+B	35	採用コスト	さいよう コスト	hiring costs
+B	36	話は変わりますが	はなしは かわりますが	on a different topic
+B	36	出社	しゅっしゃ	coming in to the office
+B	36	本社	ほんしゃ	headquarters / head office
+B	37	反発が予想されます	はんぱつが よそう されます	we expect pushback
+B	37	社内調査	しゃない ちょうさ	internal survey
+B	37	継続	けいぞく	continuing
+B	38	率直なご意見	そっちょくな ごいけん	your candor / frank opinion
+B	38	段階的な方法	だんかいてきな ほうほう	a gradual approach
+B	39	理解を得る	りかいを える	win (people's) understanding
+B	39	子育て中の社員	こそだてちゅうの しゃいん	employees raising children
+B	39	例外を認める	れいがいを みとめる	allow exceptions
+B	40	妥当	だとう	reasonable / fair
+B	40	提案書	ていあんしょ	proposal (document)
+B	40	月末までに	げつまつ までに	by the end of the month
+P	1	本日はお時間をいただき、ありがとうございます。	ほんじつは おじかんを いただき、ありがとう ございます。	Thank you for taking the time to meet with us today.
+P	2	単刀直入に申し上げます。	たんとう ちょくにゅうに もうしあげます。	Let me get straight to the point.
+P	3	もう少し詳しくご説明いただけますか。	もうすこし くわしく ごせつめい いただけますか。	Could you elaborate on that?
+P	4	おっしゃることはもっともです。	おっしゃる ことは もっともです。	That's a fair point.
+P	5	その点はお受けいたしかねます。	そのてんは おうけ いたしかねます。	I'm afraid that's not something we can agree to.
+P	6	この件は来週、改めて話し合いましょう。	このけんは らいしゅう、あらためて はなしあいましょう。	Let's circle back to this next week.
+P	7	本社に確認する必要があります。	ほんしゃに かくにんする ひつようが あります。	We'd need to run this by our head office.
+P	8	確認ですが、	かくにん ですが、	Just to clarify, …
+P	9	認識は一致していると思います。	にんしきは いっち していると おもいます。	I think we're on the same page.
+P	10	今週中にご連絡いたします。	こんしゅうちゅうに ごれんらく いたします。	I'll get back to you by the end of the week.
+P	11	いつもお世話になっております。	いつも おせわに なって おります。	Thank you for your continued support. (set phrase)
+P	12	おっしゃる通りです。	おっしゃる とおりです。	You're absolutely right.
+P	13	持ち帰って検討させていただきます。	もちかえって けんとう させて いただきます。	Let us take this back and discuss it internally.
+P	14	念のため、確認させてください。	ねんのため、かくにん させて ください。	Just to be sure, let me confirm.
+P	15	ご指摘ありがとうございます。	ごしてき ありがとう ございます。	Thank you for pointing that out.
+P	16	できる限り前向きに対応いたします。	できるかぎり まえむきに たいおう いたします。	We'll do our best to accommodate that.
+P	17	後ほど担当者からご説明いたします。	のちほど たんとうしゃから ごせつめい いたします。	The person in charge will explain that later.
+P	18	恐れ入りますが、もう一度おっしゃっていただけますか。	おそれいりますが、もう いちど おっしゃって いただけますか。	I'm sorry, could you say that again?
+P	19	その件は、現在社内で調整中です。	そのけんは、げんざい しゃないで ちょうせいちゅう です。	We're currently coordinating that internally.
+P	20	引き続きよろしくお願いいたします。	ひきつづき よろしく おねがい いたします。	We look forward to continuing to work with you. (set phrase)
+T	1	〜は前年比X%増のY円となりました	〜は ぜんねんひ X パーセント ぞうの Y えんと なりました	… rose X% year on year to Y yen
+T	2	〜は前年比X%減のY円となりました	〜は ぜんねんひ X パーセント げんの Y えんと なりました	… fell X% year on year to Y yen
+T	3	過去最高を記録しました	かこさいこうを きろく しました	hit a record high
+T	4	〜か月連続で上昇しました	〜かげつ れんぞくで じょうしょう しました	rose for the Xth consecutive month
+T	5	〜を目指しています	〜を めざして います	we aim to … (goal)
+T	6	〜する見通しです	〜する みとおし です	… is expected to (forecast)
+T	7	〜する計画です	〜する けいかく です	… plans to
+T	8	増配を決定しました	ぞうはいを けってい しました	decided to raise the dividend
+T	9	〜に支えられ、〜が伸びました	〜に ささえられ、〜が のびました	… grew, driven by …
+T	10	〜により、利益は減少しました	〜により、りえきは げんしょう しました	profit fell due to …
+T	11	〜を受けて	〜を うけて	in response to …
+T	12	慎重な姿勢を維持します	しんちょうな しせいを いじ します	we will remain cautious
+T	13	需要の拡大に伴い	じゅようの かくだいに ともない	as demand grows
+T	14	操業停止を余儀なくされました	そうぎょう ていしを よぎなく されました	was forced to suspend operations
+T	15	全体のX割を占めています	ぜんたいの X わりを しめて います	account for X0% of the total
+T	16	〜と比べて	〜と くらべて	compared with …
+T	17	X倍以上に増えました	X ばい いじょうに ふえました	more than X-fold (more than doubled)
+T	18	据え置かれました	すえおかれました	was left unchanged
+T	19	新たな料金体系を導入します	あらたな りょうきん たいけいを どうにゅう します	introduce a new pricing system
+T	20	〜への参入を検討しています	〜への さんにゅうを けんとう して います	we are considering entering …
+T	21	〜によると	〜に よると	according to …
+T	22	X年ぶりの安値	X ねんぶりの やすね	the weakest level in X years
+T	23	同時に	どうじに	at the same time
+T	24	〜だけでなく、〜も	〜だけでなく、〜も	not only … but also …
+T	25	主な要因は〜です	おもな よういんは 〜です	the main reason is …
+T	26	ご協力をお願いしたいと考えております	ごきょうりょくを おねがい したいと かんがえて おります	we would like to ask for your cooperation
+T	27	恐れ入りますが、〜いたしかねます	おそれいりますが、〜 いたしかねます	I'm afraid we cannot …
+T	28	前向きに検討いたします	まえむきに けんとう いたします	we will give it positive consideration
+T	29	ご存じの通り、市場は競争が激しくなっています	ごぞんじの とおり、しじょうは きょうそうが はげしく なって います	as you know, the market is highly competitive
+T	30	最後に、〜に感謝を申し上げます	さいごに、〜に かんしゃを もうしあげます	finally, I would like to thank …
+C	1	過去最高に達する見通し	かこさいこうに たっする みとおし	expected to reach a record
+C	1	今年度	こんねんど	this fiscal year
+C	2	半導体製造装置	はんどうたい せいぞう そうち	chip-making equipment
+C	2	出荷	しゅっか	shipments
+C	3	0.25ポイント引き上げる	れいてんにご ポイント ひきあげる	raise by 0.25 percentage points
+C	3	短期の政策金利	たんきの せいさく きんり	short-term policy rate
+C	4	訪日客数	ほうにち きゃくすう	visitor arrivals (to Japan)
+C	4	〜を上回る	〜を うわまわる	exceed / be above
+C	5	〜を投じる	〜を とうじる	invest (an amount)
+C	5	電池工場	でんち こうじょう	battery plant
+C	5	建設する	けんせつする	build
+C	6	再生可能エネルギー	さいせい かのう エネルギー	renewable energy
+C	6	発電容量	はつでん ようりょう	generating capacity
+C	6	600万キロワット	ろっぴゃくまん キロワット	6 gigawatts (1 GW = 100万 kW)
+C	7	温室効果ガス	おんしつ こうか ガス	greenhouse gases
+C	7	開示が義務付けられる	かいじが ぎむづけられる	be required to disclose
+C	7	大企業	だいきぎょう	large companies
+C	8	修正版のお見積もり	しゅうせいばんの おみつもり	revised quotation
+C	8	明日中に	あしたじゅうに	by the end of tomorrow
+C	9	伸びが鈍化する	のびが どんかする	growth slows
+C	9	貨物輸送量	かもつ ゆそうりょう	shipping volumes
+C	9	ネット通販	ネット つうはん	online sales / e-commerce
+C	10	〜に占める割合	〜に しめる わりあい	share of …
+C	10	新車販売	しんしゃ はんばい	new car sales
+C	10	電気自動車	でんき じどうしゃ	electric vehicles
+C	11	初となる	はつと なる	first-ever
+C	12	当初の見積もり	とうしょの みつもり	original estimate
+C	12	建設費	けんせつひ	construction costs
+C	13	3分の1を占める	さんぶんの いちを しめる	account for a third
+C	13	予定通り進める	よていどおり すすめる	go ahead as planned
+C	14	定額制	ていがくせい	subscription (flat-rate)
+C	14	2倍になる	にばいに なる	double
+C	15	総資産	そうしさん	total assets
+C	15	誕生する	たんじょうする	be created / born
+C	16	誠に勝手ながら	まことに かってながら	please be advised (closure notice)
+C	16	休業	きゅうぎょう	(business) closed
+C	17	新卒者	しんそつしゃ	new graduates
+C	17	平均年収	へいきん ねんしゅう	average annual salary
+C	18	時間外労働	じかんがい ろうどう	overtime
+C	18	上限	じょうげん	cap / upper limit
+C	19	業界団体	ぎょうかい だんたい	industry groups
+C	19	警告する	けいこくする	warn
+C	19	対策を取る	たいさくを とる	take measures
+C	19	〜おそれがある	〜おそれが ある	there is a risk that …
+C	20	長距離輸送	ちょうきょり ゆそう	long-distance transport
+C	20	船舶	せんぱく	ships / vessels
+C	20	切り替える	きりかえる	shift / switch
+C	21	純利益	じゅんりえき	net profit
+C	21	前期比	ぜんきひ	vs. the previous year (period)
+C	21	過去最高を更新する	かこさいこうを こうしんする	set a new record
+C	21	3期連続で	さんき れんぞくで	for the third straight year (period)
+C	22	日銀の短観	にちぎんの たんかん	Bank of Japan's Tankan survey
+C	22	景況感	けいきょうかん	business sentiment
+C	22	2期ぶりに改善	にきぶりに かいぜん	improve for the first time in two quarters
+C	22	大企業製造業	だいきぎょう せいぞうぎょう	large manufacturers
+C	23	円相場	えんそうば	the yen (exchange rate)
+C	23	158円台	ひゃくごじゅうはちえんだい	the 158 level
+C	23	半年ぶりの円安水準	はんとしぶりの えんやす すいじゅん	weakest yen level in six months
+C	24	予算案	よさんあん	draft budget
+C	24	一般会計	いっぱん かいけい	general account
+C	24	過去最大	かこ さいだい	record (largest ever)
+C	25	打ち合わせの資料	うちあわせの しりょう	materials for the meeting
+C	25	事前に	じぜんに	in advance
+C	26	外食チェーン	がいしょく チェーン	restaurant chains
+C	26	配膳ロボット	はいぜん ロボット	serving robot
+C	27	不正会計	ふせい かいけい	accounting fraud
+C	27	決算発表	けっさん はっぴょう	earnings release
+C	27	延期する	えんきする	postpone
+C	27	海外子会社	かいがい こがいしゃ	overseas subsidiary
+C	28	首都圏	しゅとけん	Tokyo metropolitan area
+C	28	発売戸数	はつばい こすう	number of units put on sale
+C	28	前年同月比	ぜんねん どうげつひ	vs. the same month last year
+C	29	目標を掲げる	もくひょうを かかげる	set a goal
+C	30	納期を延ばす	のうきを のばす	extend the delivery date
+C	30	〜は可能でしょうか	〜は かのう でしょうか	would it be possible to …?
+C	31	急増	きゅうぞう	surge
+C	31	混雑	こんざつ	congestion
+C	32	宿泊税	しゅくはくぜい	accommodation tax
+C	32	1泊	いっぱく	per night
+C	33	税収	ぜいしゅう	tax revenue
+C	33	〜に充てる	〜に あてる	allocate to / use for
+C	33	増便	ぞうびん	more services (buses, flights)
+C	34	研修を実施する	けんしゅうを じっしする	provide training
+C	35	店頭価格	てんとう かかく	retail price
+C	36	決算説明会	けっさん せつめいかい	earnings briefing
+C	36	後日	ごじつ	at a later date
+C	36	公開する	こうかいする	post / publish
+C	37	電力使用量	でんりょく しようりょう	electricity use
+C	37	比率	ひりつ	share / ratio
+C	38	冷凍食品	れいとう しょくひん	frozen foods
+C	38	倍増させる	ばいぞう させる	double
+C	40	生産能力	せいさん のうりょく	production capacity
+D	1	合弁会社を設立する	ごうべん がいしゃを せつりつする	set up a joint venture
+D	2	ありがたいお話	ありがたい おはなし	a very welcome proposal
+D	2	出資比率	しゅっし ひりつ	equity split / ownership ratio
+D	3	流通	りゅうつう	distribution
+D	3	担当する	たんとうする	handle / be in charge of
+D	4	50対50	ごじゅったい ごじゅう	50-50
+D	4	製造技術	せいぞう ぎじゅつ	manufacturing technology
+D	5	おっしゃることは分かります	おっしゃる ことは わかります	I see your point
+D	5	指名する	しめいする	appoint
+D	6	初期投資	しょき とうし	initial investment
+D	7	物流倉庫	ぶつりゅう そうこ	distribution warehouse
+D	8	黒字化	くろじか	turning a profit
+D	8	現地事業	げんち じぎょう	local business
+D	9	損益分岐点に達する	そんえき ぶんきてんに たっする	break even
+D	10	社内で協議のうえ	しゃないで きょうぎの うえ	after discussing internally
+D	10	正式なお返事	せいしきな おへんじ	a formal answer
+D	10	来月末	らいげつまつ	end of next month
+D	11	お忙しいところ	おいそがしい ところ	despite your busy schedule
+D	11	不具合	ふぐあい	defect / malfunction
+D	12	販売台数	はんばい だいすう	units sold
+D	12	欧州	おうしゅう	Europe
+D	13	全世界で	ぜんせかいで	worldwide
+D	13	そのうち	そのうち	of which
+D	14	けが人	けがにん	injured people / injuries
+D	15	軽いやけど	かるい やけど	minor burns
+D	15	重大な事故	じゅうだいな じこ	serious accident
+D	16	交換	こうかん	replacement
+D	16	返金	へんきん	refund
+D	17	無償で交換する	むしょうで こうかんする	replace free of charge
+D	17	設計上の問題	せっけいじょうの もんだい	design problem
+D	17	電源部品	でんげん ぶひん	power component
+D	18	送料を負担する	そうりょうを ふたんする	cover the shipping costs
+D	18	回収	かいしゅう	collection (of returned products)
+D	18	物流面での支援	ぶつりゅうめんでの しえん	support with logistics
+D	19	総額で	そうがくで	in total
+D	19	見込む	みこむ	expect / estimate
+D	20	お客様向けのお知らせ	おきゃくさまむけの おしらせ	customer notice
+D	21	買収	ばいしゅう	acquisition
+D	21	統合	とうごう	integration
+D	21	順調に進む	じゅんちょうに すすむ	go well / be on track
+D	22	そう伺って安心しました	そう うかがって あんしん しました	I'm relieved to hear that
+D	23	形式が大きく異なる	けいしきが おおきく ことなる	formats are very different
+D	24	決算の締め	けっさんの しめ	closing the books
+D	25	全力を尽くします	ぜんりょくを つくします	we'll do our best
+D	25	退職する	たいしょくする	leave the company / resign
+D	25	別の問題ですが	べつの もんだい ですが	on another issue
+D	26	報酬	ほうしゅう	compensation / pay
+D	27	意思決定	いし けってい	decision-making
+D	27	承認が必要	しょうにんが ひつよう	needs approval
+D	28	ご指摘はもっともです	ごしてきは もっともです	that's a fair point
+D	28	決裁	けっさい	approval / sign-off (by authority)
+D	28	権限を移す	けんげんを うつす	delegate authority
+D	28	案件	あんけん	projects / deals / matters
+D	29	引き留めのための賞与	ひきとめの ための しょうよ	retention bonus
+D	30	取締役会	とりしまりやくかい	board (of directors) meeting
+D	30	案をまとめる	あんを まとめる	put together a proposal
+D	31	お越しいただきありがとうございます	おこし いただき ありがとう ございます	thank you for visiting / coming
+D	31	軽量	けいりょう	lightweight
+D	31	鉄製	てつせい	(made of) iron
+D	32	意外に軽い	いがいに かるい	surprisingly light
+D	33	〜にも対応しています	〜にも たいおう して います	also works with / is compatible with
+D	34	価格を重視する	かかくを じゅうしする	care about price
+D	34	卸値	おろしね	wholesale price
+D	35	1個あたり	いっこ あたり	per unit
+D	36	競争力のある価格	きょうそうりょくの ある かかく	competitive price
+D	36	納期	のうき	lead time / delivery date
+D	36	直接出荷	ちょくせつ しゅっか	ship directly
+D	37	納品	のうひん	delivery (of goods)
+D	37	直送	ちょくそう	direct shipping
+D	38	販促	はんそく	(sales) promotion
+D	38	試験的な注文	しけんてきな ちゅうもん	trial order
+D	39	よろしいでしょうか	よろしい でしょうか	would that be acceptable?
+D	40	見積もり	みつもり	quote / estimate
+D	40	結構です	けっこうです	that's fine
+N3	2	純損失	じゅんそんしつ	net loss
+N3	3	来場者	らいじょうしゃ	visitors (to an event)
+N3	6	〜相当	〜そうとう	worth …
+N3	9	経済対策	けいざい たいさく	economic package
+N3	10	回答者の3分の2	かいとうしゃの さんぶんの に	two-thirds of respondents
+N3	16	4人に1人	よにんに ひとり	one in four
+N3	17	赤字	あかじ	deficit / loss
+N3	18	値上げ	ねあげ	price increase
+N3	19	時価総額	じか そうがく	market capitalization
+N3	15	X年ぶりの高水準	X ねんぶりの こうすいじゅん	the highest level in X years
+S	1	取引先	とりひきさき	supplier / business partner
+S	2	在庫	ざいこ	inventory
+S	2	保険	ほけん	insurance
+S	3	県庁所在地	けんちょう しょざいち	prefectural capital
+S	3	足を運ぶ	あしを はこぶ	visit / go to
+S	4	拡充	かくじゅう	expansion / enhancement
+S	4	多言語の案内表示	たげんごの あんない ひょうじ	multilingual signage
+S	4	ご清聴ありがとうございました	ごせいちょう ありがとう ございました	thank you for your attention
